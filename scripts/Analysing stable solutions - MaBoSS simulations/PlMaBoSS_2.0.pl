@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 
+# this file was written by Gautier Stoll, co-developer of MaBoSS tool.
 my $bndFile=shift;
 if (!$bndFile) 
 {printf "Missing bnd file, PlMaBoSS.pl <file.bnd> <file.cfg> <threshold=0.1>\n";
