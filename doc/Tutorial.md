@@ -35,17 +35,17 @@ In the particular case of this article, the ER process started by gathering info
 
 ### Metastasis model as a test case
 
-We will use a model developed in our group that describes the signalling and regulation of EMT and Metastasis in cancer cells. This model is comprised of 32 nodes and 157 edges; has two inputs, *ECMicroenv* and *DNAdamage* and six outputs: *ECM*, *Invasion*, *Migration*, *Metastasis*, *Apoptosis *and *CellCycleArrest*.
+We will use a model developed in our group that describes the signalling and regulation of EMT and Metastasis in cancer cells. This model is comprised of 32 nodes and 157 edges; has two inputs, *ECMicroenv* and *DNAdamage* and six outputs: *ECM*, *Invasion*, *Migration*, *Metastasis*, *Apoptosis* and *CellCycleArrest*.
 
 The model is able to predict conditions, e.g. single or double mutations, favourable (or unfavourable) to tumour invasion and migration to the blood vessels in response to two inputs, extracellular matrix signalling (*ECMicroenv*) and DNA damage presence (*DNAdamage*). 
 
 ![](./Images/image_0.png)
 
-The gene-wise model
+The gene-wise model with 32 nodes and 157 edges.
 
 ![](./Images/image_1.png)
 
-The module-wise model
+The module-wise model with 20 nodes and 93 edges.
 
 We have bundled some of the genes in functional modules in order to test several techniques that we will describe in present work. The pathways included in this model are represented by one or two components of these pathways, e.g TGFB1 and SMADs for *TGFbeta*, Twist1, Snai1, Snai2, Zeb1, Zeb2 and Vim for *EMT*, miR203, miR200 and miR34a for *miRNA*, etc. 
 
