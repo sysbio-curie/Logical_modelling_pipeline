@@ -20,7 +20,7 @@
 
 ## Material and methods we are going to use
 
-* Executables: [BiNoM](http://binom.curie.fr/), [Cytoscape](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [OCSANA](http://bioinfo-out.curie.fr/projects/ocsana/OCSANA.html)
+* Executables: [BiNoM](http://binom.curie.fr/), [Cytoscape](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [OCSANA (included in BiNoM)](http://bioinfo-out.curie.fr/projects/ocsana/OCSANA.html)
 * Provided tools: [MaBoSS](http://maboss.curie.fr/), [ROMA](https://github.com/sysbio-curie/Roma), [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
 * Scripts: [folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts)
 * GINSim model and Cytoscape network files: [Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
@@ -59,7 +59,7 @@ We will start with a model build on GINsim. In this tool, we can export the netw
 
 ![](./Images/image_2.png)
 
-To perform OCSANA Analysis go to Cytoscape 2.X, look for `Plugins menu / BiNoM / BiNoM Analysis / OCSANA Analysis`.
+To perform OCSANA Analysis we need BiNoM plugin in Cytoscape 2.X. In this softfware, we go to `Plugins menu / BiNoM / BiNoM Analysis / OCSANA Analysis`.
 
 <img src="./Images/image_3.png" height="500" />
 <!--- ![](./Images/image_3.png) --->
