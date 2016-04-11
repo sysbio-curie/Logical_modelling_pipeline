@@ -20,8 +20,8 @@
 
 ## Material and methods we are going to use
 
-* Executables: [BiNoM](http://binom.curie.fr/), [Cytoscape](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [OCSANA (included in BiNoM)](http://bioinfo-out.curie.fr/projects/ocsana/OCSANA.html)
-* Provided tools: [MaBoSS](http://maboss.curie.fr/), [ROMA](https://github.com/sysbio-curie/Roma), [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
+* Software: [Cytoscape](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads)
+* Provided tools: [BiNoM](http://binom.curie.fr/), [MaBoSS](http://maboss.curie.fr/), [OCSANA (included in BiNoM)](http://bioinfo-out.curie.fr/projects/ocsana/OCSANA.html), [ROMA](https://github.com/sysbio-curie/Roma), [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
 * Scripts: [folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts)
 * GINSim model and Cytoscape network files: [Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
 
