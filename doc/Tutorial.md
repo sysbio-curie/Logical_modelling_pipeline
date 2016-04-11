@@ -100,9 +100,8 @@ Second, an explanation of the results:
 
 Those are the 6 elementary paths that include 8 nodes that connect *ECMicroenv* with *Metastasis*. These are activating as well as inhibiting paths.
 
-Total timing for the search: 0 sec.
-
-Found 5 optimal CIs
+	Total timing for the search: 0 sec.
+	Found 5 optimal CIs
 
 <table>
   <tr>
