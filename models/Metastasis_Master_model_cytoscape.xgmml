@@ -1,0 +1,2885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph label="Metastasis_Master_Model" id="Metastasis_Master_Model" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.cs.rpi.edu/XGMML">
+  <att name="documentVersion" value="1.0"/>
+  <att name="networkMetadata">
+    <rdf:RDF>
+      <rdf:Description rdf:about="http://www.cytoscape.org/">
+        <dc:type>Protein-Protein Interaction</dc:type>
+        <dc:description></dc:description>
+        <dc:identifier>N/A</dc:identifier>
+        <dc:date>2016-04-06 14:42:25</dc:date>
+        <dc:title>Metastasis_Master_Model</dc:title>
+        <dc:source>http://www.cytoscape.org/</dc:source>
+        <dc:format>Cytoscape-XGMML</dc:format>
+      </rdf:Description>
+    </rdf:RDF>
+  </att>
+  <att name="backgroundColor" value="#ffffff"/>
+  <att name="GRAPH_VIEW_ZOOM" label="GRAPH_VIEW_ZOOM" type="real" value="1.0"/>
+  <att name="GRAPH_VIEW_CENTER_X" label="GRAPH_VIEW_CENTER_X" type="real" value="0.0"/>
+  <att name="GRAPH_VIEW_CENTER_Y" label="GRAPH_VIEW_CENTER_Y" type="real" value="0.0"/>
+  <node label="ECMicroenv" id="-32">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ECMicroenv"/>
+    <graphics w="95" h="25" width="1" outline="#000000" fill="#999999" y="49" x="4" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="DNAdamage" id="-31">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="DNAdamage"/>
+    <graphics w="95" h="25" width="1" outline="#000000" fill="#999999" y="2" x="1218" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="Metastasis" id="-30">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Metastasis"/>
+    <graphics w="95" h="25" width="1" outline="#000000" fill="#999999" y="768" x="614" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="Migration" id="-29">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration"/>
+    <graphics w="95" h="25" width="1" outline="#000000" fill="#999999" y="716" x="615" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="Invasion" id="-28">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Invasion"/>
+    <graphics w="95" h="25" width="1" outline="#000000" fill="#999999" y="658" x="714" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="EMT" id="-27">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="EMT"/>
+    <graphics w="95" h="25" width="1" outline="#000000" fill="#999999" y="659" x="208" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="Apoptosis" id="-26">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis"/>
+    <graphics w="95" h="25" width="1" outline="#000000" fill="#999999" y="634" x="1153" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="CellCycleArrest" id="-25">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CellCycleArrest"/>
+    <graphics w="95" h="25" width="1" outline="#000000" fill="#999999" y="673" x="930" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="GF" id="-24">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="GF"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="231" x="5" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="TGFbeta" id="-23">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="TGFbeta"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="7" x="103" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="p21" id="-22">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="542" x="995" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="CDH1" id="-21">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH1"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="564" x="49" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="CDH2" id="-20">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH2"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="530" x="226" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="VIM" id="-19">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="VIM"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="582" x="411" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="TWIST1" id="-18">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="TWIST1"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="279" x="252" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="SNAI1" id="-17">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI1"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="440" x="315" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="SNAI2" id="-16">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI2"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="410" x="461" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="ZEB1" id="-15">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB1"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="313" x="365" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="ZEB2" id="-14">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB2"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="469" x="490" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="AKT1" id="-13">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="198" x="634" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="DKK1" id="-12">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="DKK1"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="110" x="307" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="CTNNB1" id="-11">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="170" x="404" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="NICD" id="-10">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="NICD"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="82" x="190" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="p63" id="-9">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p63"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="27" x="1108" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="p53" id="-8">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="249" x="1152" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="p73" id="-7">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p73"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="428" x="1097" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="miR200" id="-6">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="369" x="885" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="miR203" id="-5">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR203"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="284" x="769" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="miR34" id="-4">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="503" x="823" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="AKT2" id="-3">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="122" x="583" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="ERK" id="-2">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ERK"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="363" x="113" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <node label="SMAD" id="-1">
+    <att name="hiddenLabel" label="hiddenLabel" type="string"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SMAD"/>
+    <graphics w="75" h="25" width="1" outline="#000000" fill="#ffffff" y="43" x="315" type="rectangle">
+      <att name="cytoscapeNodeGraphicsAttributes">
+        <att name="nodeTransparency" value="1.0"/>
+        <att name="nodeLabelFont" value="Default-0-12"/>
+        <att name="borderLineType" value="solid"/>
+      </att>
+    </graphics>
+  </node>
+  <edge target="-13" source="-23" label="AKT1 (activate) TGFbeta" id="AKT1 (activate) TGFbeta">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT1 (activate) TGFbeta"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1 (activate) TGFbeta"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-3" source="-23" label="AKT2 (activate) TGFbeta" id="AKT2 (activate) TGFbeta">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT2 (activate) TGFbeta"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2 (activate) TGFbeta"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-1" source="-23" label="SMAD (activate) TGFbeta" id="SMAD (activate) TGFbeta">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SMAD (activate) TGFbeta"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SMAD (activate) TGFbeta"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-21" source="-3" label="CDH1 (inhibit) AKT2" id="CDH1 (inhibit) AKT2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CDH1 (inhibit) AKT2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH1 (inhibit) AKT2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-22" source="-3" label="p21 (activate) AKT2" id="p21 (activate) AKT2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p21 (activate) AKT2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21 (activate) AKT2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-8" source="-3" label="p53 (inhibit) AKT2" id="p53 (inhibit) AKT2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p53 (inhibit) AKT2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53 (inhibit) AKT2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-29" source="-3" label="Migration (activate) AKT2" id="Migration (activate) AKT2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Migration (activate) AKT2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration (activate) AKT2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-6" source="-3" label="miR200 (inhibit) AKT2" id="miR200 (inhibit) AKT2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR200 (inhibit) AKT2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200 (inhibit) AKT2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-4" source="-3" label="miR34 (activate) AKT2" id="miR34 (activate) AKT2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR34 (activate) AKT2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34 (activate) AKT2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-7" source="-3" label="p73 (inhibit) AKT2" id="p73 (inhibit) AKT2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p73 (inhibit) AKT2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p73 (inhibit) AKT2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-9" source="-3" label="p63 (inhibit) AKT2" id="p63 (inhibit) AKT2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p63 (inhibit) AKT2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p63 (inhibit) AKT2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-9" source="-10" label="p63 (inhibit) NICD" id="p63 (inhibit) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p63 (inhibit) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p63 (inhibit) NICD"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-17" source="-10" label="SNAI1 (activate) NICD" id="SNAI1 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI1 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI1 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-18" source="-10" label="TWIST1 (activate) NICD" id="TWIST1 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="TWIST1 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="TWIST1 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-16" source="-10" label="SNAI2 (activate) NICD" id="SNAI2 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI2 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI2 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-13" source="-10" label="AKT1 (activate) NICD" id="AKT1 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT1 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-12" source="-10" label="DKK1 (activate) NICD" id="DKK1 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="DKK1 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="DKK1 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-15" source="-10" label="ZEB1 (activate) NICD" id="ZEB1 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB1 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB1 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-14" source="-10" label="ZEB2 (activate) NICD" id="ZEB2 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB2 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB2 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-22" source="-10" label="p21 (activate) NICD" id="p21 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p21 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-8" source="-10" label="p53 (activate) NICD" id="p53 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p53 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-23" source="-10" label="TGFbeta (activate) NICD" id="TGFbeta (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="TGFbeta (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="TGFbeta (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-2" source="-10" label="ERK (activate) NICD" id="ERK (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ERK (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ERK (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-3" source="-10" label="AKT2 (activate) NICD" id="AKT2 (activate) NICD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT2 (activate) NICD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2 (activate) NICD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-17" source="-4" label="SNAI1 (inhibit) miR34" id="SNAI1 (inhibit) miR34">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI1 (inhibit) miR34"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI1 (inhibit) miR34"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-11" source="-4" label="CTNNB1 (inhibit) miR34" id="CTNNB1 (inhibit) miR34">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CTNNB1 (inhibit) miR34"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1 (inhibit) miR34"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-25" source="-4" label="CellCycleArrest (activate) miR34" id="CellCycleArrest (activate) miR34">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CellCycleArrest (activate) miR34"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CellCycleArrest (activate) miR34"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-10" source="-4" label="NICD (inhibit) miR34" id="NICD (inhibit) miR34">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="NICD (inhibit) miR34"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="NICD (inhibit) miR34"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-13" source="-4" label="AKT1 (inhibit) miR34" id="AKT1 (inhibit) miR34">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT1 (inhibit) miR34"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1 (inhibit) miR34"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-8" source="-4" label="p53 (activate) miR34" id="p53 (activate) miR34">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p53 (activate) miR34"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53 (activate) miR34"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-26" source="-4" label="Apoptosis (activate) miR34" id="Apoptosis (activate) miR34">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Apoptosis (activate) miR34"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis (activate) miR34"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-3" source="-4" label="AKT2 (inhibit) miR34" id="AKT2 (inhibit) miR34">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT2 (inhibit) miR34"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2 (inhibit) miR34"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-11" source="-12" label="CTNNB1 (inhibit) DKK1" id="CTNNB1 (inhibit) DKK1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CTNNB1 (inhibit) DKK1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1 (inhibit) DKK1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-22" source="-1" label="p21 (activate) SMAD" id="p21 (activate) SMAD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p21 (activate) SMAD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21 (activate) SMAD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-28" source="-1" label="Invasion (activate) SMAD" id="Invasion (activate) SMAD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Invasion (activate) SMAD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Invasion (activate) SMAD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-2" source="-1" label="ERK (activate) SMAD" id="ERK (activate) SMAD">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ERK (activate) SMAD"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ERK (activate) SMAD"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-29" source="-2" label="Migration (activate) ERK" id="Migration (activate) ERK">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Migration (activate) ERK"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration (activate) ERK"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-26" source="-2" label="Apoptosis (inhibit) ERK" id="Apoptosis (inhibit) ERK">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Apoptosis (inhibit) ERK"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis (inhibit) ERK"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-22" source="-2" label="p21 (inhibit) ERK" id="p21 (inhibit) ERK">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p21 (inhibit) ERK"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21 (inhibit) ERK"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-27" source="-21" label="EMT (inhibit) CDH1" id="EMT (inhibit) CDH1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="EMT (inhibit) CDH1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="EMT (inhibit) CDH1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-11" source="-21" label="CTNNB1 (inhibit) CDH1" id="CTNNB1 (inhibit) CDH1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CTNNB1 (inhibit) CDH1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1 (inhibit) CDH1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-13" source="-21" label="AKT1 (inhibit) CDH1" id="AKT1 (inhibit) CDH1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT1 (inhibit) CDH1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1 (inhibit) CDH1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-24" source="-21" label="GF (inhibit) CDH1" id="GF (inhibit) CDH1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="GF (inhibit) CDH1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="GF (inhibit) CDH1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-2" source="-24" label="ERK (activate) GF" id="ERK (activate) GF">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ERK (activate) GF"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ERK (activate) GF"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-3" source="-24" label="AKT2 (activate) GF" id="AKT2 (activate) GF">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT2 (activate) GF"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2 (activate) GF"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-13" source="-24" label="AKT1 (activate) GF" id="AKT1 (activate) GF">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT1 (activate) GF"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1 (activate) GF"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-24" source="-24" label="GF (activate) GF" id="GF (activate) GF">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="GF (activate) GF"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="GF (activate) GF"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-27" source="-20" label="EMT (activate) CDH2" id="EMT (activate) CDH2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="EMT (activate) CDH2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="EMT (activate) CDH2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-11" source="-20" label="CTNNB1 (inhibit) CDH2" id="CTNNB1 (inhibit) CDH2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CTNNB1 (inhibit) CDH2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1 (inhibit) CDH2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-3" source="-20" label="AKT2 (activate) CDH2" id="AKT2 (activate) CDH2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT2 (activate) CDH2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2 (activate) CDH2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-2" source="-20" label="ERK (activate) CDH2" id="ERK (activate) CDH2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ERK (activate) CDH2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ERK (activate) CDH2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-28" source="-20" label="Invasion (activate) CDH2" id="Invasion (activate) CDH2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Invasion (activate) CDH2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Invasion (activate) CDH2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-24" source="-20" label="GF (activate) CDH2" id="GF (activate) CDH2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="GF (activate) CDH2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="GF (activate) CDH2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-13" source="-20" label="AKT1 (activate) CDH2" id="AKT1 (activate) CDH2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT1 (activate) CDH2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1 (activate) CDH2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-22" source="-13" label="p21 (inhibit) AKT1" id="p21 (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p21 (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21 (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-7" source="-13" label="p73 (inhibit) AKT1" id="p73 (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p73 (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p73 (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-9" source="-13" label="p63 (inhibit) AKT1" id="p63 (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p63 (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p63 (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-8" source="-13" label="p53 (inhibit) AKT1" id="p53 (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p53 (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53 (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-25" source="-13" label="CellCycleArrest (inhibit) AKT1" id="CellCycleArrest (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CellCycleArrest (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CellCycleArrest (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-11" source="-13" label="CTNNB1 (inhibit) AKT1" id="CTNNB1 (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CTNNB1 (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1 (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-26" source="-13" label="Apoptosis (inhibit) AKT1" id="Apoptosis (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Apoptosis (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-4" source="-13" label="miR34 (inhibit) AKT1" id="miR34 (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR34 (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34 (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-29" source="-13" label="Migration (inhibit) AKT1" id="Migration (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Migration (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-2" source="-13" label="ERK (inhibit) AKT1" id="ERK (inhibit) AKT1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ERK (inhibit) AKT1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ERK (inhibit) AKT1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-6" source="-15" label="miR200 (inhibit) ZEB1" id="miR200 (inhibit) ZEB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR200 (inhibit) ZEB1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200 (inhibit) ZEB1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-5" source="-15" label="miR203 (inhibit) ZEB1" id="miR203 (inhibit) ZEB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR203 (inhibit) ZEB1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR203 (inhibit) ZEB1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-4" source="-15" label="miR34 (inhibit) ZEB1" id="miR34 (inhibit) ZEB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR34 (inhibit) ZEB1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34 (inhibit) ZEB1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-7" source="-15" label="p73 (inhibit) ZEB1" id="p73 (inhibit) ZEB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p73 (inhibit) ZEB1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p73 (inhibit) ZEB1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-21" source="-15" label="CDH1 (inhibit) ZEB1" id="CDH1 (inhibit) ZEB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CDH1 (inhibit) ZEB1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH1 (inhibit) ZEB1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-6" source="-16" label="miR200 (inhibit) SNAI2" id="miR200 (inhibit) SNAI2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR200 (inhibit) SNAI2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200 (inhibit) SNAI2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-15" source="-16" label="ZEB1 (activate) SNAI2" id="ZEB1 (activate) SNAI2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB1 (activate) SNAI2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB1 (activate) SNAI2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-14" source="-16" label="ZEB2 (activate) SNAI2" id="ZEB2 (activate) SNAI2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB2 (activate) SNAI2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB2 (activate) SNAI2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-8" source="-16" label="p53 (inhibit) SNAI2" id="p53 (inhibit) SNAI2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p53 (inhibit) SNAI2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53 (inhibit) SNAI2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-21" source="-16" label="CDH1 (inhibit) SNAI2" id="CDH1 (inhibit) SNAI2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CDH1 (inhibit) SNAI2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH1 (inhibit) SNAI2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-19" source="-11" label="VIM (activate) CTNNB1" id="VIM (activate) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="VIM (activate) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="VIM (activate) CTNNB1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-13" source="-11" label="AKT1 (activate) CTNNB1" id="AKT1 (activate) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT1 (activate) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1 (activate) CTNNB1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-18" source="-11" label="TWIST1 (activate) CTNNB1" id="TWIST1 (activate) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="TWIST1 (activate) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="TWIST1 (activate) CTNNB1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-16" source="-11" label="SNAI2 (activate) CTNNB1" id="SNAI2 (activate) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI2 (activate) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI2 (activate) CTNNB1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-15" source="-11" label="ZEB1 (activate) CTNNB1" id="ZEB1 (activate) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB1 (activate) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB1 (activate) CTNNB1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-12" source="-11" label="DKK1 (activate) CTNNB1" id="DKK1 (activate) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="DKK1 (activate) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="DKK1 (activate) CTNNB1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-8" source="-11" label="p53 (activate) CTNNB1" id="p53 (activate) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p53 (activate) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53 (activate) CTNNB1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-17" source="-11" label="SNAI1 (inhibit) CTNNB1" id="SNAI1 (inhibit) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI1 (inhibit) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI1 (inhibit) CTNNB1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-28" source="-11" label="Invasion (activate) CTNNB1" id="Invasion (activate) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Invasion (activate) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Invasion (activate) CTNNB1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-23" source="-11" label="TGFbeta (inhibit) CTNNB1" id="TGFbeta (inhibit) CTNNB1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="TGFbeta (inhibit) CTNNB1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="TGFbeta (inhibit) CTNNB1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-30" source="-29" label="Metastasis (activate) Migration" id="Metastasis (activate) Migration">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Metastasis (activate) Migration"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Metastasis (activate) Migration"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-29" source="-28" label="Migration (activate) Invasion" id="Migration (activate) Invasion">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Migration (activate) Invasion"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration (activate) Invasion"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-6" source="-7" label="miR200 (activate) p73" id="miR200 (activate) p73">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR200 (activate) p73"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200 (activate) p73"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-4" source="-7" label="miR34 (activate) p73" id="miR34 (activate) p73">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR34 (activate) p73"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34 (activate) p73"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-22" source="-7" label="p21 (activate) p73" id="p21 (activate) p73">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p21 (activate) p73"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21 (activate) p73"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-8" source="-7" label="p53 (inhibit) p73" id="p53 (inhibit) p73">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p53 (inhibit) p73"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53 (inhibit) p73"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-10" source="-7" label="NICD (inhibit) p73" id="NICD (inhibit) p73">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="NICD (inhibit) p73"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="NICD (inhibit) p73"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-26" source="-7" label="Apoptosis (activate) p73" id="Apoptosis (activate) p73">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Apoptosis (activate) p73"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis (activate) p73"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-29" source="-27" label="Migration (activate) EMT" id="Migration (activate) EMT">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Migration (activate) EMT"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration (activate) EMT"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-20" source="-18" label="CDH2 (activate) TWIST1" id="CDH2 (activate) TWIST1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CDH2 (activate) TWIST1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH2 (activate) TWIST1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-15" source="-18" label="ZEB1 (activate) TWIST1" id="ZEB1 (activate) TWIST1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB1 (activate) TWIST1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB1 (activate) TWIST1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-16" source="-18" label="SNAI2 (activate) TWIST1" id="SNAI2 (activate) TWIST1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI2 (activate) TWIST1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI2 (activate) TWIST1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-17" source="-18" label="SNAI1 (activate) TWIST1" id="SNAI1 (activate) TWIST1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI1 (activate) TWIST1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI1 (activate) TWIST1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-14" source="-18" label="ZEB2 (activate) TWIST1" id="ZEB2 (activate) TWIST1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB2 (activate) TWIST1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB2 (activate) TWIST1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-3" source="-18" label="AKT2 (activate) TWIST1" id="AKT2 (activate) TWIST1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT2 (activate) TWIST1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2 (activate) TWIST1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-21" source="-18" label="CDH1 (inhibit) TWIST1" id="CDH1 (inhibit) TWIST1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CDH1 (inhibit) TWIST1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH1 (inhibit) TWIST1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-6" source="-9" label="miR200 (activate) p63" id="miR200 (activate) p63">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR200 (activate) p63"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200 (activate) p63"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-4" source="-9" label="miR34 (inhibit) p63" id="miR34 (inhibit) p63">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR34 (inhibit) p63"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34 (inhibit) p63"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-22" source="-9" label="p21 (activate) p63" id="p21 (activate) p63">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p21 (activate) p63"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21 (activate) p63"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-10" source="-9" label="NICD (inhibit) p63" id="NICD (inhibit) p63">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="NICD (inhibit) p63"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="NICD (inhibit) p63"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-26" source="-9" label="Apoptosis (activate) p63" id="Apoptosis (activate) p63">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Apoptosis (activate) p63"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis (activate) p63"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-11" source="-9" label="CTNNB1 (inhibit) p63" id="CTNNB1 (inhibit) p63">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CTNNB1 (inhibit) p63"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1 (inhibit) p63"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-29" source="-9" label="Migration (inhibit) p63" id="Migration (inhibit) p63">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Migration (inhibit) p63"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration (inhibit) p63"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-16" source="-6" label="SNAI2 (inhibit) miR200" id="SNAI2 (inhibit) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI2 (inhibit) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI2 (inhibit) miR200"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-15" source="-6" label="ZEB1 (inhibit) miR200" id="ZEB1 (inhibit) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB1 (inhibit) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB1 (inhibit) miR200"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-14" source="-6" label="ZEB2 (inhibit) miR200" id="ZEB2 (inhibit) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB2 (inhibit) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB2 (inhibit) miR200"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-10" source="-6" label="NICD (inhibit) miR200" id="NICD (inhibit) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="NICD (inhibit) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="NICD (inhibit) miR200"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-25" source="-6" label="CellCycleArrest (activate) miR200" id="CellCycleArrest (activate) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CellCycleArrest (activate) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CellCycleArrest (activate) miR200"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-11" source="-6" label="CTNNB1 (inhibit) miR200" id="CTNNB1 (inhibit) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CTNNB1 (inhibit) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1 (inhibit) miR200"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-26" source="-6" label="Apoptosis (activate) miR200" id="Apoptosis (activate) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Apoptosis (activate) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis (activate) miR200"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-29" source="-6" label="Migration (inhibit) miR200" id="Migration (inhibit) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Migration (inhibit) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration (inhibit) miR200"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-1" source="-6" label="SMAD (inhibit) miR200" id="SMAD (inhibit) miR200">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SMAD (inhibit) miR200"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SMAD (inhibit) miR200"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-18" source="-17" label="TWIST1 (activate) SNAI1" id="TWIST1 (activate) SNAI1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="TWIST1 (activate) SNAI1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="TWIST1 (activate) SNAI1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-15" source="-17" label="ZEB1 (activate) SNAI1" id="ZEB1 (activate) SNAI1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB1 (activate) SNAI1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB1 (activate) SNAI1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-14" source="-17" label="ZEB2 (activate) SNAI1" id="ZEB2 (activate) SNAI1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB2 (activate) SNAI1"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB2 (activate) SNAI1"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-6" source="-17" label="miR200 (inhibit) SNAI1" id="miR200 (inhibit) SNAI1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR200 (inhibit) SNAI1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200 (inhibit) SNAI1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-5" source="-17" label="miR203 (inhibit) SNAI1" id="miR203 (inhibit) SNAI1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR203 (inhibit) SNAI1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR203 (inhibit) SNAI1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-4" source="-17" label="miR34 (inhibit) SNAI1" id="miR34 (inhibit) SNAI1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR34 (inhibit) SNAI1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34 (inhibit) SNAI1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-21" source="-17" label="CDH1 (inhibit) SNAI1" id="CDH1 (inhibit) SNAI1">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CDH1 (inhibit) SNAI1"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH1 (inhibit) SNAI1"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-25" source="-22" label="CellCycleArrest (activate) p21" id="CellCycleArrest (activate) p21">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CellCycleArrest (activate) p21"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CellCycleArrest (activate) p21"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-6" source="-8" label="miR200 (activate) p53" id="miR200 (activate) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR200 (activate) p53"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200 (activate) p53"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-5" source="-8" label="miR203 (activate) p53" id="miR203 (activate) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR203 (activate) p53"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR203 (activate) p53"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-4" source="-8" label="miR34 (activate) p53" id="miR34 (activate) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR34 (activate) p53"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34 (activate) p53"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-7" source="-8" label="p73 (inhibit) p53" id="p73 (inhibit) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p73 (inhibit) p53"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p73 (inhibit) p53"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-22" source="-8" label="p21 (activate) p53" id="p21 (activate) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p21 (activate) p53"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p21 (activate) p53"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-16" source="-8" label="SNAI2 (inhibit) p53" id="SNAI2 (inhibit) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI2 (inhibit) p53"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI2 (inhibit) p53"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-17" source="-8" label="SNAI1 (inhibit) p53" id="SNAI1 (inhibit) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI1 (inhibit) p53"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI1 (inhibit) p53"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-10" source="-8" label="NICD (inhibit) p53" id="NICD (inhibit) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="NICD (inhibit) p53"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="NICD (inhibit) p53"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-9" source="-8" label="p63 (inhibit) p53" id="p63 (inhibit) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p63 (inhibit) p53"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p63 (inhibit) p53"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-13" source="-8" label="AKT1 (inhibit) p53" id="AKT1 (inhibit) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT1 (inhibit) p53"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT1 (inhibit) p53"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-26" source="-8" label="Apoptosis (activate) p53" id="Apoptosis (activate) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Apoptosis (activate) p53"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis (activate) p53"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-11" source="-8" label="CTNNB1 (inhibit) p53" id="CTNNB1 (inhibit) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CTNNB1 (inhibit) p53"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CTNNB1 (inhibit) p53"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-3" source="-8" label="AKT2 (inhibit) p53" id="AKT2 (inhibit) p53">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT2 (inhibit) p53"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2 (inhibit) p53"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-29" source="-19" label="Migration (activate) VIM" id="Migration (activate) VIM">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Migration (activate) VIM"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Migration (activate) VIM"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-19" source="-14" label="VIM (activate) ZEB2" id="VIM (activate) ZEB2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="VIM (activate) ZEB2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="VIM (activate) ZEB2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-6" source="-14" label="miR200 (inhibit) ZEB2" id="miR200 (inhibit) ZEB2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR200 (inhibit) ZEB2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR200 (inhibit) ZEB2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-5" source="-14" label="miR203 (inhibit) ZEB2" id="miR203 (inhibit) ZEB2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR203 (inhibit) ZEB2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR203 (inhibit) ZEB2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-4" source="-14" label="miR34 (inhibit) ZEB2" id="miR34 (inhibit) ZEB2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="miR34 (inhibit) ZEB2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="miR34 (inhibit) ZEB2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-25" source="-14" label="CellCycleArrest (activate) ZEB2" id="CellCycleArrest (activate) ZEB2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CellCycleArrest (activate) ZEB2"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CellCycleArrest (activate) ZEB2"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-26" source="-14" label="Apoptosis (inhibit) ZEB2" id="Apoptosis (inhibit) ZEB2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="Apoptosis (inhibit) ZEB2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="Apoptosis (inhibit) ZEB2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-21" source="-14" label="CDH1 (inhibit) ZEB2" id="CDH1 (inhibit) ZEB2">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CDH1 (inhibit) ZEB2"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CDH1 (inhibit) ZEB2"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-17" source="-5" label="SNAI1 (inhibit) miR203" id="SNAI1 (inhibit) miR203">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI1 (inhibit) miR203"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI1 (inhibit) miR203"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-14" source="-5" label="ZEB2 (inhibit) miR203" id="ZEB2 (inhibit) miR203">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="ZEB2 (inhibit) miR203"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="ZEB2 (inhibit) miR203"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-9" source="-5" label="p63 (inhibit) miR203" id="p63 (inhibit) miR203">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p63 (inhibit) miR203"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p63 (inhibit) miR203"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-25" source="-5" label="CellCycleArrest (activate) miR203" id="CellCycleArrest (activate) miR203">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="CellCycleArrest (activate) miR203"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="CellCycleArrest (activate) miR203"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-16" source="-5" label="SNAI2 (inhibit) miR203" id="SNAI2 (inhibit) miR203">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SNAI2 (inhibit) miR203"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SNAI2 (inhibit) miR203"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-3" source="-5" label="AKT2 (inhibit) miR203" id="AKT2 (inhibit) miR203">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="AKT2 (inhibit) miR203"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="AKT2 (inhibit) miR203"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-1" source="-5" label="SMAD (inhibit) miR203" id="SMAD (inhibit) miR203">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="SMAD (inhibit) miR203"/>
+    <att name="interaction" label="interaction" type="string" value="inhibit"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="SMAD (inhibit) miR203"/>
+    <graphics width="1" fill="#ff0000">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="15"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#ff0000"/>
+        <att name="targetArrowColor" value="#ff0000"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-23" source="-32" label="TGFbeta (activate) ECMicroenv" id="TGFbeta (activate) ECMicroenv">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="TGFbeta (activate) ECMicroenv"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="TGFbeta (activate) ECMicroenv"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-10" source="-32" label="NICD (activate) ECMicroenv" id="NICD (activate) ECMicroenv">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="NICD (activate) ECMicroenv"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="NICD (activate) ECMicroenv"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-9" source="-31" label="p63 (activate) DNAdamage" id="p63 (activate) DNAdamage">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p63 (activate) DNAdamage"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p63 (activate) DNAdamage"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-8" source="-31" label="p53 (activate) DNAdamage" id="p53 (activate) DNAdamage">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p53 (activate) DNAdamage"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p53 (activate) DNAdamage"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+  <edge target="-7" source="-31" label="p73 (activate) DNAdamage" id="p73 (activate) DNAdamage">
+    <att name="XGMML Edge Label" label="XGMML Edge Label" type="string" value="p73 (activate) DNAdamage"/>
+    <att name="interaction" label="interaction" type="string" value="activate"/>
+    <att name="canonicalName" label="canonicalName" type="string" value="p73 (activate) DNAdamage"/>
+    <graphics width="1" fill="#00c800">
+      <att name="cytoscapeEdgeGraphicsAttributes">
+        <att name="sourceArrow" value="0"/>
+        <att name="targetArrow" value="3"/>
+        <att name="edgeLabelFont" value="Default-0-10"/>
+        <att name="edgeLineType" value="SOLID"/>
+        <att name="sourceArrowColor" value="#00c800"/>
+        <att name="targetArrowColor" value="#00c800"/>
+        <att name="curved" value="STRAIGHT_LINES"/>
+      </att>
+    </graphics>
+  </edge>
+</graph>
