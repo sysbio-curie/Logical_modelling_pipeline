@@ -1,6 +1,5 @@
-Tutorial on logical model simulation
+# Tutorial on logical model simulation
 
-[[TOC]]
 ## Table of contents
 1. [Material and methods](#material-and-methods-we-are-going-to-use)
 2. [Constructing the Metastasis model network](#constructing-the-metastasis-model-network)
