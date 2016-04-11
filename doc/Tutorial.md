@@ -22,8 +22,8 @@
 
 * Executables: [BiNoM](http://binom.curie.fr/), [Cytoscape](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [OCSANA](http://bioinfo-out.curie.fr/projects/ocsana/OCSANA.html)
 * Provided tools: [MaBoSS](http://maboss.curie.fr/), [ROMA](https://github.com/sysbio-curie/Roma), [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
-* Scripts: [Provided list](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts)
-* GINSim model and Cytoscape network files: [Provided](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
+* Scripts: [folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts)
+* GINSim model and Cytoscape network files: [Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
 
 ## Constructing the Metastasis model network
 
@@ -804,7 +804,7 @@ This method is semi-manual and requires some decision-making from the modeller.
 
 For that, we use BiNoM functionalities. The method for reduction was already presented in [ref], where the rationale behind choices on rules was explained. With this method, some choices of which rules are important need to be made like when both positive and negative influences are deduced from one module to another.
 
-The obtained network is presented below:
+The obtained network with 20 nodes and 93 edges is presented below:
 
 ![](./Images/image_24.png)
 
