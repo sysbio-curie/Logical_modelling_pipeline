@@ -20,13 +20,10 @@
 
 ## Material and methods we are going to use
 
-Cytoscape network file (for data integration)
-
-GINSim model file
-
-Executables (downloads or links to downloads): GINSim, OCSANA, MaBoSS, Cytoscape, BiNoM, ViDaExpert, ROMA
-
-Scripts: list 
+* Cytoscape network file (for data integration)
+* GINSim model file
+* Executables (downloads or links to downloads): GINSim, OCSANA, MaBoSS, Cytoscape, BiNoM, ViDaExpert, ROMA
+* Scripts: list 
 
 ## Constructing the Metastasis model network
 
