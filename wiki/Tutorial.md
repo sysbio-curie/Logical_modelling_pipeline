@@ -26,11 +26,11 @@ We will use a model developed in our group that describes the signalling and reg
 
 The model is able to predict conditions, e.g. single or double mutations, favourable (or unfavourable) to tumour invasion and migration to the blood vessels in response to two inputs, extracellular matrix signalling (*ECMicroenv*) and DNA damage presence (*DNAdamage*). 
 
-![image alt text](/Images/image_0.png)
+![](./Images/image_0.png)
 
 The gene-wise model
 
-![image alt text](/Images/image_1.png)
+![](./Images/image_1.png)
 
 The module-wise model
 
@@ -44,20 +44,20 @@ In this model, no cyclic attractors were found for the wild type cases.
 
 We will start with a model build on GINsim. In this tool, we can export the network into Cytoscape format. Once we have done that we are able to import it in Cytoscape.
 
-![image alt text](/Images/image_2.png)
+![](./Images/image_2.png)
 
 To perform OCSANA Analysis go to Cytoscape 2.X, look for `Plugins menu / BiNoM / BiNoM Analysis / OCSANA Analysis`.
 
-<img src="/Images/image_3.png" height="500" />
-<!--- ![image alt text](/Images/image_3.png) --->
+<img src="./Images/image_3.png" height="500" />
+<!--- ![](./Images/image_3.png) --->
 
 A window pops up where you can select the source node (*ECMicroenv* in our case study) and target node (*Metastasis* in our case study) for which you want to study the shortest paths.
 
-![image alt text](/Images/image_4.png)
+![](./Images/image_4.png)
 
 This generates a report that can be copied to clipboard , saved or also visualized in Cytoscape as a subnetwork of the original network.
 
-![image alt text](/Images/image_5.png)
+![](./Images/image_5.png)
 
 This report can be exported in a text file and have a structure such as follows:
 
@@ -233,8 +233,8 @@ Globally, these results can be interpreted as follows:
 
 Finally, the set of shortest paths can be seen right away in Cytoscape.
 
-<img src="/Images/image_6.png" height="600" />
-<!---![image alt text](/Images/image_6.png)---> 
+<img src="./Images/image_6.png" height="600" />
+<!---![](./Images/image_6.png)---> 
 
 ## Translation of the network into a mathematical model
 
@@ -244,35 +244,35 @@ GINsim can inform easily on all stable states of the model, the functionality of
 
 GINsim can easily find and show all stable states:
 
-![image alt text](/Images/image_7.png)
+![](./Images/image_7.png)
 
 And generate a truth table of this kind:
 
-![image alt text](/Images/image_8.png)
+![](./Images/image_8.png)
 
 GINsim can also find all positive and negative circuits. For this we will use the reduced model obtained in the process explained in the "Model reduction" part and also in [ref]. The reason for this is that GINsim cannot deal with the functionality analysis of the original model:
 
-![image alt text](/Images/image_9.png)
+![](./Images/image_9.png)
 
 A window pops up:
 
-![image alt text](/Images/image_10.png)
+![](./Images/image_10.png)
 
 **XXX Differences of *must*, *must not* and *any*??**
 
 And *Search Circuits* retrieves:
 
-![image alt text](/Images/image_11.png)
+![](./Images/image_11.png)
 
 Here researchers can perform a *Functionality Analysis* of wild type strain in order to analyse its functional circuits, and retrieve a window such as:
 
-![image alt text](/Images/image_12.png)
+![](./Images/image_12.png)
 
 Where Positive and Negative circuits can be browsed and studied. The latter is especially interesting to detect and analyse limit cycles, that are usually caused by feedback loops.
 
 This analysis can also be performed on strains with a given perturbation, such as knock outs (KO) and overexpression (E1), or a combination of perturbations:
 
-![image alt text](/Images/image_13.png)
+![](./Images/image_13.png)
 
 This way, we can browse if a given perturbation causes that the system doesn’t display limit cycles. **XXX example of a feedback that only appears/disappears with a given perturbation.**
 
@@ -280,7 +280,7 @@ We have used MaBoSS software as our goal was to simulate our logical model using
 
 GINsim export in MaBoSS format:
 
-![image alt text](/Images/image_14.png) 
+![](./Images/image_14.png) 
 
 Models from GINsim can be exported in MaBoSS format. Two files are created: a BND file with the description of the network and its connections among nodes and a CFG file with the configuration parameters needed for the simulations.
 
@@ -290,7 +290,7 @@ Models from GINsim can be exported in MaBoSS format. Two files are created: a BN
 
 From GINsim, we can obtain a table of stable states that displays all possible combinations of system’s inputs and its stable outputs:  
 
-![image alt text](/Images/image_15.png)
+![](./Images/image_15.png)
 
 This table can be analysed and studied as it is, even more if the model is small-scale and the researcher has a deep knowledge of it. Furthermore, other exploratory analyses can be applied on these results, such as Principal Component Analysis, (PCA). To do this, we need to obtain the table of stable states as a matrix, which can be obtained from the FP output file of MaBoSS run. PCa can then be applied to this matrix in order to identify with variable changes (node’s values in our case) causes that model states change from one stable solution to another. 
 
@@ -711,7 +711,7 @@ We have used R environment to perform this analysis with **XXX** package. PCA us
 
 The PCA plot shows a first dimension (with 60.32% of variability explained) completely dominated by an axis of CDH1 on one side and a set of elements on the other side with TWIST1, CDH2, SNAI1 and 2, ZEB1 and 2, AKT2, VIM, ERK. A second dimension (with 16.75% of variability explained) dominated by two vectors close to each other: ECMicroenv , TGFbeta and Migration in one vector and NICD, SMAD, Invasion, Migration and Metastasis in another.
 
-![image alt text](/Images/image_16.png)![image alt text](/Images/image_17.png)
+![](./Images/image_16.png)![](./Images/image_17.png)
 
 ### MaBoSS simulations
 
@@ -743,7 +743,7 @@ In order to analyse the results we have built a small script to rearrange the co
 
 This creates a file called ginsim_out_probtraj_table_post.csv that we can import on our favourite spreadsheet software and plotting the leftmost stable states columns gives something like:
 
-![image alt text](/Images/image_18.png)
+![](./Images/image_18.png)
 
 This plot displays temporal evolution of the four most probable trajectories. As we can see most probable stable state is Apoptosis and Cell Cycle Arrest, followed by Migration, EMT and Cell Cycle Arrest, followed by the Homeostatic state (labelled as <nil> and with only CDH1 active) and lastly EMT and Cell Cycle Arrest. 
 
@@ -757,7 +757,7 @@ This plot displays temporal evolution of the four most probable trajectories. As
 
 The list of the stable states of the full detailed model is shown below:
 
-![image alt text](/Images/image_19.png)
+![](./Images/image_19.png)
 
 First two columns, ECMicroenv and DNAdamage are the inputs of the system and the following six are outputs: ECM, Invasion, Migration, Metastasis, Apoptosis and CellCycleArrest.
 
@@ -765,15 +765,15 @@ We select the variables we wish to keep in the reduced version of the model and
 
 Go to Tools => Reduce model
 
-![image alt text](/Images/image_20.png)
+![](./Images/image_20.png)
 
 Choose the variables to suppress, nodes that we want to remove. Please bear in mind that this should not be done on self-regulated nodes.
 
-![image alt text](/Images/image_21.png)
+![](./Images/image_21.png)
 
 The resulting network is the following:
 
-![image alt text](/Images/image_22.png)
+![](./Images/image_22.png)
 
 New edges, with blue colour, represent reduced paths, combination of two or more edges in the original network.
 
@@ -781,7 +781,7 @@ The resulting logical rules are not written explicitly but the conditions for ac
 
 The resulting stable states can be obtained and we can see that the transfer function of inputs and outputs have been conserved, same combinations of inputs lead to same combination of outputs:
 
-![image alt text](/Images/image_23.png)
+![](./Images/image_23.png)
 
 2. Modular reduction using BiNoM
 
@@ -793,7 +793,7 @@ For that, we use BiNoM functionalities. The method for reduction was already pre
 
 The obtained network is presented below:
 
-![image alt text](/Images/image_24.png)
+![](./Images/image_24.png)
 
 with the corresponding rules:
 
@@ -1095,13 +1095,13 @@ For the example, we choose to show the result of one of the phenotypes, *Metasta
 
 Looking closely at the *Metastasis*’ phenotypes changes that lead to 0% of metastasis, we can see that changing the logical operators of p63, p73 or AKT1 rules alter the wild type. A particular attention needs to be given to these variables whose rules need to be carefully constrained. 
 
-![image alt text](/Images/image_25.png)
+![](./Images/image_25.png)
 
-![image alt text](/Images/image_26.png)
+![](./Images/image_26.png)
 
 These two could substitute this one:
 
-![image alt text](/Images/image_27.png)
+![](./Images/image_27.png)
 
 Fig Histogram
 <center>Fig Histogram</center>
