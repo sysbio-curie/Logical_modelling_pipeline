@@ -20,10 +20,10 @@
 
 ## Material and methods we are going to use
 
-* Cytoscape network file (for data integration)
-* GINSim model file
-* Executables (downloads or links to downloads): GINSim, OCSANA, MaBoSS, Cytoscape, BiNoM, ViDaExpert, ROMA
-* Scripts: list 
+* Executables: [BiNoM](http://binom.curie.fr/), [Cytoscape](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [OCSANA](http://bioinfo-out.curie.fr/projects/ocsana/OCSANA.html)
+* Provided tools: [MaBoSS](http://maboss.curie.fr/), [ROMA](https://github.com/sysbio-curie/Roma), [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
+* Scripts: [Provided list](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts)
+* GINSim model and Cytoscape network files: [Provided](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
 
 ## Constructing the Metastasis model network
 
