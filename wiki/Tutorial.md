@@ -1,6 +1,23 @@
 Tutorial on logical model simulation
 
 [[TOC]]
+## Table of contents
+1. [Material and methods](#material-and-methods-we-are-going-to-use)
+2. [Constructing the Metastasis model network](#constructing-the-metastasis-model-network)
+    1. [Metastasis model as a test case](#metastasis-model-as-a-test-case)
+3. [Structural analysis of the model](#structural-analysis-of-the-model)
+4. [Translation of the network into a mathematical model](#translation-of-the-network-into-a-mathematical-model)
+5. [Analysing stable solutions](#analysing-stable-solutions)
+	1. [Principal component analysis](#principal-component-analysis)
+	2. [MaBoSS simulations](#maboss-simulations)
+6. [Model reduction](#model-reduction)
+7. [Robustness analyses](#robustness-analyses)
+	1. [Robustness analysis with respect to the phenotype probability](#robustness-analysis-with-respect-to-the-phenotype-probability)
+	2. [Robustness analysis with respect to the stable states](#robustness-analysis-with-respect-to-the-stable-states)
+8. [Using the model as a scaffold for data integration](#using-the-model-as-a-scaffold-for-data-integration)
+	1. [Mapping data onto modular network using ROMA](#mapping-data-onto-modular-network-using-roma)
+	2. [Using data as priors of model construction](#using-data-as-priors-of-model-construction)
+
 
 ## Material and methods we are going to use
 
