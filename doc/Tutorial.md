@@ -11,8 +11,10 @@
 	2. [MaBoSS simulations](#maboss-simulations)
 6. [Model reduction](#model-reduction)
 7. [Robustness analyses](#robustness-analyses)
-	1. [Robustness analysis with respect to the phenotype probability](#robustness-analysis-with-respect-to-the-phenotype-probability)
-	2. [Robustness analysis with respect to the stable states](#robustness-analysis-with-respect-to-the-stable-states)
+	1. [Predicting genetic interactions](#predicting-genetic-interactions)
+	2. [Robustness analyses](#robustness-analyses)
+		a. [Robustness analysis with respect to the phenotype probability](#robustness-analysis-with-respect-to-the-phenotype-probability)
+		b. [Robustness analysis with respect to the stable states](#robustness-analysis-with-respect-to-the-stable-states)
 8. [Using the model as a scaffold for data integration](#using-the-model-as-a-scaffold-for-data-integration)
 	1. [Mapping data onto modular network using ROMA](#mapping-data-onto-modular-network-using-roma)
 	2. [Using data as priors of model construction](#using-data-as-priors-of-model-construction)
@@ -893,7 +895,7 @@ with the corresponding rules:
 
 One of the reasons to be interested in model construction is the possibility to study genetic perturbations and how they affect phenotypes. As our nodes correspond to genes or sets of genes, it is easy to have an automated construction of models with perturbed genes and be able to simulate them. This allows us to be able to compare different mutant models and combinations of perturbations, thus enabling epistasis studies, and perform also robustness analyses..
 
-1. Predicting genetic interactions
+### Predicting genetic interactions
 
 We use MaBoSS in order to explore an epistasis study of the genes in our network.
 
@@ -1006,7 +1008,7 @@ It normalizes the results with the WT values. It also re-organizes outputs so to
 
 It performs the epistasis study and outputs all three file types: edges, nodes and epi
 
-## Robustness analyses
+### Robustness analyses
 
 For this, we need several files, such as: 
 
