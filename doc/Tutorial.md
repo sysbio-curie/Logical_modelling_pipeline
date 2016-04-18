@@ -891,7 +891,7 @@ with the corresponding rules:
 </table>
 
 
-## Mutant analysis
+## Mutant analyses
 
 One of the reasons to be interested in model construction is the possibility to study genetic perturbations and how they affect phenotypes. As our nodes correspond to genes or sets of genes, it is easy to have an automated construction of models with perturbed genes and be able to simulate them. This allows us to be able to compare different mutant models and combinations of perturbations, thus enabling epistasis studies, and perform also robustness analyses..
 
