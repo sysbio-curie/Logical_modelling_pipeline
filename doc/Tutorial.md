@@ -929,9 +929,10 @@ We run the analysis in three parts: firstly, we generate all mutants; secondly, 
 
 The goal is to build a folder with files corresponding to the different knock out (KO) and over expression (or ectopic expression, OE) mutants for each node. For this, we use MaBoSSConfigurationFile script from BiNoM JAR file. At the end, this script also builds a script (BAT and SH) to run MaBoSS simulations with all these files. The command line to perform this analysis is:
 
-
-    java -cp ./BiNoM_all.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigurationFile 
-    -c ./ginsimout2.cfg -b ./ginsimout.bnd
+```
+java -cp ./BiNoM_all.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigurationFile 
+-c ./ginsimout2.cfg -b ./ginsimout.bnd
+```
 
 Where `-classpath` is the location of the JAR file, `-c` is the CFG file location and `-b` is the BND file location. Other optional arguments are:
 
