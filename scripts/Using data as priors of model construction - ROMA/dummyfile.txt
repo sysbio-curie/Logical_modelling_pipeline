@@ -1,0 +1,1 @@
+java -cp lib/ROMA.jar fr.curie.ROMA.ModuleActivityAnalysis -dataFile data_EMT.txt -moduleFile msigdb.v4.0.symbols_KEGG.gmt -outputFolder outfolder -centerData 1 -robustPCA 1 -numberOfPermutations 1000 -robustPCASampling 0 -saveDecomposedFiles 1
