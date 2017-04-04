@@ -39,8 +39,8 @@ The same steps can be used for any other Boolean models.
 [Cytoscape v2](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [Cygwin](https://cygwin.com/install.html) needed to use MaBoSS under Windows
 
 * Provided tools:
-	* [BiNoM](http://binom.curie.fr/), 
-	* [MaBoSS](http://maboss.curie.fr/), 
+	* [BiNoM](http://binom.curie.fr/)
+	* [MaBoSS](http://maboss.curie.fr/)
 	* [ROMA](https://github.com/sysbio-curie/Roma)
 	* [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
 	* [Lemon-Tree](https://github.com/eb00/lemon-tree)
