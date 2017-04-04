@@ -35,16 +35,20 @@ The same steps can be used for any other Boolean models.
 
 ## Material and methods used in the pipeline
 
-* Software: [Cytoscape v2](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [Cygwin](https://cygwin.com/install.html) needed to use MaBoSS under Windows
+* Software: 
+[Cytoscape v2](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [Cygwin](https://cygwin.com/install.html) needed to use MaBoSS under Windows
 
 * Provided tools:
-	* [BiNoM](http://binom.curie.fr/), 	* [MaBoSS](http://maboss.curie.fr/), 
-	* [ROMA](https://github.com/sysbio-curie/Roma), [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
+	* [BiNoM](http://binom.curie.fr/), 
+	* [MaBoSS](http://maboss.curie.fr/), 
+	* [ROMA](https://github.com/sysbio-curie/Roma)
+	* [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
 	* [Lemon-Tree](https://github.com/eb00/lemon-tree)
 
 * Scripts: [Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts)
 
-* GINsim model and Cytoscape network files: [Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
+* GINsim model and Cytoscape network files: 
+[Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
 
 ## Constructing the Metastasis model network
 
