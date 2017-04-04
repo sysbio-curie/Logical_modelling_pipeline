@@ -855,9 +855,13 @@ We are interested in the combined phenotype of *Migration/Metastasis/Invasion/EM
 
 Then, using the code found in `Analyses_of_genetic_interactions.R` file we can use PCA function from FactoMineR package to study mutants variability. The combined PCA plot shows the first two PCA dimensions and the projections of the wild type, single and double mutants (knock out or overexpression). This plot also shows the variable factors’ vectors (the sets of phenotypes) in order to analyse which variable is the main driver of the knock out change when comparing it to the wild type.
 
-A)![](./Images/image_19.png)
+A)<p align="center">
+<img src="./Images/image_19.png" width="550">
+</p>
 
-B)![](./Images/image_20.png)
+B)<p align="center">
+<img src="./Images/image_20.png" width="550">
+</p>
 
 Figure D: PCA on WT, single and double mutant phenotype probabilities centered on the wild type projections on PC1 and PC2, so these are on the origin of coordinates. In a) we have plotted the phenotype probabilities projection to the single phenotypes (*HS*, *Apoptosis*, *EMT*, *Invasion*, *Migration*, *Metastasis*, *CellCycleArrest*), while in b) we have plotted the phenotype probabilities projection to the combined phenotypes that we have discussed in depth in this tutorial (namely *Migration/Metastasis/Invasion/EMT/CellCycleArrest*).
 
@@ -877,7 +881,9 @@ Looking closely at the mutations that shift the phenotype’s distribution to 0,
 
 Likewise, if we look at the combinations of mutations that increase this phenotype’s probability, we find that they are NICD\_oe with AKT2\_oe, SNAI2\_oe, p73\_oe, ECMicroenv\_oe or p53\_ko. These are mutants with overexpressed pro-migratory genes, with high levels of pro-migratory microenvironment signals or with a pro-apoptotic gene knocked out.
 
-![](./Images/image_21.png)
+<p align="center">
+<img src="./Images/image_21.png" width="550">
+</p>
 
 Figure E. *Migration/Metastasis/Invasion/EMT/CellCycleArrest* phenotype distribution across all single and double mutants. Bin where wild type value is found has been marked with dark red colour.
 
@@ -941,7 +947,9 @@ The goal is to build a table that gathers all the results from all the ProbTraj 
 
 The command line to perform this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -makelogicmutanttable -folder ./ginsimout_mutants_logics/ -prefix ginsimout -out ginsimout.xls -description ./ginsimout_mutants_logics/descriptions.txt
+	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -makelogicmutanttable 
+	-folder ./ginsimout_mutants_logics/ -prefix ginsimout -out ginsimout.xls 
+	-description ./ginsimout_mutants_logics/descriptions.txt
 
 Where `-classpath` is the location of the JAR files, `-makelogicmutanttable` is the command to build the results’ table (in a tab-delimited file and a ViDaExpert table file), `-folder` is the location of the folder with ProbTraj files, `-prefix` is the name of the files’ prefix (usually a descriptive name for the model) and `-out` is the desired output file name.
 
@@ -953,7 +961,8 @@ First, the goal is to build a table that gathers all the final stable states and
 
 The command line to perform this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSStatDistFile -maketable -folder ginsimout_mutants_logics/ -prefix ginsimout
+	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSStatDistFile -maketable 
+	-folder ginsimout_mutants_logics/ -prefix ginsimout
 
 Where -cp is the location of the JAR files, -maketable is the command to build the table with all final stable states reached by each mutant (in a tab-delimited file and a ViDaExpert table file), -folder is the location of the folder with StatDist files and -prefix is the name of the files’ prefix (usually a descriptive name for the model).
 
@@ -969,11 +978,15 @@ Looking closely at the logical gates variations that shift the phenotype’s dis
 
 Note that AKT1 is a node in which changing some logical rules may abolish the metastatic phenotype, while changing others (obviously, in opposite sense) will increase this phenotype.
 
-![](./Images/image_22.png)
+<p align="center">
+<img src="./Images/image_22.png" width="550">
+</p>
 
 Figure F: *Migration/Metastasis/Invasion/EMT/CellCycleArrest *phenotype probability distribution across all mutants for logical gates. Bin where wild type value is found has been marked with dark red colour.
 
-![](./Images/image_23.png)
+<p align="center">
+<img src="./Images/image_23.png" width="550">
+</p>
 
 Figure F: Distribution of logical combinations that reduce  *Migration/Metastasis/Invasion/EMT/CellCycleArrest *phenotype probability to zero.
 
@@ -985,13 +998,17 @@ The wild type is composed of 9 stable states showing 4 different phenotypes: *Ho
 
 In our model, we have found 38922 stables states of all mutants and most of them (25742, 66.1% of the total) are the same than the 9 stable states from the WT (distance to WT stable states = 0). The stable states that differ the most (distance to WT stable states = 12) are 37 different variations of CTNNB1 or NICD logical rules that represent 0.09% of the total.
 
-![](./Images/image_24.png)
+<p align="center">
+<img src="./Images/image_24.png" width="550">
+</p>
 
 Figure: Stables states counts present in all mutants combinations. All 38922 stables states of all mutants have been ordered by their Hamming distance to the closest WT stable states and their abundances have been counted.
 
 Furthermore, if we filter by unique stable states, we have found 209 stable states and most of them (85, 40.7% of the total) have Hamming distance of 1 to any of the 9 WT stable states (that represent 4.3% of the total with Hamming distance 0).
 
-![](./Images/image_25.png)
+<p align="center">
+<img src="./Images/image_25.png" width="550">
+</p>
 
 Figure: Unique stable states counts present in all mutants combinations. 209 unique stables states of all mutants have been ordered by their Hamming distance to the closest WT stable states.
 
@@ -1007,13 +1024,16 @@ We tested target gene sets selected from MSigDB (PMID:16273092) database togethe
 
  To run ROMA, we set the parameters as follows in the .bat file:
 
-	java -cp lib/ROMA.jar fr.curie.ROMA.ModuleActivityAnalysis -dataFile data_EMT_sorted.txt -moduleFile Main_Pathway_File.gmt -typeOfModuleFile 1 -outputFolder crc_cetuximab_MainPath -robustPCA 1 -numberOfPermutations 1000 
+	java -cp lib/ROMA.jar fr.curie.ROMA.ModuleActivityAnalysis -dataFile data_EMT_sorted.txt 
+	-moduleFile Main_Pathway_File.gmt -typeOfModuleFile 1 -outputFolder crc_cetuximab_MainPath 
+	-robustPCA 1 -numberOfPermutations 1000 
 
 where the parameter -typeOfModuleFile 1 specifies that the we provided a module file GMT with weights and -robustPCA 1 requires to compute PCA using leave-one-out-based removal of outliers. The output folder contains the `moduletable_simple.txt` file with the matrix of activity values of each tested module in each sample. These have been used to compute the mean activity score in the two groups for the modules included in the model.
 
-![](./Images/image_26.png)
-
-![](./Images/image_27.png)
+<p align="center">
+<img src="./Images/image_26.png" width="550">
+<img src="./Images/image_27.png" width="550">
+</p>
 
 ### Using data as priors of model construction
 
@@ -1024,15 +1044,20 @@ We will use ROMA software to perform the following analysis (ref 3). A collectio
 To run ROMA, we set the parameters as follows in .bat file:
 
 	java -cp lib/ROMA.jar fr.curie.ROMA.ModuleActivityAnalysis -dataFile data_EMT.txt 
-	-moduleFile msigdb.v4.0.symbols_KEGG.gmt -outputFolder outfolder -centerData 1 -robustPCA 1 -numberOfPermutations 1000 
+	-moduleFile msigdb.v4.0.symbols_KEGG.gmt -outputFolder outfolder -centerData 1 
+	-robustPCA 1 -numberOfPermutations 1000 
 
 In this case we didn’t specify the use of a weighted GMT file, so the algorithm considers a default unweighted GMT format.
 
 ROMA detected 51 differentially activated/inactivated gene sets (t-test pv <0.05) revealing major biological pathways contributing to the cetuximab response. Among them, we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. Moreover, we identified activation of HSP27 and CARM1 pathways, potentially involved in the tumour aggressiveness.
 
-![](./Images/image_28.png) |![](./Images/image_29.png)
-![](./Images/image_31.png) |![](./Images/image_32.png)
-![](./Images/image_30.png) |
+<p align="center">
+<img src="./Images/image_28.png" width="300">
+<img src="./Images/image_29.png" width="300">
+<img src="./Images/image_31.png" width="300">
+<img src="./Images/image_32.png" width="300">
+<img src="./Images/image_30.png" width="100">
+</p>
 
 #### Prioritization of genes for constructing the model with LemonTree
 
