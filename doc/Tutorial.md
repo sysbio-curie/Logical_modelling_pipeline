@@ -872,19 +872,22 @@ More information on how the epistasis scores are calculated can be found in a pr
 
 Before analysing the results of the epistasis we need to understand how this values were computed. This file shows the results of the following equation for each gene pairs (equation 2 in ref 1):
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cvarepsilon%20%28A%2CB%29%3D%20f%5E%7BAB%7D_%5CPhi%20-%20%20%5CPsi%20%28%20f%5E%7BA%7D_%5CPhi%2Cf%5E%7BB%7D_%5CPhi%29&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0)					(1)
+<p align="center">
+<img src="./Images/math/1.png" width="250">		(1)
+</p>
 
-Where ![equation](http://www.sciweavers.org/tex2img.php?eq=f%5E%7BA%7D_%7B%5CPhi%7D&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) and ![equation](http://www.sciweavers.org/tex2img.php?eq=f%5E%7BB%7D_%7B%5CPhi%7D&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) are phenotype ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5CPhi%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) fitness values of single gene defects, ![equation](http://www.sciweavers.org/tex2img.php?eq=%20f%5E%7BAB%7D_%7B%5CPhi%7D%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) is the phenotype ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5CPhi%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) fitness of the double mutant, and ![equation](http://www.sciweavers.org/tex2img.php?eq=%5CPsi%5Cbig%28x%2Cy%5Cbig%29%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) is one of the four functions:
+Where  ![](./Images/math/2.png) and ![](./Images/math/3.png) are phenotype ![](./Images/math/4.png) fitness values of single gene defects, ![](./Images/math/14.png) is the phenotype ![](./Images/math/4.png) fitness of the double mutant, and ![](./Images/math/5.png) is one of the four functions:
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5CPsi%5E%7BADD%7D%5Cbig%28x%2Cy%5Cbig%29%20%3D%20x%2By&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) 		(additive)
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5CPsi%5E%7BLOG%7D%5Cbig%28x%2Cy%5Cbig%29%20%3D%20log_%7B2%7D%5Cbig%28%5Cbig%282%5E%7Bx%7D-1%5Cbig%29%5Cbig%282%5E%7By%7D-1%5Cbig%29%2B1%5Cbig%29&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0)		 (log)
+![](./Images/math/6.png) 		(additive)
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5CPsi%5E%7BMLT%7D%5Cbig%28x%2Cy%5Cbig%29%20%3D%20xy&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0)		 (multiplicative)
+![](./Images/math/7.png)		 (log)
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5CPsi%5E%7BMIN%7D%5Cbig%28x%2Cy%5Cbig%29%20%3D%20min%5Cbig%28x%2Cy%5Cbig%29&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) 		(min)
+![](./Images/math/8.png)		 (multiplicative)
 
-To choose the best definition of ![equation](http://www.sciweavers.org/tex2img.php?eq=%5CPsi%5Cbig%28x%2Cy%5Cbig%29%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) , the Pearson correlation coefficient was computed between the fitness values observed in all double mutants and estimated by the null model (more information on ref 1). Regarding ![equation](http://www.sciweavers.org/tex2img.php?eq=%20f%5E%7BX%7D_%7B%5CPhi%7D&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) fitness value, to a given phenotype ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5CPhi%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0), ![equation](http://www.sciweavers.org/tex2img.php?eq=%20f%5E%7BX%7D_%7B%5CPhi%7D%3C1&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) represents deleterious, ![equation](http://www.sciweavers.org/tex2img.php?eq=%20f%5E%7BX%7D_%7B%5CPhi%7D%3E1&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) beneficial and ![equation](http://www.sciweavers.org/tex2img.php?eq=%20f%5E%7BX%7D_%7B%5CPhi%7D%20%5Capprox%201&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) neutral mutation.
+![](./Images/math/9.png) 		(min)
+
+To choose the best definition of ![](./Images/math/5.png) , the Pearson correlation coefficient was computed between the fitness values observed in all double mutants and estimated by the null model (more information on ref 1). Regarding ![](./Images/math/10.png) fitness value, to a given phenotype ![](./Images/math/4.png), ![](./Images/math/11.png) represents deleterious, ![](./Images/math/12.png) beneficial and ![](./Images/math/13.png)neutral mutation.
 
 In this `_edges_selected_stringent3.txt` file, the first columns are descriptions of the interactors and their type of mutation (knock out or overexpression), then we have the fitness of each interactor and the fitness of the double mutant, then we have the                of each one of the four functions as well as the best one and its normalization (for details on this selection, please refer to ref 1). The last three columns will be the ones that interest us the most: INEQUALITY, which is the comparative of the fitness of the wild type and the three mutants; INEQ\_TYPE, which is the type of interaction among the four fitnesses and INEQ\_DIR, which is an indicative of which mutant is dominating the epistasis.
 

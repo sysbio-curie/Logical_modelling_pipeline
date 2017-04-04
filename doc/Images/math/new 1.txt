@@ -1,0 +1,15 @@
+\varepsilon (A,B)= f^{AB}_\Phi -  \Psi ( f^{A}_\Phi,f^{B}_\Phi)
+f^{A}_\Phi
+f^{B}_\Phi
+\Phi
+\Psi (x,y)
+\Psi^{ADD}(x,y)=x+y
+\Psi^{LOG}(x,y)=log_{2}((2^{x}-1)(2^{y}-1)+1)
+\Psi^{MLT}(x,y)=xy
+\Psi^{MIN}(x,y)=min(x,y)
+f^{X}_\Phi
+f^{X}_\Phi<1
+f^{X}_\Phi>1
+f^{X}_\Phi \approx 1
+
+http://www.sciweavers.org/free-online-latex-equation-editor
