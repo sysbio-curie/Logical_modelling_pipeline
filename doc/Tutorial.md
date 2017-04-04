@@ -843,10 +843,10 @@ The command for this is:
 
 Where -cp is the location of the JAR files, -normtable is the normalization command that filters lower bounds of 1% in the probability table and -table is the name of the data table that results from -maketable command. This command will build a new table called `ginsimout_norm.xls` that we will need to perform the epistasis study.
 
-Additionally, we can use this normalization step to bundle together phenotypes that are very similar using the -mergedphenotypes flag. We can add phenotypes into different groups such as:
+Additionally, we can use this normalization step to bundle together phenotypes that are very similar using the `-mergedphenotypes` flag. We can add phenotypes into different groups such as:
 
 	java -cp './BiNoM.jar:./VDAOEngine.jar'  fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -normtable 
-	-mergedphenotypes "ECM1=ECMicroenv/EMT+ECMicroenv/EMT/GF+ECMicroenv/EMT/GF/TGFbeta+ECMicroenv/EMT/TGFbeta+ECMicroenv/GF+ECMicroenv/GF/TGFbeta;Migration1=ECMicroenv/Migration/Metastasis/Invasion/EMT/GF/TGFbeta+Metastasis+ECMicroenv/EMT/CellCycleArrest/GF" 
+	-mergedphenotypes "Migration1=ECMicroenv/Migration/Metastasis/Invasion/EMT/GF/TGFbeta+Metastasis+ECMicroenv/EMT/CellCycleArrest/GF" 
 	-table ginsimout.xls
 
 This allows researchers to be able to bundle together phenotypes that are very similar and thus are supposed to have similar epistatic properties or phenotypes that are part of the same stable states family (for instance all the phenotypes that lead to *Apoptosis* or *CellCycleArrest*). 
@@ -872,7 +872,7 @@ More information on how the epistasis scores are calculated can be found in a pr
 
 Before analysing the results of the epistasis we need to understand how this values were computed. This file shows the results of the following equation for each gene pairs (equation 2 in ref 1):
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5Cvarepsilon_%7B%5CPhi%7D%5Cbig%28A%2CB%5Cbig%29%20%3D%20f%5E%7BAB%7D_%7B%5CPhi%7D%20-%20%5CPsi%5Cbig%28f%5E%7BA%7D_%7B%5CPhi%7D%2Cf%5E%7BB%7D_%7B%5CPhi%7D%5Cbig%29&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0)					(1)
+![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cvarepsilon%20%28A%2CB%29%3D%20f%5E%7BAB%7D_%5CPhi%20-%20%20%5CPsi%20%28%20f%5E%7BA%7D_%5CPhi%2Cf%5E%7BB%7D_%5CPhi%29&bc=White&fc=Black&im=png&fs=12&ff=modern&edit=0)					(1)
 
 Where ![equation](http://www.sciweavers.org/tex2img.php?eq=f%5E%7BA%7D_%7B%5CPhi%7D&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) and ![equation](http://www.sciweavers.org/tex2img.php?eq=f%5E%7BB%7D_%7B%5CPhi%7D&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) are phenotype ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5CPhi%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) fitness values of single gene defects, ![equation](http://www.sciweavers.org/tex2img.php?eq=%20f%5E%7BAB%7D_%7B%5CPhi%7D%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) is the phenotype ![equation](http://www.sciweavers.org/tex2img.php?eq=%20%5CPhi%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) fitness of the double mutant, and ![equation](http://www.sciweavers.org/tex2img.php?eq=%5CPsi%5Cbig%28x%2Cy%5Cbig%29%20&bc=White&fc=Black&im=png&fs=16&ff=modern&edit=0) is one of the four functions:
 
