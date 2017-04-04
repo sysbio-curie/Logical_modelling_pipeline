@@ -777,7 +777,7 @@ with the corresponding rules:
 
 One of the reasons to be interested in model construction is the possibility to study genetic perturbations and how they affect phenotypes. As our nodes correspond to genes or sets of genes, it is easy to have an automated construction of models with perturbed genes and be able to simulate them. This allows us to be able to compare different mutant models and combinations of perturbations, thus enabling epistasis studies, and perform also robustness analyses..
 
-1. Predicting genetic interactions
+### Predicting genetic interactions
 
 We use MaBoSS in order to explore an epistasis study of the genes in our network. For this, we need several files, such as: 
 
@@ -900,7 +900,7 @@ A)<br>
 <img src="./Images/image_19.png" width="550"><br>
 B)<br>
 <img src="./Images/image_20.png" width="550"><br>
-Figure D: PCA on WT, single and double mutant phenotype probabilities centered on the wild type projections on PC1 and PC2, so these are on the origin of coordinates. In a) we have plotted the phenotype probabilities projection to the single phenotypes (*HS*, *Apoptosis*, *EMT*, *Invasion*, *Migration*, *Metastasis*, *CellCycleArrest*), while in b) we have plotted the phenotype probabilities projection to the combined phenotypes that we have discussed in depth in this tutorial (namely *Migration/Metastasis/Invasion/EMT/CellCycleArrest*).
+Figure D: PCA on WT, single and double mutant phenotype probabilities centered on the wild type projections on PC1 and PC2, so these are on the origin of coordinates. In a) we have plotted the phenotype probabilities projection to the single phenotypes (<i>HS</i>, <i>Apoptosis</i>, <i>EMT</i>, <i>Invasion</i>, <i>Migration</i>, <i>Metastasis</i>, <i>CellCycleArrest</i>), while in b) we have plotted the phenotype probabilities projection to the combined phenotypes that we have discussed in depth in this tutorial (namely <i>Migration/Metastasis/Invasion/EMT/CellCycleArrest</i>).
 </p>
 
 
@@ -908,7 +908,7 @@ In Figure D, a) we see that SNAI2 overexpression and SNAI1 knock out are the sin
 
 This combination is an example of genetic interaction as AKT2\_oe single mutant is near WT values (label not shown), but once it is combined with SNAI1\_ko their projection on PC1 are drastically changed. This can be studied looking at the files from the Metastasis (only) phenotype , specifically at `Metastasis_pure_edges_selected_stringent3.txt`. Here we can see that this double mutant phenotype outstands as a genetic interaction, even though the type of genetic interaction is asynthetic, in the form of A=B=AB<WT.
 
-In figure D, b) we can identify the 6 epistatic pairs that we have discussed previously of the combinations of AKT2 gain of function with SNAI1, SNAI2 and TWIST1 gain of functions and NICD gain of function with SMAD, SNAI1 and TGFbeta gain of functions. We can visually understand the epistasis of these combinations by tracing the projections of their single gene alterations. For instance, if we look at the combined effect of AKT2 gain of function with SNAI1 or TWIST1 gain of functions, we see that the combinations bring the double mutant closer to the combined Migration phenotype and further from the WT.
+In Figure D, b) we can identify the 6 epistatic pairs that we have discussed previously of the combinations of AKT2 gain of function with SNAI1, SNAI2 and TWIST1 gain of functions and NICD gain of function with SMAD, SNAI1 and TGFbeta gain of functions. We can visually understand the epistasis of these combinations by tracing the projections of their single gene alterations. For instance, if we look at the combined effect of AKT2 gain of function with SNAI1 or TWIST1 gain of functions, we see that the combinations bring the double mutant closer to the combined Migration phenotype and further from the WT.
 
 #### Robustness analysis of genetic interactions with respect to the phenotype probability
 
@@ -922,10 +922,10 @@ Likewise, if we look at the combinations of mutations that increase this phenoty
 
 <p align="center">
 <img src="./Images/image_21.png" width="550"><br>
-Figure E. *Migration/Metastasis/Invasion/EMT/CellCycleArrest* phenotype distribution across all single and double mutants. Bin where wild type value is found has been marked with dark red colour.
+Figure E. <i>Migration/Metastasis/Invasion/EMT/CellCycleArrest</i> phenotype distribution across all single and double mutants. Bin where wild type value is found has been marked with dark red colour.
 </p>
 
-1. Robustness analysis of logical gates
+### Robustness analysis of logical gates
 
 For this, we need several files, such as: 
 
@@ -955,9 +955,12 @@ The goal is to build a folder with files corresponding to the different logical 
 
 Where `-cp` is the classpath or location of the JAR file, `-c` is the CFG file location and `-b` is the BND file location. Several paths to CFG files can be glued together using '+' symbol and, in this case, several command lines per one model variant will be generated. Other optional arguments are:
 
-	-level		can be either 1 (for making only one modification in a logical rule) or 2 (for making 2 modifications). Default value is 1.
+	-level		can be either 1 (for making only one modification in a logical rule) 
+			or 2 (for making 2 modifications). Default value is 1.
 
-	-several	modifier for -level 2 option. If specified, then two logical rules can be applied for two different rules, if not then two modifications will be applied only inside the same rule.
+	-several	modifier for -level 2 option. If specified, then two logical rules can be 
+			applied for two different rules, if not then two modifications will be applied 
+			only inside the same rule.
 
 In our ginsimout case, we have 360 variants if we look for level 1 modifications, over 4 thousands if we look for level 2 and over 64 thousands if we look for level 2 and several. For the sake of clarity, we will consider level 2 without the several flag.
 
@@ -1018,12 +1021,12 @@ Note that AKT1 is a node in which changing some logical rules may abolish the me
 
 <p align="center">
 <img src="./Images/image_22.png" width="550"><br>
-Figure F: *Migration/Metastasis/Invasion/EMT/CellCycleArrest *phenotype probability distribution across all mutants for logical gates. Bin where wild type value is found has been marked with dark red colour.
+Figure F: <i>Migration/Metastasis/Invasion/EMT/CellCycleArrest</i> phenotype probability distribution across all mutants for logical gates. Bin where wild type value is found has been marked with dark red colour.
 </p>
 
 <p align="center">
 <img src="./Images/image_23.png" width="550"><br>
-Figure G: Distribution of logical combinations that reduce  *Migration/Metastasis/Invasion/EMT/CellCycleArrest *phenotype probability to zero.
+Figure G: Distribution of logical combinations that reduce <i>Migration/Metastasis/Invasion/EMT/CellCycleArrest</i> phenotype probability to zero.
 </p>
 
 #### Robustness analysis of logical gates with respect to the stable states
