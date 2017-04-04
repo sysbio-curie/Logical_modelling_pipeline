@@ -86,35 +86,49 @@ GINsim can inform easily on all stable states of the model, the functionality of
 
 GINsim can easily find and show all stable states:
 
-![](./Images/image_2.png)
+<p align="center">
+<img src="./Images/image_2.png" width="550"><br>
+</p>
 
 And generate a truth table of this kind:
 
-![](./Images/image_3.png)
+<p align="center">
+<img src="./Images/image_3.png" width="650"><br>
+</p>
 
 GINsim can also find all positive and negative circuits. For this we will use the reduced model obtained in the process explained in the "Model reduction" part and also in [ref]. The reason for this is that GINsim cannot deal with the functionality analysis of the original model:
 
-![](./Images/image_4.png)
+<p align="center">
+<img src="./Images/image_4.png" width="550"><br>
+</p>
 
 A window pops up:
 
-![](./Images/image_5.png)
+<p align="center">
+<img src="./Images/image_5.png" width="650"><br>
+</p>
 
 Some choices of whether to include some nodes or not in the analysis of circuits can be made. For more information about GINsim, visit the webpage: http://ginsim.org/
 
 And *Search Circuits* retrieves:
 
-![](./Images/image_6.png)
+<p align="center">
+<img src="./Images/image_6.png" width="650"><br>
+</p>
 
 Here one can perform a *Functionality Analysis* of wild type strain in order to analyse its functional circuits, and retrieve a window such as:
 
-![](./Images/image_7.png)
+<p align="center">
+<img src="./Images/image_7.png" width="650"><br>
+</p>
 
 Where Positive and Negative circuits can be browsed and studied. The latter is especially interesting to detect and analyse limit cycles, that are usually caused by feedback loops.
 
 This analysis can also be performed on strains with a given perturbation, such as knock outs (KO) and overexpression (E1), or a combination of perturbations:
 
-![](./Images/image_8.png)
+<p align="center">
+<img src="./Images/image_8.png" width="650"><br>
+</p>
 
 This way, we can browse if a given perturbation is responsible, for instance, for the appearance or disappearance of a limit cycle.
 
@@ -124,7 +138,9 @@ GINsim is used here at first for his user friendly graphical interface, its faci
 
 GINsim export in MaBoSS format is straightforward:
 
-![](./Images/image_9.png) 
+<p align="center">
+<img src="./Images/image_9.png" width="550"><br>
+</p>
 
 Models from GINsim can be exported in MaBoSS format. Two files are created: a BND file with the description of the network and its connections among nodes and a CFG file with the configuration parameters needed for the simulations. We call this files ginsimout.bnd and ginsimout.cfg. 
 
@@ -137,12 +153,12 @@ MaBoSS is a C++ software for simulating continuous/discrete time Markov processe
 In order to have these software running we need its source code that can be downloaded from [http://maboss.curie.fr/](http://maboss.curie.fr/) and compile it on a UNIX machine. In order to be able to compile MaBoSS, packages flex and bison are needed. If you are using Windows, you can use our executable in lib folder of our Github repository ([https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib))
 
 Once you have a working executable you can copy it to the location of our launching script `run_MaBoSS_CygWin.sh` (modify BND and CFG file declaration before using `BND_CFG_modif.sh` script) and run it with the following command:
+ 
+	./run_MaBoSS_CygWin.sh				  --for Windows 
 
-	./run_MaBoSS_CygWin.sh				--for Windows 
+	./run_MaBoSS_Unix.sh	 	  	  	  --for Unix
 
-	./run_MaBoSS_Unix.sh	 	  	    --for Unix
-
-	./run_MaBoSS_CygWin_noPerl.sh    	--for Windows with no Perl
+	./run_MaBoSS_CygWin_noPerl.sh    		  --for Windows without Perl
 
 This launching script generates a folder with the BND and CFG files as well as the resulting files with the same prefix as the BND and CFG files. The first and second scripts use a Perl script to organise the results. If you do not have a Perl interpreter, you can use the third script. The resulting files are: 
 
@@ -164,7 +180,9 @@ This launching script generates a folder with the BND and CFG files as well as t
 
 In both GINsim and MaBoSS, a table of stable states that displays all possible combinations of system’s inputs and its stable outputs can be obtained: 
 
-![](./Images/image_10.png)
+<p align="center">
+<img src="./Images/image_10.png" width="600"><br>
+</p>
 
 This table can be analysed and studied as it is, even more if the model is small-scale and one has a deep knowledge of it. Furthermore, other exploratory analyses can be applied on these results, such as Principal Component Analysis, (PCA). To do this, we need to obtain the table of stable states as a matrix, which can be obtained from the FP output file of MaBoSS run. PCA can then be applied to this matrix in order to identify with variable changes (node’s values in our case) causes that model states change from one stable solution to another. 
 
@@ -590,9 +608,10 @@ Then, we run the R code found in file `PCA_on_FixedPoints.R` that uses PCA funct
 
 The PCA plot shows a first dimension (with 62.48% of variability explained) dominated by an axis of CDH1 on one side and a set of elements on the other side with TWIST1, CDH2, SNAI1 and 2, ZEB1 and 2, AKT2, VIM, ERK. A second dimension (with 16.33% of variability explained) dominated by two vectors close to each other: ECMicroenv and TGFbeta in one vector and NICD, SMAD, Invasion, Migration and Metastasis in another.
 
-![](./Images/image_11.png)
-
+<p align="center">
+<img src="./Images/image_11.png" width="550"><br>
 Figure A. PCA graphs
+</p>
 
 ### Displaying asymptotic solutions
 
@@ -602,11 +621,12 @@ In order to analyse the results we have built a small script to rearrange the co
 
 This creates a file called `ginsimout_probtraj_table_post.csv` that we can import on our favourite spreadsheet software and plotting the four leftmost stable states columns gives something like:
 
-![](./Images/image_12.png)
-
+<p align="center">
+<img src="./Images/image_12.png" width="550"><br>
 Figure B: Study of the temporal behaviour of different phenotypes.
+</p>
 
-This plot displays temporal evolution of the four most probable trajectories. As we can see most probable stable state is *Apoptosis* and *Cell Cycle Arrest*, followed by *Migration*, *EMT* and *Cell Cycle Arrest*, followed by the Homeostatic state (with only CDH1 active and labelled as *HS* in this figure and *<nil>* on the files) and lastly *EMT *and *Cell Cycle Arrest*. 
+This plot displays temporal evolution of the four most probable trajectories. As we can see most probable stable state is *Apoptosis* and *Cell Cycle Arrest*, followed by *Migration*, *EMT* and *Cell Cycle Arrest*, followed by the Homeostatic state (with only CDH1 active and labelled as *HS* in this figure and *nil* on the files) and lastly *EMT* and *Cell Cycle Arrest*. 
 
 Other representations can be more appropriate. For instance, if only the asymptotic solution is of interest, a pie chart displaying the probabilities of the last row of the table might be more informative.
 
@@ -622,23 +642,31 @@ The first approach consists in reducing the network by masking some variables an
 
 The list of the stable states of the full detailed model is shown below:
 
-![](./Images/image_13.png)
+<p align="center">
+<img src="./Images/image_13.png" width="600">
+</p>
 
-First two columns, *ECMicroenv *and *DNAdamage *are the inputs of the system and the following six are outputs: *ECM*, *Invasion*, *Migration*, *Metastasis*, *Apoptosis *and *CellCycleArrest*.
+First two columns, *ECMicroenv* and *DNAdamage* are the inputs of the system and the following six are outputs: *ECM*, *Invasion*, *Migration*, *Metastasis*, *Apoptosis* and *CellCycleArrest*.
 
 We select the variables we wish to keep in the reduced version of the model and 
 
-Go to Tools => Reduce model
+Go to `Tools => Reduce model`
 
-![](./Images/image_14.png)
+<p align="center">
+<img src="./Images/image_14.png" width="550">
+</p>
 
 Choose the variables to suppress, nodes that we want to remove. Please bear in mind that this should not be done on self-regulated nodes.
 
-![](./Images/image_15.png)
+<p align="center">
+<img src="./Images/image_15.png" width="650">
+</p>
 
 The resulting network is the following:
 
-![](./Images/image_16.png)
+<p align="center">
+<img src="./Images/image_16.png" width="650">
+</p>
 
 New edges, with blue colour, represent reduced paths, combination of two or more edges in the original network.
 
@@ -646,7 +674,9 @@ The resulting logical rules are not written explicitly but the conditions for ac
 
 The resulting stable states can be obtained and we can see that the transfer function of inputs and outputs have been conserved, same combinations of inputs lead to same combination of outputs:
 
-![](./Images/image_17.png)
+<p align="center">
+<img src="./Images/image_17.png" width="600">
+</p>
 
 2. Modular reduction using BiNoM
 
@@ -658,8 +688,9 @@ For that, we use BiNoM functionalities. The method for reduction was already pre
 
 The obtained network with 20 nodes and 93 edges is presented below:
 
-![](./Images/image_18.png)
-
+<p align="center">
+<img src="./Images/image_18.png" width="600">
+</p>
 with the corresponding rules:
 
 <table>
@@ -776,7 +807,8 @@ We run the analysis in four parts: firstly, we generate all mutants; secondly, w
 
 The script `1_generating_mutants` goal is to build a folder with files corresponding to the different knock out (KO) and overexpression (or ectopic expression, OE) mutants for each node. For this, we use MaBoSSConfigurationFile script from BiNoM JAR file. At the end, this script also builds a script (BAT and SH) to run MaBoSS simulations with all these files. The command line to perform this analysis is:
 
-	java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigurationFile -c ./ginsimout.cfg -b ./ginsimout.bnd
+	java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigurationFile 
+	-c ./ginsimout.cfg -b ./ginsimout.bnd
 
 Where `-cp` is the location of the JAR file, `-c` is the CFG file location and `-b` is the BND file location. Other optional arguments are:
 
@@ -795,7 +827,8 @@ The script `3_results_table_norm` goal is to build a table that gathers all the 
 
 The command that performs this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -maketable -folder ginsimout_mutants/ -prefix ginsimout -out ginsimout.xls
+	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
+	-maketable -folder ginsimout_mutants/ -prefix ginsimout -out ginsimout.xls
 
 Where `-cp` is the location of the JAR files, `-maketable` is the command to build the results’ table (in a tab-delimited file and a DAT ViDaExpert table file), `-folder` is the location of the folder with ProbTraj files, `-prefix` is the name of the files’ prefix (usually a descriptive name for the model) and `-out` is the desired output file name.
 
@@ -805,13 +838,16 @@ The script `4_epistasis_study` goal is to normalize the results obtained with Ma
 
 The command for this is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar'  fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -normtable -table ginsimout.xls
+	java -cp './BiNoM.jar:./VDAOEngine.jar'  fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
+	-normtable -table ginsimout.xls
 
 Where -cp is the location of the JAR files, -normtable is the normalization command that filters lower bounds of 1% in the probability table and -table is the name of the data table that results from -maketable command. This command will build a new table called `ginsimout_norm.xls` that we will need to perform the epistasis study.
 
 Additionally, we can use this normalization step to bundle together phenotypes that are very similar using the -mergedphenotypes flag. We can add phenotypes into different groups such as:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar'  fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -normtable -mergedphenotypes "ECM1=ECMicroenv/EMT+ECMicroenv/EMT/GF+ECMicroenv/EMT/GF/TGFbeta+ECMicroenv/EMT/TGFbeta+ECMicroenv/GF+ECMicroenv/GF/TGFbeta;Migration1=ECMicroenv/Migration/Metastasis/Invasion/EMT/GF/TGFbeta+Metastasis+ECMicroenv/EMT/CellCycleArrest/GF" -table ginsimout.xls
+	java -cp './BiNoM.jar:./VDAOEngine.jar'  fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -normtable 
+	-mergedphenotypes "ECM1=ECMicroenv/EMT+ECMicroenv/EMT/GF+ECMicroenv/EMT/GF/TGFbeta+ECMicroenv/EMT/TGFbeta+ECMicroenv/GF+ECMicroenv/GF/TGFbeta;Migration1=ECMicroenv/Migration/Metastasis/Invasion/EMT/GF/TGFbeta+Metastasis+ECMicroenv/EMT/CellCycleArrest/GF" 
+	-table ginsimout.xls
 
 This allows researchers to be able to bundle together phenotypes that are very similar and thus are supposed to have similar epistatic properties or phenotypes that are part of the same stable states family (for instance all the phenotypes that lead to *Apoptosis* or *CellCycleArrest*). 
 
@@ -819,7 +855,8 @@ Once we have normalized the results and bundled together some phenotypes, we can
 
 The command for this is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar'  fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -makeinter -table ginsimout_norm.dat -phenotype CellCycleArrest -phenotype_short CCA -out ginsimout >epistasis_summary.txt
+	java -cp './BiNoM.jar:./VDAOEngine.jar'  fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -makeinter 
+	-table ginsimout_norm.dat -phenotype CellCycleArrest -phenotype_short CCA -out ginsimout >epistasis_summary.txt
 
 Where `-makeinter` is the command to build the table of interactions with correlation values and alpha values (look at a previous paper (ref 1) for details), `-table` is the name of the data table that results from -normtable command (only DAT file is allowed), `-phenotype` is the name of the phenotype in the DAT file (in this case, CellCycleArrest), `-phenotype_short` is the short name that you want to assign to this phenotype in the output file (in this case, CCA) and `-out` is the prefix of the output files that the command will generate.
 
@@ -855,15 +892,14 @@ We are interested in the combined phenotype of *Migration/Metastasis/Invasion/EM
 
 Then, using the code found in `Analyses_of_genetic_interactions.R` file we can use PCA function from FactoMineR package to study mutants variability. The combined PCA plot shows the first two PCA dimensions and the projections of the wild type, single and double mutants (knock out or overexpression). This plot also shows the variable factors’ vectors (the sets of phenotypes) in order to analyse which variable is the main driver of the knock out change when comparing it to the wild type.
 
-A)<p align="center">
-<img src="./Images/image_19.png" width="550">
-</p>
-
-B)<p align="center">
-<img src="./Images/image_20.png" width="550">
-</p>
-
+<p align="center">
+A)<br>
+<img src="./Images/image_19.png" width="550"><br>
+B)<br>
+<img src="./Images/image_20.png" width="550"><br>
 Figure D: PCA on WT, single and double mutant phenotype probabilities centered on the wild type projections on PC1 and PC2, so these are on the origin of coordinates. In a) we have plotted the phenotype probabilities projection to the single phenotypes (*HS*, *Apoptosis*, *EMT*, *Invasion*, *Migration*, *Metastasis*, *CellCycleArrest*), while in b) we have plotted the phenotype probabilities projection to the combined phenotypes that we have discussed in depth in this tutorial (namely *Migration/Metastasis/Invasion/EMT/CellCycleArrest*).
+</p>
+
 
 In Figure D, a) we see that SNAI2 overexpression and SNAI1 knock out are the single mutant that moves the wild type state farthest towards Metastasis and Migration phenotypes (dark red dots). In fact, the combination of SNAI1\_ko and SNAI2\_oe is the first facet of Figure D around 17 of WT-normalized PC1. Also, the second facet around 35 of WT-normalized PC1 is the combination of SNAI1\_ko and AKT2\_oe.
 
@@ -882,10 +918,9 @@ Looking closely at the mutations that shift the phenotype’s distribution to 0,
 Likewise, if we look at the combinations of mutations that increase this phenotype’s probability, we find that they are NICD\_oe with AKT2\_oe, SNAI2\_oe, p73\_oe, ECMicroenv\_oe or p53\_ko. These are mutants with overexpressed pro-migratory genes, with high levels of pro-migratory microenvironment signals or with a pro-apoptotic gene knocked out.
 
 <p align="center">
-<img src="./Images/image_21.png" width="550">
-</p>
-
+<img src="./Images/image_21.png" width="550"><br>
 Figure E. *Migration/Metastasis/Invasion/EMT/CellCycleArrest* phenotype distribution across all single and double mutants. Bin where wild type value is found has been marked with dark red colour.
+</p>
 
 1. Robustness analysis of logical gates
 
@@ -979,16 +1014,14 @@ Looking closely at the logical gates variations that shift the phenotype’s dis
 Note that AKT1 is a node in which changing some logical rules may abolish the metastatic phenotype, while changing others (obviously, in opposite sense) will increase this phenotype.
 
 <p align="center">
-<img src="./Images/image_22.png" width="550">
-</p>
-
+<img src="./Images/image_22.png" width="550"><br>
 Figure F: *Migration/Metastasis/Invasion/EMT/CellCycleArrest *phenotype probability distribution across all mutants for logical gates. Bin where wild type value is found has been marked with dark red colour.
+</p>
 
 <p align="center">
-<img src="./Images/image_23.png" width="550">
+<img src="./Images/image_23.png" width="550"><br>
+Figure G: Distribution of logical combinations that reduce  *Migration/Metastasis/Invasion/EMT/CellCycleArrest *phenotype probability to zero.
 </p>
-
-Figure F: Distribution of logical combinations that reduce  *Migration/Metastasis/Invasion/EMT/CellCycleArrest *phenotype probability to zero.
 
 #### Robustness analysis of logical gates with respect to the stable states
 
@@ -999,18 +1032,16 @@ The wild type is composed of 9 stable states showing 4 different phenotypes: *Ho
 In our model, we have found 38922 stables states of all mutants and most of them (25742, 66.1% of the total) are the same than the 9 stable states from the WT (distance to WT stable states = 0). The stable states that differ the most (distance to WT stable states = 12) are 37 different variations of CTNNB1 or NICD logical rules that represent 0.09% of the total.
 
 <p align="center">
-<img src="./Images/image_24.png" width="550">
+<img src="./Images/image_24.png" width="550"><br>
+Figure H: Stables states counts present in all mutants combinations. All 38922 stables states of all mutants have been ordered by their Hamming distance to the closest WT stable states and their abundances have been counted.
 </p>
-
-Figure: Stables states counts present in all mutants combinations. All 38922 stables states of all mutants have been ordered by their Hamming distance to the closest WT stable states and their abundances have been counted.
 
 Furthermore, if we filter by unique stable states, we have found 209 stable states and most of them (85, 40.7% of the total) have Hamming distance of 1 to any of the 9 WT stable states (that represent 4.3% of the total with Hamming distance 0).
 
 <p align="center">
-<img src="./Images/image_25.png" width="550">
+<img src="./Images/image_25.png" width="550"><br>
+Figure I: Unique stable states counts present in all mutants combinations. 209 unique stables states of all mutants have been ordered by their Hamming distance to the closest WT stable states.
 </p>
-
-Figure: Unique stable states counts present in all mutants combinations. 209 unique stables states of all mutants have been ordered by their Hamming distance to the closest WT stable states.
 
 Note that in this analysis we are looking at stable states and we are ignoring the possible cyclic attractors, but it can still be informative to study the divergence from the wild type stable states.
 
