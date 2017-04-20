@@ -36,7 +36,7 @@ The same steps can be used for any other Boolean models.
 ## Material and methods used in the pipeline
 
 * Software: 
-[Cytoscape v2](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [Cygwin](https://cygwin.com/install.html) needed to use MaBoSS under Windows
+[Cytoscape v2](http://chianti.ucsd.edu/Cyto-2_8_3/), [GINSim](http://ginsim.org/downloads), [Cygwin](https://cygwin.com/install.html) needed to use MaBoSS under Windows, [R project](https://cloud.r-project.org/) used for data analysis (for convenience [RStudio](https://www.rstudio.com/products/rstudio/download/) is recommended)
 
 * Provided tools:
 	* [BiNoM](http://binom.curie.fr/)
