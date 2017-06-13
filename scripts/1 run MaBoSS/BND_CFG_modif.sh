@@ -3,12 +3,14 @@
 # - modifying CFG file
 # Define outputs in file called "listOut" (needed for _ko and _up parameters of epistasis) and inputs in file called "listIn" (needed for is_internal parameters of MaBoSS), one output per line
 states=$(grep istate ginsimout.cfg)
-outputs=$(sed ':a;N;$!ba;s/\n/ /g;s/^/ /g' listOut.txt)
 inputs=$(sed ':a;N;$!ba;s/\n/ /g;s/^/ /g' listIn.txt)
+output=$(sed ':a;N;$!ba;s/\n/ -e /g;s/^/ -e /g' listOut.txt)
+outputs=$(sed ':a;N;$!ba;s/\n/ /g;s/^/ /g' listOut.txt)
 
 cp ginsimout.cfg ginsimout_original.cfg
-state_ko=$(echo $states | sed 's/.istate/_ko/g')
-state_up=$(echo $states | sed 's/.istate/_up/g')
+statesnoout=$(grep -v $output <<<"$states")
+state_ko=$(echo $statesnoout | sed 's/.istate/_ko/g')
+state_up=$(echo $statesnoout | sed 's/.istate/_up/g')
 states2=$(printf "%s\n" ${state_ko[@]} ${state_up[@]})
 IFS=$'\n' sorted=($(sort <<<"${states2[*]}"))
 printf "%s\n" "${sorted[@]}" | sed 's/^/\$/;1i\\' | sed '1i\\' >> ginsimout.cfg

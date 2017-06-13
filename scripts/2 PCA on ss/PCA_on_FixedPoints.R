@@ -1,6 +1,13 @@
 rm(list=ls())
+# comment when appropiate:
+# option a) for .FP files (MaBoSS on Cygwin used with PlMaBoSS_2.0.pl
 FP <- read.table(text=(gsub("#", "FP", readLines("./ginsimout.FP"))),sep='\t',row.names = 1,skip=2,header=T,stringsAsFactors= F)
 FP2<-FP[,-c(1)]
+
+# option b) for _fp.csv files (MaBoSS on UNIX and MaBoSS on Cygwin used withOUT PlMaBoSS_2.0.pl)
+# FP <- read.table(text=(gsub("#", "FP", readLines("./ginsimout_fp.csv"))),sep='\t',row.names = 1,skip=1,header=T,stringsAsFactors= F)
+# FP2<-FP[,-c(1,2)]
+
 
 # - Default FactoMineR graphs
 if(!require(FactoMineR)) {
@@ -50,7 +57,16 @@ pv2 <- pv2 + geom_segment(data=vPCs, aes(x = 0, y = 0, xend = vPC1*0.9, yend = v
 # Now put them side by side
 grid.arrange(p,pv2,nrow=1)
 
-# merging FP of same phenotypes and vectors
+# merging FP of same phenotypes and vectors --after a first plot has been made and resultst analysed
+# enlarging vectors (may need tinkering):
+vPCs2<-vPCs*3
+pv3 <- p +
+  geom_text_repel(data=vPCs2, aes(x=vPCs2$PC1,y=vPCs2$PC2,label=rownames(vPCs2)), size=4, colour="black", box.padding = unit(0.05, "lines"),segment.color=NA) +
+  geom_segment(data=vPCs2, aes(x = 0, y = 0, xend = vPCs2$PC1, yend = vPCs2$PC2), arrow = arrow(length = unit(1/2, 'picas')), colour = "grey60") +
+  theme(legend.justification=c(1, 0), legend.position=c(1, 0), legend.title =element_text(size = 15), legend.text =element_text(size = 12)  )
+pv3
+
+# merging FP of same phenotypes and vectors --after a first plot has been made and results analysed
 # enlarging vectors:
 vPCs2<-vPCs*5
 # adding Phenotypes once we have studied the results:

@@ -26,6 +26,13 @@ ratio_1<-as.data.frame(ratio_1[order(rownames(ratio_1)), ])
 resta<- as.data.frame(sweep(as.matrix(a4),2,as.matrix(WT)))
 
 ## draw histograms of ratio (mutant / WT)
+# - general
+# ag<-ggplot_build(ggplot(ratio, aes(x = NAME_OF_PHENOTYPE)) + geom_histogram())
+# col <- rep("grey", 30)
+# col[findInterval((ratio[(which(rownames(ratio)=="WT")),])$NAME_OF_PHENOTYPE, ag$data[[1]]$xmin)]<-"dark red"
+# ggplot(ratio, aes(x = NAME_OF_PHENOTYPE)) + geom_histogram(bins = 30, fill=col, col="white",aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=percent,breaks = pretty_breaks(10)) + scale_x_continuous(labels=comma,breaks = pretty_breaks(10)) +labs(x = "NAME_OF_PHENOTYPE phenotype ratio logical gate mutant / WT", y = "Percentage")
+
+# - following is specific of Cohen et al's model
 pdf("Logical_gates_ratio_histograms_phenotypes.pdf",onefile=T)
 # HS
 ag<-ggplot_build(ggplot(ratio, aes(x = HS)) + geom_histogram())
@@ -61,6 +68,7 @@ toppos$node<-gsub("_.*","",rownames(toppos))
 ggplot(toppos, aes(x = node, fill=node)) + geom_histogram(stat="count",col="white") +theme(legend.position="none")
 
 top0<-ratio[ratio$Migration.Metastasis.Invasion.EMT.CellCycleArrest==0,]
+top0$node<-gsub("_.*","",rownames(top0))
 ggplot(top0, aes(x = node, fill=node)) + geom_histogram(stat="count",col="white") + theme(axis.text.x = element_text(angle = 90, hjust = 1),legend.position="none") + labs(x = "Logical combinations that abolish Migration.Metastasis.Invasion.EMT.CellCycleArrest phenotype",y = "Total counts")
 
 # Analyses on stable states ----
@@ -74,12 +82,14 @@ ggplot(b4, aes(y = COUNT,x=Dist_to_WT)) + geom_point() + scale_x_continuous(brea
 allSS<-b4[c(1:3)]
 allSSsum<-aggregate(COUNT ~ Dist_to_WT, data = allSS, sum)
 allSSsum$Percentage <- round(allSSsum$COUNT / sum(allSSsum$COUNT) * 100,4)
+allSSsum
 
 ## unique stable states:
 ggplot(b4, aes(x = Dist_to_WT)) + geom_histogram(stat="count",bins = 30, col="white") + labs(x = "Distance to closest WT stable state of unique stable states",y = "Counts")+ theme(panel.grid.minor = element_blank()) + scale_x_continuous(breaks=seq(0,12,1))
 ggplot(b4, aes(x = Dist_to_WT)) + geom_histogram(stat="count",bins = 30, col="white",aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=percent) + scale_x_continuous(breaks=seq(0,12,1)) + labs(x = "Distance to closest WT stable state of unique stable states",y = "Percentage")+ theme(panel.grid.minor = element_blank())
 uniqueSSsum<-as.data.frame(table(b4$Dist_to_WT))
 uniqueSSsum$Percentage <- round(uniqueSSsum$Freq / sum(uniqueSSsum$Freq) * 100,4)
+uniqueSSsum
 
 ## looking at the WT stable states by closest to mutants stable states
 b5<-as.data.frame(table(b3$Closest_WT))

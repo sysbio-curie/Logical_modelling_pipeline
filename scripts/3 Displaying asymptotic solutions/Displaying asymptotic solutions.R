@@ -11,6 +11,15 @@ a5 <- cbind(a2[,1:3],a4)
 
 # temporal evolution ----
 library(ggplot2)
+library(reshape2)
+
+# general look of the data
+a7<- melt(a5[,-c(2,3)],id=c("Time"))
+ggplot(a7, aes(x=Time,y=value,color=variable)) + 
+  geom_line() + 
+  ylab("Phenotype probablity") 
+
+# focusing on some variables (generally the ones with higher final probabilities)
 a6<-a5[,1:7]
 temporal<- ggplot(a6, aes(x=Time)) + 
   geom_path(aes(y = a6[,"Apoptosis-CellCycleArrest"], color=("Apoptosis-CellCycleArrest")),size=2) + 
@@ -30,8 +39,9 @@ library(ggplot2)
 # library(scales)
 
 pie_data<-as.data.frame(t(a5[299,4:7]))
-pie_data$ord<-c("Apoptosis-CellCycleArrest","Migration-Metastasis-Invasion-EMT-CellCycleArrest","HS","EMT-CellCycleArrest")
-pie_data <- within(pie_data, ord <- factor(ord, levels=c("Apoptosis-CellCycleArrest","Migration-Metastasis-Invasion-EMT-CellCycleArrest","HS","EMT-CellCycleArrest")))
+pie_data$ord<-rownames(pie_data)
+# if you want to order sectors in the pie chart, by name
+# pie_data <- within(pie_data, ord <- factor(ord, levels=c("Apoptosis-CellCycleArrest","Migration-Metastasis-Invasion-EMT-CellCycleArrest","HS","EMT-CellCycleArrest")))
 
 pie<-ggplot(pie_data,aes(x="", y=V299,fill=ord,order= ord))+ 
   geom_bar(width=1,stat = "identity")+
