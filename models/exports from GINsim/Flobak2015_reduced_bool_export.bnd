@@ -1,0 +1,92 @@
+Node MEK {
+  logic = (!ERK) | (ERK & !TAK1) | (ERK & TAK1 & !p38alpha) | (ERK & TAK1 & p38alpha & !AKT) | (ERK & TAK1 & p38alpha & AKT & !GSK3 & betacatenin) | (ERK & TAK1 & p38alpha & AKT & GSK3);
+  rate_up  = ( $MEK_ko ? 0.0 : ( $MEK_up ? @max_rate : ( @logic ? $u_MEK : 0)));
+  rate_down  = ( $MEK_ko ? @max_rate : ( $MEK_up ? 0.0 : ( @logic ? 0 : $d_MEK)));
+ 	 max_rate = 1.7976931348623157E+308/1;
+}
+
+Node ERK {
+  logic = (!MEK & !ERK & !AKT) | (MEK);
+  rate_up  = ( $ERK_ko ? 0.0 : ( $ERK_up ? @max_rate : ( @logic ? $u_ERK : 0)));
+  rate_down  = ( $ERK_ko ? @max_rate : ( $ERK_up ? 0.0 : ( @logic ? 0 : $d_ERK)));
+ 	 max_rate = 1.7976931348623157E+308/1;
+}
+
+Node TAK1 {
+  logic = (!p38alpha);
+  rate_up  = ( $TAK1_ko ? 0.0 : ( $TAK1_up ? @max_rate : ( @logic ? $u_TAK1 : 0)));
+  rate_down  = ( $TAK1_ko ? @max_rate : ( $TAK1_up ? 0.0 : ( @logic ? 0 : $d_TAK1)));
+ 	 max_rate = 1.7976931348623157E+308/1;
+}
+
+Node p38alpha {
+  logic = (!ERK & !p38alpha);
+  rate_up  = ( $p38alpha_ko ? 0.0 : ( $p38alpha_up ? @max_rate : ( @logic ? $u_p38alpha : 0)));
+  rate_down  = ( $p38alpha_ko ? @max_rate : ( $p38alpha_up ? 0.0 : ( @logic ? 0 : $d_p38alpha)));
+ 	 max_rate = 1.7976931348623157E+308/1;
+}
+
+Node AKT {
+  logic = (!ERK & !TAK1 & !AKT & !PI3K & GSK3) | (!ERK & !TAK1 & !AKT & PI3K) | (!ERK & !TAK1 & AKT & PI3K) | (!ERK & TAK1 & PI3K & !GSK3 & betacatenin) | (!ERK & TAK1 & PI3K & GSK3) | (ERK & !TAK1 & PI3K) | (ERK & TAK1 & PI3K & !GSK3 & betacatenin) | (ERK & TAK1 & PI3K & GSK3);
+  rate_up  = ( $AKT_ko ? 0.0 : ( $AKT_up ? @max_rate : ( @logic ? $u_AKT : 0)));
+  rate_down  = ( $AKT_ko ? @max_rate : ( $AKT_up ? 0.0 : ( @logic ? 0 : $d_AKT)));
+ 	 max_rate = 1.7976931348623157E+308/1;
+}
+
+Node PI3K {
+  logic = (!ERK) | (ERK & !TAK1) | (ERK & TAK1 & !GSK3 & betacatenin) | (ERK & TAK1 & GSK3);
+  rate_up  = ( $PI3K_ko ? 0.0 : ( $PI3K_up ? @max_rate : ( @logic ? $u_PI3K : 0)));
+  rate_down  = ( $PI3K_ko ? @max_rate : ( $PI3K_up ? 0.0 : ( @logic ? 0 : $d_PI3K)));
+ 	 max_rate = 1.7976931348623157E+308/1;
+}
+
+Node GSK3 {
+  logic = (GSK3);
+  rate_up  = ( $GSK3_ko ? 0.0 : ( $GSK3_up ? @max_rate : ( @logic ? $u_GSK3 : 0)));
+  rate_down  = ( $GSK3_ko ? @max_rate : ( $GSK3_up ? 0.0 : ( @logic ? 0 : $d_GSK3)));
+ 	 max_rate = 1.7976931348623157E+308/1;
+}
+
+Node betacatenin {
+  logic = (betacatenin);
+  rate_up  = ( $betacatenin_ko ? 0.0 : ( $betacatenin_up ? @max_rate : ( @logic ? $u_betacatenin : 0)));
+  rate_down  = ( $betacatenin_ko ? @max_rate : ( $betacatenin_up ? 0.0 : ( @logic ? 0 : $d_betacatenin)));
+ 	 max_rate = 1.7976931348623157E+308/1;
+}
+
+Node Antisurvival_b1 {
+  logic = (!ERK & !p38alpha) | (!ERK & p38alpha & !AKT) | (!ERK & p38alpha & AKT & Antisurvival_b2) | (ERK & !AKT) | (ERK & AKT & Antisurvival_b2);
+  rate_up = @logic ? $u_Antisurvival_b1 : 0;
+  rate_down = @logic ? 0 : $d_Antisurvival_b1;
+}
+
+Node Antisurvival_b2 {
+  logic = (!ERK & !TAK1 & !AKT & !Antisurvival_b1 & Antisurvival_b3) | (!ERK & !TAK1 & !AKT & Antisurvival_b1) | (!ERK & !TAK1 & AKT & Antisurvival_b3) | (!ERK & TAK1 & !p38alpha & Antisurvival_b3) | (!ERK & TAK1 & p38alpha & !AKT & !PI3K & Antisurvival_b3) | (!ERK & TAK1 & p38alpha & !AKT & PI3K & !GSK3 & !betacatenin & Antisurvival_b3) | (!ERK & TAK1 & p38alpha & !AKT & PI3K & !GSK3 & betacatenin & !Antisurvival_b1 & Antisurvival_b3) | (!ERK & TAK1 & p38alpha & !AKT & PI3K & !GSK3 & betacatenin & Antisurvival_b1) | (!ERK & TAK1 & p38alpha & !AKT & PI3K & GSK3 & !Antisurvival_b1 & Antisurvival_b3) | (!ERK & TAK1 & p38alpha & !AKT & PI3K & GSK3 & Antisurvival_b1) | (!ERK & TAK1 & p38alpha & AKT & Antisurvival_b3) | (ERK & !TAK1 & !AKT & !Antisurvival_b1 & Antisurvival_b3) | (ERK & !TAK1 & !AKT & Antisurvival_b1) | (ERK & !TAK1 & AKT & Antisurvival_b3) | (ERK & TAK1 & Antisurvival_b3);
+  rate_up = @logic ? $u_Antisurvival_b2 : 0;
+  rate_down = @logic ? 0 : $d_Antisurvival_b2;
+}
+
+Node Antisurvival_b3 {
+  logic = (!ERK & !TAK1 & p38alpha & !AKT & PI3K & Antisurvival_b2);
+  rate_up = @logic ? $u_Antisurvival_b3 : 0;
+  rate_down = @logic ? 0 : $d_Antisurvival_b3;
+}
+
+Node Prosurvival_b1 {
+  logic = (!ERK & !TAK1) | (!ERK & TAK1 & !betacatenin & Prosurvival_b2) | (!ERK & TAK1 & betacatenin) | (ERK & !TAK1) | (ERK & TAK1 & !PI3K & !betacatenin & Prosurvival_b2) | (ERK & TAK1 & !PI3K & betacatenin) | (ERK & TAK1 & PI3K & !GSK3 & !betacatenin & Prosurvival_b2) | (ERK & TAK1 & PI3K & !GSK3 & betacatenin) | (ERK & TAK1 & PI3K & GSK3);
+  rate_up = @logic ? $u_Prosurvival_b1 : 0;
+  rate_down = @logic ? 0 : $d_Prosurvival_b1;
+}
+
+Node Prosurvival_b2 {
+  logic = (!TAK1 & !Prosurvival_b1 & Prosurvival_b3) | (!TAK1 & Prosurvival_b1) | (TAK1 & !betacatenin & Prosurvival_b3) | (TAK1 & betacatenin & !Prosurvival_b1 & Prosurvival_b3) | (TAK1 & betacatenin & Prosurvival_b1);
+  rate_up = @logic ? $u_Prosurvival_b2 : 0;
+  rate_down = @logic ? 0 : $d_Prosurvival_b2;
+}
+
+Node Prosurvival_b3 {
+  logic = (ERK & !TAK1 & PI3K & Prosurvival_b2) | (ERK & TAK1 & PI3K & betacatenin & Prosurvival_b2);
+  rate_up = @logic ? $u_Prosurvival_b3 : 0;
+  rate_down = @logic ? 0 : $d_Prosurvival_b3;
+}
+
