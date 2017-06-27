@@ -57,7 +57,7 @@ pv2 <- pv2 + geom_segment(data=vPCs, aes(x = 0, y = 0, xend = vPC1*0.9, yend = v
 # Now put them side by side
 grid.arrange(p,pv2,nrow=1)
 
-# merging FP of same phenotypes and vectors --after a first plot has been made and resultst analysed
+# merging FP of same phenotypes and vectors --after a first plot has been made and results analysed
 # enlarging vectors (may need tinkering):
 vPCs2<-vPCs*3
 pv3 <- p +
