@@ -6,7 +6,7 @@ mkdir ginsimout
 cp ginsimout.cfg ginsimout/ginsimout.cfg
 cp ginsimout.bnd ginsimout/ginsimout.bnd
 cd ginsimout
-../MaBoSS -c ginsimout.cfg -o ginsimout ginsimout.bnd
+../../../lib/MaBoSS2 -c ginsimout.cfg -o ginsimout ginsimout.bnd
 
 for f in *_statdist*; do
 	echo "Processing FP of $f"
