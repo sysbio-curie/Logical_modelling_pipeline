@@ -1,4 +1,6 @@
 rm(list=ls(all=TRUE)) 
+setwd(dir = "~/data/scripts/3 Displaying asymptotic solutions/")
+
 a1 <- read.table("./ginsimout_probtraj_table.csv", header = TRUE, sep="\t", stringsAsFactors=FALSE)
 a1 <- a1[,-ncol(a1)]
 a2 <- a1[,!grepl("Err.*",colnames(a1))]
@@ -53,7 +55,7 @@ pie<-ggplot(pie_data,aes(x="", y=V299,fill=ord,order= ord))+
         axis.title= element_blank(),
         panel.grid=element_blank(),
         legend.position = "bottom",legend.title = element_blank() )
-pie
+# pie
 
 png("Phenotypes_probability_pie_chart.png", width = 800, height = 800, res = 120)
 pie

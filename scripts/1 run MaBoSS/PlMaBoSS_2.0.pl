@@ -28,7 +28,7 @@ system("mkdir ".$ProjectName);
 system("cp ".$bndFile." ".$ProjectName);
 system("cp ".$cfgFile." ".$ProjectName); #copy the files in the created directory
 chdir($ProjectName);
-system("../../lib/MaBoSS -c ".$cfgFile." -o ".$ProjectName." ".$bndFile); #run MaBoSS
+system("../../../lib/MaBoSS -c ".$cfgFile." -o ".$ProjectName." ".$bndFile); #run MaBoSS
 
 #construct the table of clustered stationary distributions
 my $StatDistFile=$ProjectName."_statdist.csv";

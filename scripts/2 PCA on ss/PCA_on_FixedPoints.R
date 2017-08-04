@@ -1,4 +1,5 @@
 rm(list=ls())
+setwd(dir = "~/data/scripts/2 PCA on ss/")
 # comment when appropiate:
 # option a) for .FP files (MaBoSS on Cygwin used with PlMaBoSS_2.0.pl
 FP <- read.table(text=(gsub("#", "FP", readLines("./ginsimout.FP"))),sep='\t',row.names = 1,skip=2,header=T,stringsAsFactors= F)
@@ -10,10 +11,10 @@ FP2<-FP[,-c(1)]
 
 
 # - Default FactoMineR graphs
-if(!require(FactoMineR)) {
-  install.packages("FactoMineR"); 
-  require(FactoMineR)}
-result <- PCA(FP2)
+# if(!require(FactoMineR)) {
+#   install.packages("FactoMineR"); 
+#   require(FactoMineR)}
+# result <- PCA(FP2)
 
 # - Merging variable and individuals factor map
 # Adapted from ggFactoPlot.R - Plotting the output of FactoMineR's PCA using ggplot2, credit to benmarwick: https://gist.github.com/benmarwick/2139672

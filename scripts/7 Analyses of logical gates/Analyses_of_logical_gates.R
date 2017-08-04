@@ -1,4 +1,5 @@
 rm(list=ls(all=TRUE)) 
+setwd(dir = "~/data/scripts/7 Analyses of logical gates/")
 # import data ----
 a1<-read.table("./ginsimout.xls", header = TRUE, sep="\t", row.names = 1, stringsAsFactors=FALSE)
 a2<-a1[,-c(2:7,ncol(a1))]
@@ -69,7 +70,15 @@ ggplot(toppos, aes(x = node, fill=node)) + geom_histogram(stat="count",col="whit
 
 top0<-ratio[ratio$Migration.Metastasis.Invasion.EMT.CellCycleArrest==0,]
 top0$node<-gsub("_.*","",rownames(top0))
-ggplot(top0, aes(x = node, fill=node)) + geom_histogram(stat="count",col="white") + theme(axis.text.x = element_text(angle = 90, hjust = 1),legend.position="none") + labs(x = "Logical combinations that abolish Migration.Metastasis.Invasion.EMT.CellCycleArrest phenotype",y = "Total counts")
+unique(top0$node)
+top0a<-top0[(top0$node!="Apoptosis" & top0$node!="CellCycleArrest" & top0$node!="Invasion" & top0$node!="TGFbeta"),]
+unique(top0a$node)
+top0a <- within(top0a, node <- factor(node, levels=names(sort(table(node), decreasing=TRUE))))
+top0fig<-ggplot(top0a, aes(x = node, fill=node)) + geom_histogram(stat="count",col="white") + theme(axis.text.x = element_text(angle = 90, hjust = 1),legend.position="none") + labs(x = "Logical combinations that abolish Migration.Metastasis.Invasion.EMT.CellCycleArrest phenotype",y = "Total counts")
+
+png("Migration_logical_mutants_high.png", width = 1600, height = 1440, res = 200)
+top0fig
+dev.off()
 
 # Analyses on stable states ----
 library(ggplot2)

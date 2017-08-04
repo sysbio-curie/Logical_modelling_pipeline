@@ -1,4 +1,5 @@
 rm(list=ls(all=TRUE)) 
+setwd(dir = "~/data/scripts/5 Analyses of genetic interactions/")
 # import data ----
 a1<- read.table("./ginsimout_norm.xls", header = TRUE, sep="\t", row.names = 1, stringsAsFactors=FALSE)
 a2<-a1[,-c(2:5,ncol(a1))]
@@ -15,14 +16,14 @@ library(ggplot2)
 library(ggrepel)
 
 # - all phenotypes
-a3<-a2
+# a3<-a2
 # - only single phenotypes
 # a3<-a2[,!grepl("-", colnames(a2),fixed=T)]
 
 # following two options are specific to Cohen et al's model
 # - 4 combined phenotypes
-# pattern <- c("^TYPE","^Apoptosis-CellCycleArrest$","^Migration-Metastasis-Invasion-EMT-CellCycleArrest$","^HS$","^EMT-CellCycleArrest$")
-# a3 <- a2[,(grep(paste(pattern,collapse="|"), colnames(a2), value=TRUE))]
+pattern <- c("^TYPE","^Apoptosis-CellCycleArrest$","^Migration-Metastasis-Invasion-EMT-CellCycleArrest$","^HS$","^EMT-CellCycleArrest$")
+a3 <- a2[,(grep(paste(pattern,collapse="|"), colnames(a2), value=TRUE))]
 # - single phenotypes + 4 combined phenotypes
 # pattern <- c("^Apoptosis-CellCycleArrest$","^Migration-Metastasis-Invasion-EMT-CellCycleArrest$","^HS$","^EMT-CellCycleArrest$")
 # a3<-cbind(a2[,!grepl("-", colnames(a2),fixed=T)],a2[,(grep(paste(pattern,collapse="|"), colnames(a2), value=TRUE))])
