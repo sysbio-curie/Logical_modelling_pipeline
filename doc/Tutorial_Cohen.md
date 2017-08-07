@@ -1238,7 +1238,7 @@ The output file reg\_model.topreg.txt contains the top regulators (i.e. genes wi
 
 The ranking of the genes means that genes that have the strongest link to the module genes in terms of similarity of profiles are selected. In other words, those genes are more likely to have a real functional link to the modules. In our model and using this data, the results suggests that top regulator genes such as CDC42SE1, MKNK1 and FGFR3 should be part of the model in order to build a specific colon cancer model that explains differential cetuximab response.
 
-References:
+## References:
 
 1.	Mi H, Schreiber F, Moodie S, et al. Systems Biology Graphical Notation: Activity Flow language Level 1 Version 1.2. J. Integr. Bioinforma. 2015; 12:265
 
