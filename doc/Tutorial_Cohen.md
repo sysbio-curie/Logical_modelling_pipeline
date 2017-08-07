@@ -86,7 +86,7 @@ The network with 32 nodes and 157 edges in GINsim.The model name is: Metastasis
 
 The modular network with 20 nodes and 93 edges in GINsim.The model name is: Metastasis\_Module\_Model.zginml
 
-Some of the genes were bundled in functional modules in order to test several techniques that we will describe here and were partly described in the initial pubication of this model. The pathways included in this model are represented by one or two components of these pathways, e.g TGFB1 and SMADs for *TGFbeta*; Twist1, Snai1, Snai2, Zeb1, Zeb2 and Vim for *EMT*; miR203, miR200 and miR34a for *miRNA*, etc. 
+Some of the genes were bundled in functional modules in order to test several techniques that we will describe here and were partly described in the initial publication of this model. The pathways included in this model are represented by one or two components of these pathways, e.g TGFB1 and SMADs for *TGFbeta*; Twist1, Snai1, Snai2, Zeb1, Zeb2 and Vim for *EMT*; miR203, miR200 and miR34a for *miRNA*, etc. 
 
 This model has been the object of continuous work from several researchers who have gathered data from literature and have thoroughly validated it with experiments and single and double mutant data ([ref 3](https://www.ncbi.nlm.nih.gov/pubmed/26528548)). 
 
@@ -152,7 +152,7 @@ This analysis can also be performed on strains with a given perturbation, such a
 
 This way, we can browse if a given perturbation is responsible, for instance, for the appearance or disappearance of a limit cycle.
 
-###The logical model in MaBoSS
+### The logical model in MaBoSS
 
 Next, we use MaBoSS software because our goal is to simulate our logical model using discrete time Markov chain. In order to do this, we can take advantage of GINsim export ability to build the files that MaBoSS needs to simulate: a BND file for model definition and a CFG file for setting up the parameters of simulation.
 
