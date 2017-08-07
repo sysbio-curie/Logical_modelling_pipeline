@@ -4,7 +4,7 @@ In this tutorial, we use a [model of early steps of metastasis](http://journals.
 
 All scripts and tools are provided at: [https://github.com/sysbio-curie/Logical\_modelling\_pipeline](https://github.com/sysbio-curie/Logical_modelling_pipeline) 
 
-All tools can be run in your CentOS/MacOS/Windows machine or you can download our Docker container that allows the completion of the present tutorial here: [https://hub.docker.com/r/arnaumontagud/logical\_modelling\_pipeline](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/)
+All tools can be run in your CentOS/MacOS/Windows machine or you can download our Docker container that allows the completion of the present tutorial at the dedicated [Docker Hub webpage](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/).
 
 All command lines and steps to follow to process the results are described in this tutorial. The same steps can be used for any other Boolean models.
 
