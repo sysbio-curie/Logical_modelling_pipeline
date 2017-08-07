@@ -1268,4 +1268,4 @@ References:
 
 10.	Kuperstein I, Bonnet E, Nguyen H-A, et al. Atlas of Cancer Signalling Network: a systems biology resource for integrative analysis of cancer data with Google Maps. Oncogenesis 2015; 4:e160
 
-11. 	Bonnet E, Calzone L, Michoel T. Integrative Multi-omics Module Network Inference with Lemon-Tree. PLOS Comput Biol. 2015;11: e1003983. doi:10.1371/journal.pcbi.1003983
+11.	Bonnet E, Calzone L, Michoel T. Integrative Multi-omics Module Network Inference with Lemon-Tree. PLOS Comput Biol. 2015;11: e1003983. doi:10.1371/journal.pcbi.1003983
