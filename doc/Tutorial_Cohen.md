@@ -4,7 +4,8 @@ In this tutorial, we use a [model of early steps of metastasis](http://journals.
 
 All scripts and tools are provided at: [https://github.com/sysbio-curie/Logical\\_modelling\_pipeline](https://github.com/sysbio-curie/Logical_modelling_pipeline) 
 
-All tools can be run in your CentOS/MacOS/Windows machine or you can download our Docker container that allows the completion of the present tutorial here: [https://hub.docker.com/r/arnaumontagud/logical\\_modelling\\_pipeline](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/)
+All tools can be run in your CentOS/MacOS/Windows machine or you can download our Docker container that allows the completion of the present tutorial at the dedicated [Docker Hub webpage](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/).
+
 
 All command lines and steps to follow to process the results are described in this tutorial. The same steps can be used for any other Boolean models.
 
@@ -57,7 +58,7 @@ All command lines and steps to follow to process the results are described in th
 
 * GINsim model and Cytoscape network files: [Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
 
-* Docker container: [Docker hub site to pull and run the container with all tools needed to run the tutorial using Unix scripts](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/)
+* Docker container: [Docker hub site](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/) to pull and run the container with all tools needed to run the tutorial using Unix scripts and where its usage is explained.
 
 ## 1. Constructing the model network
 
@@ -85,7 +86,7 @@ The network with 32 nodes and 157 edges in GINsim.The model name is: Metastasis
 
 The modular network with 20 nodes and 93 edges in GINsim.The model name is: Metastasis\_Module\_Model.zginml
 
-Some of the genes were bundled in functional modules in order to test several techniques that we will describe here and were partly described in the initial pubmication of this model. The pathways included in this model are represented by one or two components of these pathways, e.g TGFB1 and SMADs for *TGFbeta*; Twist1, Snai1, Snai2, Zeb1, Zeb2 and Vim for *EMT*; miR203, miR200 and miR34a for *miRNA*, etc. 
+Some of the genes were bundled in functional modules in order to test several techniques that we will describe here and were partly described in the initial pubication of this model. The pathways included in this model are represented by one or two components of these pathways, e.g TGFB1 and SMADs for *TGFbeta*; Twist1, Snai1, Snai2, Zeb1, Zeb2 and Vim for *EMT*; miR203, miR200 and miR34a for *miRNA*, etc. 
 
 This model has been the object of continuous work from several researchers who have gathered data from literature and have thoroughly validated it with experiments and single and double mutant data ([ref 3](https://www.ncbi.nlm.nih.gov/pubmed/26528548)). 
 
@@ -180,9 +181,9 @@ You can also choose to use MaBoSS environment. For that, you need to follow the 
 
 In a terminal, go to the MaBoSS environment folder. Type:
 
-source MaBoSS.env
+	source MaBoSS.env
 
-It is important that you stay in the same terminal. Then you can run MaBoSS from any other folder containing your model files. I
+It is important that you stay in the same terminal. Then you can run MaBoSS from any other folder containing your model files.
 
 To run the wild type condition (with no modifications from the initial model), you need to change some simulation parameters in the CFG file exported from GINsim.
 
@@ -1171,7 +1172,7 @@ B)&nbsp;&nbsp;<img src="./Images_Cohen/image_28.png" width="550" align="top"><br
 Figure 9: A) gene-wide model with data, B) module-wide model with data
 </p>
 
-Note that this analysis could also be achieved using R-based rROMA: [https://github.com/sysbio-curie/rRomaDash](https://github.com/sysbio-curie/rRomaDash) 
+Note that this analysis could also be achieved using: [R-based rROMA](https://github.com/sysbio-curie/rRomaDash) 
 
 ### 8. Using data as priors of model construction
 
@@ -1239,18 +1240,19 @@ References:
 
 1. Flobak Å, Baudot A, Remy E, et al. Discovery of Drug Synergies in Gastric Cancer Cells Predicted by Logical Modeling. PLOS Comput. Biol. 2015; 11:e1004426
 
-1. Stoll G, Viara E, Barillot E, et al. Continuous time Boolean modeling for biological signaling: application of Gillespie algorithm. BMC Syst. Biol. 2012; 6:116
-25. Stoll G, Caron B, Viara E, et al. MaBoSS 2.0: an environment for stochastic Boolean modeling. Bioinformatics 2017; 33:2226–2228
+2. Stoll G, Viara E, Barillot E, et al. Continuous time Boolean modeling for biological signaling: application of Gillespie algorithm. BMC Syst. Biol. 2012; 6:116
+
+3. Stoll G, Caron B, Viara E, et al. MaBoSS 2.0: an environment for stochastic Boolean modeling. Bioinformatics 2017; 33:2226–2228
 
 3.	Zinovyev A, Viara E, Calzone L, et al. BiNoM: a Cytoscape plugin for manipulating and analyzing biological networks. Bioinforma. Oxf. Engl. 2008; 24:876–877
 
-4. 	Calzone L, Barillot E, Zinovyev A. Predicting genetic interactions from Boolean models of biological networks. Integr Biol. 2015;7: 921–929. doi:10.1039/C5IB00029G
+4. Calzone L, Barillot E, Zinovyev A. Predicting genetic interactions from Boolean models of biological networks. Integr Biol. 2015;7: 921–929. doi:10.1039/C5IB00029G
 
-5. 	Drees BL, Thorsson V, Carter GW, Rives AW, Raymond MZ, Avila-Campillo I, et al. Derivation of genetic interaction networks from quantitative phenotype data. Genome Biol. 2005;6: R38. doi:10.1186/gb-2005-6-4-r38
+5. Drees BL, Thorsson V, Carter GW, Rives AW, Raymond MZ, Avila-Campillo I, et al. Derivation of genetic interaction networks from quantitative phenotype data. Genome Biol. 2005;6: R38. doi:10.1186/gb-2005-6-4-r38
 
-6. 	Martignetti L, Calzone L, Bonnet E, Barillot E, Zinovyev A. ROMA: Representation and Quantification of Module Activity from Target Expression Data. Front Genet. 2016;7: 18. doi:10.3389/fgene.2016.00018
+6. Martignetti L, Calzone L, Bonnet E, Barillot E, Zinovyev A. ROMA: Representation and Quantification of Module Activity from Target Expression Data. Front Genet. 2016;7: 18. doi:10.3389/fgene.2016.00018
 
-7. 	Subramanian A, Tamayo P, Mootha VK, et al. Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc. Natl. Acad. Sci. U. S. A. 2005; 102:15545–50
+7. Subramanian A, Tamayo P, Mootha VK, et al. Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc. Natl. Acad. Sci. U. S. A. 2005; 102:15545–50
 
 8.	Kanehisa M, Goto S, Sato Y, et al. KEGG for integration and interpretation of large-scale molecular data sets. Nucleic Acids Res. 2012; 40:D109–D114
 
