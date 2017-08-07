@@ -10,7 +10,7 @@ All command lines and steps to follow to process the results are described in th
 
 *Disclaimer: we will keep updating the tutorial in the github as the different tools used evolve.*
 
-*Note: the scripts used in this tutorial are tailored for the Cohen et al example. Only small changes are needed in the provided files to fit a new model. Another example of the use of the pipeline is presented in the github using Flobak et al model.*
+*Note: the scripts used in this tutorial are tailored for the Cohen et al example. Only small changes are needed in the provided files to fit a new model. Another example of the use of the pipeline is presented [here](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Tutorial_Flobak.md) using Flobak et al model.*
 
 ## Table of contents
 1. [Material and methods used in the pipeline](#material-and-methods-used-in-the-pipeline)
