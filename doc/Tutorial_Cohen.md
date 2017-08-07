@@ -53,11 +53,13 @@ All command lines and steps to follow to process the results are described in th
 	* [ViDaExpert](http://bioinfo-out.curie.fr/projects/vidaexpert/)
 	* [Lemon-Tree](https://github.com/eb00/lemon-tree)
 
-* Scripts: [Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts)
+* Scripts: 
+[Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts)
 
-* GINsim model and Cytoscape network files: [Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
+* GINsim model and Cytoscape network files: 
+[Folder with provided files](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/models)
 
-* Docker container: [Docker hub site to pull and run the container with all tools needed to run the tutorial using Unix scripts](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/)
+* Docker container: [Docker hub site](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/) to pull and run the container with all tools needed to run the tutorial using Unix scripts and where its usage is explained.
 
 ## 1. Constructing the model network
 
@@ -79,11 +81,13 @@ The model is able to predict conditions, e.g. single or double mutations, favour
 
 ![](./Images_Cohen/image_0.png)
 
-The network with 32 nodes and 157 edges in GINsim.The model name is: Metastasis\_Master\_Model.zginml
+The network with 32 nodes and 157 edges in GINsim.
+The model name is: Metastasis\_Master\_Model.zginml
 
 ![](./Images_Cohen/image_1.png)
 
-The modular network with 20 nodes and 93 edges in GINsim.The model name is: Metastasis\_Module\_Model.zginml
+The modular network with 20 nodes and 93 edges in GINsim.
+The model name is: Metastasis\_Module\_Model.zginml
 
 Some of the genes were bundled in functional modules in order to test several techniques that we will describe here and were partly described in the initial pubmication of this model. The pathways included in this model are represented by one or two components of these pathways, e.g TGFB1 and SMADs for *TGFbeta*; Twist1, Snai1, Snai2, Zeb1, Zeb2 and Vim for *EMT*; miR203, miR200 and miR34a for *miRNA*, etc. 
 
@@ -881,9 +885,13 @@ The BND is meant to remain the same throughout the analysis. All modifications o
 
 We propose two means to facilitate the creation of these files:
 
-* With the perl script: `MBSS_MutBndCfg.pl`, available on MaBoSS webpage: [MaBoSS webpage](http://maboss.curie.fr/) or directly available from the environment. For that, you need to type: 	MBSS_MutBndCfg.pl ginsimout.bnd ginsimout.cfg 'VAR1 VAR2 …'Two new files are created with the extension \_mut
+* With the perl script: `MBSS_MutBndCfg.pl`, available on MaBoSS webpage: [MaBoSS webpage](http://maboss.curie.fr/) or directly available from the environment. 
+For that, you need to type: 
+	MBSS_MutBndCfg.pl ginsimout.bnd ginsimout.cfg 'VAR1 VAR2 …'
+Two new files are created with the extension \_mut
 
-* With the script: `BND_CFG_modif.sh`For that, we need to define the outputs of the model in the file listOut.txt and the inputs in file listIn.txt, one output or input per line. Then, the CFG and BND files are modified using `BND_CFG_modif.sh`. The script changes these files (with the new parameters for simulating mutants) and keeps the original ones with original suffix: ginsimout\_original.bnd and ginsimout\_original.cfg. The script also optimizes the simulation parameter values (maximum number of steps, number of trajectories, etc.).
+* With the script: `BND_CFG_modif.sh`
+For that, we need to define the outputs of the model in the file listOut.txt and the inputs in file listIn.txt, one output or input per line. Then, the CFG and BND files are modified using `BND_CFG_modif.sh`. The script changes these files (with the new parameters for simulating mutants) and keeps the original ones with original suffix: ginsimout\_original.bnd and ginsimout\_original.cfg. The script also optimizes the simulation parameter values (maximum number of steps, number of trajectories, etc.).
 
 ### 2. Predicting genetic interactions
 
