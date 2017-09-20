@@ -35,7 +35,7 @@ All command lines and steps to follow to process the results are described in th
 	1. [Mapping data onto modular network using ROMA](#mapping-data-onto-modular-network-using-roma)
 1. [Using data as priors of model construction](#using-data-as-priors-of-model-construction)
 	1. [Identifying interesting modules from data with ROMA](#identifying-interesting-modules-from-data-with-roma)
-	1. [Prioritization of genes for constructing the model with LemonTree](#prioritization-of-genes-for-constructing-the-model-with-lemontree)
+	1. [Prioritization of genes for constructing the model with Lemon-Tree](#prioritization-of-genes-for-constructing-the-model-with-lemon-tree)
 
 
 ## Material and methods used in the pipeline
@@ -1205,7 +1205,7 @@ ROMA detected 51 differentially activated/inactivated gene sets (t-test, p-value
 Figure 10: Selected results of ROMA on expression data from eight primary colon cancer samples, responding (R1) and not responding (R0).
 </p>
 
-#### Prioritization of genes for constructing the model with LemonTree
+#### Prioritization of genes for constructing the model with Lemon-Tree
 
 We used the same dataset of colon primary tumors as described in the previous paragraph ([GSE56386](http://www.ncbi.nlm.nih.gov/sites/entrez?db=gds&term=GSE56386[Accession]&cmd=search)) to build a module network with the [Lemon-Tree](https://github.com/eb00/lemon-tree) software (ref 15). The process to install the software is described in the Lemon-Tree [tutorial](https://github.com/eb00/lemon-tree/wiki/Tutorial).
 
