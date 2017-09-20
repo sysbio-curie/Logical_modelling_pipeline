@@ -737,7 +737,7 @@ The R code provided here allows full freedom in modifying the files to output. A
 
 ## 4. Model reduction
 
-For some analyses or depending on the size of the network,, it might be necessary to reduce the model to get some clearer insight about the mechanisms involved in the processes described in the model. We propose two approaches here.
+For some analyses or depending on the size of the network, it might be necessary to reduce the model to get some clearer insight about the mechanisms involved in the processes described in the model. We propose two approaches here.
 
 #### 1. Masking nodes reduction using GINsim
 
