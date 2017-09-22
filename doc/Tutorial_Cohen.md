@@ -1048,13 +1048,14 @@ All the figures for all the phenotypes of interest can be found in Supplementary
 For this, we need several files, such as: 
 
 * BiNoM.jar
-* MaBoSS executable (MaBoSS-1-3-8 for UNIX and MaBoSS.exe for Windows)
+* MaBoSS executable (MaBoSS for UNIX and MaBoSS.exe for Windows)
 * VDAOEngine.jar
 * BND file
 * CFG file
 * `1_generating_variants.sh` script
 * `2_running_MaBoSS.sh` script
 * `3_results_tables.sh` script
+* `1-3_logical.sh` script
 
 Similarly to the "Predicting genetic interactions" section, we first built model variants, then simulate them, gather their results and, finally, analyse them.
 
