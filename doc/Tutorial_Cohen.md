@@ -45,7 +45,7 @@ All command lines and steps to follow to process the results are described in th
 	* [GINSim](http://ginsim.org/downloads)
 	* [Cygwin](https://cygwin.com/install.html) needed to use MaBoSS under Windows
 	* [R project](https://cloud.r-project.org/) used for data analysis (for convenience [RStudio](https://www.rstudio.com/products/rstudio/download/) is recommended)
-* 
+	
 	
 * Provided tools:
 	* [BiNoM](http://binom.curie.fr/)
