@@ -720,7 +720,7 @@ Figure 1: PCA bi-plot of stable state solutions of the metastasis model. The nin
 
 ### Displaying asymptotic solutions
 
-In order to analyse the results we have that performs these analyses in R software: Displaying asymptotic solutions.R.
+In order to analyse the results we have that performs these analyses in R software: `Displaying asymptotic solutions.R`.
 
 This file creates temporal evolution and pie charts for the asymptotic solutions. 
 
