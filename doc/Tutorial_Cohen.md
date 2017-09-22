@@ -2,7 +2,7 @@
 
 In this tutorial, we use a [model of early steps of metastasis](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004571) to illustrate the pipeline. 
 
-All scripts and tools are provided at: [https://github.com/sysbio-curie/Logical\\_modelling\_pipeline](https://github.com/sysbio-curie/Logical_modelling_pipeline) 
+All scripts and tools are provided at: [https://github.com/sysbio-curie/Logical_modelling\_pipeline](https://github.com/sysbio-curie/Logical_modelling_pipeline) 
 
 All tools can be run in your CentOS/MacOS/Windows machine or you can download our Docker container that allows the completion of the present tutorial at the dedicated [Docker Hub webpage](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/).
 
