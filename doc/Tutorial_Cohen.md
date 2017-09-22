@@ -258,6 +258,10 @@ To simulate the model using MaBoSS, make sure the MaBoSS executable, the script 
 Or if you run it from the MaBoSS environment, simply type:
 
 	MBSS_FormatTable.pl ginsimout.bnd ginsimout.cfg
+	
+Or, for completeness, you can also run it with following script:
+
+	run_MaBoSS_Unix.sh ginsimout.bnd ginsimout.cfg
 
 #### For all users
 
