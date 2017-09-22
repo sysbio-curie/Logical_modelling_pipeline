@@ -1166,7 +1166,7 @@ Note that in this analysis we are looking at stable states and we are ignoring t
 
 ## 7. Using the model as a scaffold for data integration
 
-#### Mapping data onto modular network using ROMA
+### Mapping data onto modular network using ROMA
 
 We used expression data from eight primary colon cancer samples ([GSE56386](http://www.ncbi.nlm.nih.gov/sites/entrez?db=gds&term=GSE56386[Accession]&cmd=search)), divided into a set of 4 tumors responding to cetuximab therapy, and 4 tumours non responding. 
 
@@ -1187,9 +1187,9 @@ Figure 9: A) gene-wide model with data, B) module-wide model with data
 
 Note that this analysis could also be achieved using: [R-based rROMA](https://github.com/sysbio-curie/rRomaDash) 
 
-### 8. Using data as priors of model construction
+## 8. Using data as priors of model construction
 
-#### Identifying interesting modules from data with ROMA
+### Identifying interesting modules from data with ROMA
 
 We use ROMA software to perform the following analysis (ref 10). 
 
@@ -1210,7 +1210,7 @@ ROMA detected 51 differentially activated/inactivated gene sets (t-test, p-value
 Figure 10: Selected results of ROMA on expression data from eight primary colon cancer samples, responding (R1) and not responding (R0).
 </p>
 
-#### Prioritization of genes for constructing the model with Lemon-Tree
+### Prioritization of genes for constructing the model with Lemon-Tree
 
 We used the same dataset of colon primary tumors as described in the previous paragraph ([GSE56386](http://www.ncbi.nlm.nih.gov/sites/entrez?db=gds&term=GSE56386[Accession]&cmd=search)) to build a module network with the [Lemon-Tree](https://github.com/eb00/lemon-tree) software (ref 15). The process to install the software is described in the Lemon-Tree [tutorial](https://github.com/eb00/lemon-tree/wiki/Tutorial).
 
