@@ -9,7 +9,7 @@ All tools can be run in your CentOS/MacOS/Windows machine or you can download ou
 
 All command lines and steps to follow to process the results are described in this tutorial. The same steps can be used for any other Boolean models.
 
-*Disclaimer: we will keep updating the tutorial in the github as the different tools used evolve.*
+*Disclaimer: we will keep updating the tutorial in the github as the different tools used evolve.* 
 
 *Note: the scripts used in this tutorial are tailored for the Cohen et al example. Only small changes are needed in the provided files to fit a new model. Another example of the use of the pipeline is presented [using Flobak et al model](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Tutorial_Flobak.md).*
 
