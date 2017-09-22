@@ -26,7 +26,7 @@ All command lines and steps to follow to process the results are described in th
 	1. [Masking nodes reduction using GINsim](#masking-nodes-reduction-using-ginsim)
 	1. [Modular reduction using BiNoM](#modular-reduction-using-binom)
 1. [Mutant analysis](#mutant-analysis)
-	1. [Predicting genetic interactions](#predicting-genetic-interactions)
+	1. [Predicting genetic interactions](#2-predicting-genetic-interactions) 
 		1. [Robustness analysis of genetic interactions with respect to the phenotype probability](#robustness-analysis-of-genetic-interactions-with-respect-to-the-phenotype-probability)
 	1. [Robustness analysis of logical gates](#robustness-analysis-of-logical-gates)
 		1. [Robustness analysis of logical gates with respect to the phenotype probability](#robustness-analysis-of-logical-gates-with-respect-to-the-phenotype-probability)
