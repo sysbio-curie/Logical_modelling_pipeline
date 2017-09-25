@@ -28,7 +28,7 @@ All command lines and steps to follow to process the results are described in th
 1. [Mutant analysis](#5-mutant-analysis)
 	1. [Predicting genetic interactions](#2-predicting-genetic-interactions) 
 		1. [Robustness analysis of genetic interactions with respect to the phenotype probability](#robustness-analysis-of-logical-gates-with-respect-to-the-phenotype-probability)
-	1. [Robustness analysis of logical gates](#6-robustness-analysis-of-logical-gates)
+	1. [Robustness analysis of logical gates](#robustness-analysis-of-logical-gates)
 		1. [Robustness analysis of logical gates with respect to the phenotype probability](#robustness-analysis-of-logical-gates-with-respect-to-the-phenotype-probability)
 		1. [Robustness analysis of logical gates with respect to the stable states](#robustness-analysis-of-logical-gates-with-respect-to-the-stable-states)
 1. [Using the model as a scaffold for data integration](#7-using-the-model-as-a-scaffold-for-data-integration)
@@ -1043,7 +1043,7 @@ Figure 4: <i>Migration/Metastasis/Invasion/EMT/CellCycleArrest</i> phenotype dis
 
 All the figures for all the phenotypes of interest can be found in Supplementary figure 2.
 
-### 6. Robustness analysis of logical gates
+### Robustness analysis of logical gates
 
 For this, we need several files, such as: 
 
@@ -1164,7 +1164,7 @@ Figure 8: Unique stable states counts present in all mutants combinations. 209 u
 
 Note that in this analysis we are looking at stable states and we are ignoring the possible cyclic attractors, but it can still be informative to study the divergence from the wild type stable states.
 
-## 7. Using the model as a scaffold for data integration
+## 6. Using the model as a scaffold for data integration
 
 ### Mapping data onto modular network using ROMA
 
@@ -1187,7 +1187,7 @@ Figure 9: A) gene-wide model with data, B) module-wide model with data
 
 Note that this analysis could also be achieved using: [R-based rROMA](https://github.com/sysbio-curie/rRomaDash) 
 
-## 8. Using data as priors of model construction
+## 7. Using data as priors of model construction
 
 ### Identifying interesting modules from data with ROMA
 
