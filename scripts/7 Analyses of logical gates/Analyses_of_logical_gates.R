@@ -14,6 +14,15 @@ b2<-b1[,-c(cols)]
 b3<-b2[-c(1:9),]
 b3$Dist_to_WT<-as.numeric(levels(b3$Dist_to_WT))[b3$Dist_to_WT]
 
+c1 <- read.table("./projectname_probtraj_table.csv", header = TRUE, sep="\t", stringsAsFactors=FALSE)
+c1 <- c1[,-ncol(c1)]
+c2 <- c1[,!grepl("Err.*",colnames(c1))]
+colnames(c2) <- gsub("\\.\\.","-",gsub("\\.$","", gsub("\\.nil\\.","HS", gsub("^Prob.","", colnames(c2)))))
+c3 <- as.data.frame(t(c2[,4:ncol(c2)]))
+c4 <- as.data.frame(t(c3[ order(-c3[,ncol(c3)]), ]))
+c5 <- colnames(c4[,1:4])
+
+
 # Histogram on genetic interactions ----
 library(ggplot2)
 library(scales)
@@ -22,9 +31,9 @@ a4<-a2[,-c(1)]
 WT<-a4[which(rownames(a4)=="WT"),]
 ratio<-scale(as.matrix(a4), center=FALSE, scale=as.matrix(WT))
 ratio<-as.data.frame(ratio[order(rownames(ratio)), ])
-ratio_1<-scale(as.matrix(a4+1), center=FALSE, scale=as.matrix(WT+1))
-ratio_1<-as.data.frame(ratio_1[order(rownames(ratio_1)), ])
-resta<- as.data.frame(sweep(as.matrix(a4),2,as.matrix(WT)))
+# ratio_1<-scale(as.matrix(a4+1), center=FALSE, scale=as.matrix(WT+1))
+# ratio_1<-as.data.frame(ratio_1[order(rownames(ratio_1)), ])
+# resta<- as.data.frame(sweep(as.matrix(a4),2,as.matrix(WT)))
 
 ## draw histograms of ratio (mutant / WT)
 # - general
@@ -32,6 +41,17 @@ resta<- as.data.frame(sweep(as.matrix(a4),2,as.matrix(WT)))
 # col <- rep("grey", 30)
 # col[findInterval((ratio[(which(rownames(ratio)=="WT")),])$NAME_OF_PHENOTYPE, ag$data[[1]]$xmin)]<-"dark red"
 # ggplot(ratio, aes(x = NAME_OF_PHENOTYPE)) + geom_histogram(bins = 30, fill=col, col="white",aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=percent,breaks = pretty_breaks(10)) + scale_x_continuous(labels=comma,breaks = pretty_breaks(10)) +labs(x = "NAME_OF_PHENOTYPE phenotype ratio logical gate mutant / WT", y = "Percentage")
+
+pdf("Logical_gates_ratio_histograms_phenotypes_most_probable.pdf",onefile=T)
+for (i in c5){
+  # print(i)
+  ag<-ggplot_build(ggplot(ratio, aes(x =  ratio[,i])) + geom_histogram())
+  col <- rep("grey", 30)
+  col[findInterval((ratio[(which(rownames(ratio)=="WT")),])[,i], ag$data[[1]]$xmin)]<-"dark red"
+  print(ggplot(ratio, aes(x = ratio[,i])) + geom_histogram(bins = 30, fill=col, col="white",aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=percent,breaks = pretty_breaks(10)) + scale_x_continuous(labels=comma,breaks = pretty_breaks(10)) +labs(x = paste0(i," phenotype ratio logical gate mutant / WT"), y = "Percentage"))
+        # print(ggplot(ratio, aes(x = ratio[,i])) + geom_histogram(bins = 30, fill=col, col="white",aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=percent,breaks = pretty_breaks(10)) + scale_x_continuous(labels=comma,breaks = pretty_breaks(10)) +labs(x = paste0(i," phenotype ratio mutant / WT"), y = "Percentage"))
+}
+dev.off()
 
 # - following is specific of Cohen et al's model
 pdf("Logical_gates_ratio_histograms_phenotypes.pdf",onefile=T)

@@ -1,0 +1,1 @@
+patients	responderResponder1	1Responder2	1Responder3	1Responder4	1NonResponder1	0NonResponder2	0NonResponder3	0NonResponder4	0

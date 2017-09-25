@@ -1,0 +1,11 @@
+Fixed Points (9)
+FP	Proba	State	ECMicroenv	DNAdamage	Migration	Metastasis	Invasion	EMT	VIM	AKT1	p63	miR200	AKT2	ERK	CDH2	CTNNB1	SMAD	CDH1	ZEB2	p53	p73	miR34	Apoptosis	p21	miR203	CellCycleArrest	GF	NICD	TGFbeta	TWIST1	SNAI1	SNAI2	ZEB1	DKK1
+#1	0.04718	EMT -- VIM -- AKT2 -- ERK -- CDH2 -- ZEB2 -- CellCycleArrest -- GF -- TWIST1 -- SNAI1 -- SNAI2 -- ZEB1	0	0	0	0	0	1	1	0	0	0	1	1	1	0	0	0	1	0	0	0	0	0	0	1	1	0	0	1	1	1	1	0
+#2	0.24886	ECMicroenv -- Migration -- Metastasis -- Invasion -- EMT -- VIM -- AKT2 -- ERK -- CDH2 -- SMAD -- ZEB2 -- CellCycleArrest -- GF -- NICD -- TGFbeta -- TWIST1 -- SNAI1 -- SNAI2 -- ZEB1 -- DKK1	1	0	1	1	1	1	1	0	0	0	1	1	1	0	1	0	1	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+#3	0.20274	CDH1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+#4	0.13182	DNAdamage -- miR200 -- CDH1 -- p53 -- Apoptosis -- p21 -- miR203 -- CellCycleArrest	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	1	0	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0
+#5	0.05498	ECMicroenv -- DNAdamage -- Migration -- Metastasis -- Invasion -- EMT -- VIM -- AKT2 -- ERK -- CDH2 -- SMAD -- ZEB2 -- CellCycleArrest -- GF -- NICD -- TGFbeta -- TWIST1 -- SNAI1 -- SNAI2 -- ZEB1 -- DKK1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	1	0	1	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1
+#6	0.07966	ECMicroenv -- DNAdamage -- p63 -- miR200 -- CDH1 -- p73 -- Apoptosis -- p21 -- CellCycleArrest -- TGFbeta	1	1	0	0	0	0	0	0	1	1	0	0	0	0	0	1	0	0	1	0	1	1	0	1	0	0	1	0	0	0	0	0
+#7	0.01508	DNAdamage -- EMT -- VIM -- AKT2 -- ERK -- CDH2 -- ZEB2 -- CellCycleArrest -- GF -- TWIST1 -- SNAI1 -- SNAI2 -- ZEB1	0	1	0	0	0	1	1	0	0	0	1	1	1	0	0	0	1	0	0	0	0	0	0	1	1	0	0	1	1	1	1	0
+#8	0.1154	ECMicroenv -- DNAdamage -- miR200 -- CDH1 -- p53 -- Apoptosis -- p21 -- miR203 -- CellCycleArrest -- TGFbeta	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	1	0	1	0	0	1	1	1	1	0	0	1	0	0	0	0	0
+#9	0.10306	DNAdamage -- p63 -- miR200 -- CDH1 -- p73 -- Apoptosis -- p21 -- CellCycleArrest	0	1	0	0	0	0	0	0	1	1	0	0	0	0	0	1	0	0	1	0	1	1	0	1	0	0	0	0	0	0	0	0

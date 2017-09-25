@@ -1,15 +1,15 @@
 #!/usr/bin/bash
 
-# java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile -c ./ginsimout.cfg -b ./ginsimout.bnd  -level 1
-java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile -c ./ginsimout.cfg -b ./ginsimout.bnd  -level 2
-# java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile -c ./ginsimout.cfg -b ./ginsimout.bnd  -level 2 -several
+java -cp '../../../lib/BiNoM.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile -c ./ginsimout.cfg -b ./ginsimout.bnd  -level 1
+# java -cp '../../../lib/BiNoM.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile -c ./ginsimout.cfg -b ./ginsimout.bnd  -level 2
+# java -cp '../../../lib/BiNoM.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile -c ./ginsimout.cfg -b ./ginsimout.bnd  -level 2 -several
 
 
 cd ginsimout_mutants_logics/
-sed 's:./ginsimout.cfg:../ginsimout.cfg:' run.sh > run2.sh
-chmod 766 ./run2.sh
+sed -i 's:../MaBoSS:../../../../lib/MaBoSS.exe:;s:./ginsimout.cfg:../ginsimout.cfg:' run.sh
+chmod 755 run.sh
 echo "running MaBoSS instances"
-./run2.sh
+./run.sh
 
 # In Windows, MaBoSS.exe does not produce FP file, this code hereby does it:
 for f in *_statdist*; do
@@ -42,9 +42,9 @@ done
 
 cd ..
 
-java -cp './BiNoM.jar;./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -makelogicmutanttable -folder ./ginsimout_mutants_logics/ -prefix ginsimout -out ginsimout.xls -description ./ginsimout_mutants_logics/descriptions.txt
+java -cp '../../../lib/BiNoM.jar;../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -makelogicmutanttable -folder ./ginsimout_mutants_logics/ -prefix ginsimout -out ginsimout.xls -description ./ginsimout_mutants_logics/descriptions.txt
 
-java -cp './BiNoM.jar;./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSStatDistFile -folder ginsimout_mutants_logics/ -prefix ginsimout -maketable
+java -cp '../../../lib/BiNoM.jar;../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSStatDistFile -folder ginsimout_mutants_logics/ -prefix ginsimout -maketable
 
 cd ginsimout_mutants_logics
 for f in *_dist_*; do

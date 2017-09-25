@@ -8,6 +8,15 @@ colnames(a2)<-gsub(".","-", colnames(a2),fixed = T)
 rownames(a2)<-sub("^_","WT",rownames(a2),perl = F)
 rownames(a2)<-sub("__","-",rownames(a2),perl = F)
 
+b1 <- read.table("./projectname_probtraj_table.csv", header = TRUE, sep="\t", stringsAsFactors=FALSE)
+b1 <- b1[,-ncol(b1)]
+b2 <- b1[,!grepl("Err.*",colnames(b1))]
+colnames(b2) <- gsub("\\.\\.","-",gsub("\\.$","", gsub("\\.nil\\.","HS", gsub("^Prob.","", colnames(b2)))))
+
+b3 <- as.data.frame(t(b2[,4:ncol(b2)]))
+b4 <- as.data.frame(t(b3[ order(-b3[,ncol(b3)]), ]))
+# b5 <- colnames(b4[,1:4])
+
 # PCA on genetic interactions ----
 # Adapted from ggFactoPlot.R - Plotting the output of FactoMineR's PCA using ggplot2, credit to benmarwick
 # https://gist.github.com/benmarwick/2139672
@@ -19,6 +28,9 @@ library(ggrepel)
 # a3<-a2
 # - only single phenotypes
 # a3<-a2[,!grepl("-", colnames(a2),fixed=T)]
+# - only most probable phenotypes
+# IntPhe<-c("TYPE",colnames(b4[,1:4]))
+# a5<-a2[,IntPhe]
 
 # following two options are specific to Cohen et al's model
 # - 4 combined phenotypes
@@ -173,6 +185,19 @@ ratio_1<-scale(as.matrix(a4+1), center=FALSE, scale=as.matrix(WT+1))
 ratio_1<-as.data.frame(ratio_1[order(rownames(ratio_1)), ])
 
 ## draw histograms
+pdf("Epistasis_ratio_phenotypes_histograms_most_prob.pdf",onefile=T)
+# phe<-colnames(b4[,1:4])
+# for (i in phe){
+for (i in colnames(b4[,1:4])){
+  # print(i)
+  ag<-ggplot_build(ggplot(ratio, aes(x =  ratio[,i])) + geom_histogram())
+  col <- rep("grey", 30)
+  col[findInterval((ratio[(which(rownames(ratio)=="WT")),])[,i], ag$data[[1]]$xmin)]<-"dark red"
+  print(ggplot(ratio, aes(x = ratio[,i])) + geom_histogram(bins = 30, fill=col, col="white",aes(y = (..count..)/sum(..count..))) + scale_y_continuous(labels=percent,breaks = pretty_breaks(10)) + scale_x_continuous(labels=comma,breaks = pretty_breaks(10)) +labs(x = paste0(i," phenotype ratio mutant / WT"), y = "Percentage"))
+}
+dev.off()
+
+
 pdf("Epistasis_ratio_phenotypes_histograms.pdf",onefile=T)
 # HS
 ag<-ggplot_build(ggplot(ratio, aes(x = HS)) + geom_histogram())

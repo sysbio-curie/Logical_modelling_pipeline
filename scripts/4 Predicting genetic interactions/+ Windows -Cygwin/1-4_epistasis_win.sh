@@ -4,10 +4,10 @@ java -cp '../../../lib/BiNoM.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigura
 
 cp ./ginsimout.bnd ./ginsimout_mutants/
 cd ginsimout_mutants/ 
-sed 's:../MaBoSS:../../../../lib/MaBoSS.exe:' run.sh > run2.sh
-chmod 766 ./run2.sh
+sed -i 's:../MaBoSS:../../../../lib/MaBoSS.exe:' run.sh
+chmod 755 ./run.sh
 echo "running MaBoSS instances"
-./run2.sh
+./run.sh
 
 cd ..
 
