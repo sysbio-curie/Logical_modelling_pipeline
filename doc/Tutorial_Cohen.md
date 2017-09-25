@@ -31,9 +31,9 @@ All command lines and steps to follow to process the results are described in th
 	1. [Robustness analysis of logical gates](#robustness-analysis-of-logical-gates)
 		1. [Robustness analysis of logical gates with respect to the phenotype probability](#robustness-analysis-of-logical-gates-with-respect-to-the-phenotype-probability)
 		1. [Robustness analysis of logical gates with respect to the stable states](#robustness-analysis-of-logical-gates-with-respect-to-the-stable-states)
-1. [Using the model as a scaffold for data integration](#7-using-the-model-as-a-scaffold-for-data-integration)
+1. [Using the model as a scaffold for data integration](#6-using-the-model-as-a-scaffold-for-data-integration)
 	1. [Mapping data onto modular network using ROMA](#mapping-data-onto-modular-network-using-roma)
-1. [Using data as priors of model construction](#8-using-data-as-priors-of-model-construction)
+1. [Using data as priors of model construction](#7-using-data-as-priors-of-model-construction)
 	1. [Identifying interesting modules from data with ROMA](#identifying-interesting-modules-from-data-with-roma)
 	1. [Prioritization of genes for constructing the model with Lemon-Tree](#prioritization-of-genes-for-constructing-the-model-with-lemon-tree)
 
