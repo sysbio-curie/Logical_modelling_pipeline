@@ -81,9 +81,6 @@ ggplot(ratio, aes(x = EMT.CellCycleArrest)) + geom_histogram(bins = 30, fill=col
 dev.off()
 
 # Close up on Migration.Metastasis.Invasion.EMT.CellCycleArrest top positive and negative ----
-bb<-ggplot_build(ggplot(ratio, aes(x = Migration.Metastasis.Invasion.EMT.CellCycleArrest)) + geom_histogram(bins = 30, fill=col, col="white",aes(y = (..count..)/sum(..count..))))
-metastasis_hist<-bb$data[[1]]
-
 toppos<-ratio[ratio$Migration.Metastasis.Invasion.EMT.CellCycleArrest>1.5,]
 toppos$node<-gsub("_.*","",rownames(toppos))
 ggplot(toppos, aes(x = node, fill=node)) + geom_histogram(stat="count",col="white") +theme(legend.position="none")
