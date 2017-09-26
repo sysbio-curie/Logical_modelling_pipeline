@@ -241,7 +241,7 @@ If you are using Windows, you can use our executable in the lib folder of our Gi
 
 	./run_MaBoSS_CygWin.sh
 
-If you do not have perl installed on your Windows environment, you can use the script: 
+If you do not have perl installed on your Cygwin environment, you can use the script: 
 
 	./run_MaBoSS_CygWin_noPerl.sh
 
