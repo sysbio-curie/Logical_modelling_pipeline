@@ -264,7 +264,7 @@ If you do not have perl installed on your Cygwin environment, you can use the sc
 
 	./run_MaBoSS_CygWin_noPerl.sh
 
-Or, for completeness, you can also run it with MaBoSS environment files. Copy Windows MaBoSS executable (from `MaBoSS-env-2.0/binaries/win-x86`) and MBSS_FormatTable.pl (from `/MaBoSS-env-2.0/tools`) and copy them to the local folder `1 run MaBoSS`:
+Or, for completeness, you can also run it with MaBoSS environment files. Copy Windows MaBoSS executable (from `MaBoSS-env-2.0/binaries/win-x86`) and MBSS_FormatTable.pl (from `/MaBoSS-env-2.0/tools`) and copy them to the local folder `/scripts/1 run MaBoSS`:
 
 	./MBSS_FormatTable.pl ginsimout.bnd ginsimout.cfg
 
