@@ -177,13 +177,11 @@ Models from GINsim can be exported in MaBoSS format. Two files are created: a BN
 
 MaBoSS is a C++ software (ref 5 and 6) for simulating continuous/discrete time Markov processes, defined on the state transition graph describing the dynamics of a Boolean network and can output probabilities of activation for each state of the model. This allows quantification of genetic perturbation and epistatic studies: simulation results do not shift from one stable state to another but rather 40% of the simulations shift from one stable state to another. 
 
-In order to have these software running, we need its source code that can be downloaded from [webpage](http://maboss.curie.fr/) and compile it on a UNIX machine. MaBoSS requires the packages flex and bison. 
+In order to have these software running, we need its source code that can be downloaded from [webpage](http://maboss.curie.fr/) (also available from the tutorial `/lib` folder) and compile it on a UNIX machine. MaBoSS requires the packages flex and bison. 
 
-There are several options to use MaBoSS, you can download the software, install the executable of MaBoSS in the folder containing your model files and run it from the same folder. For that, we 
+There are several options to use MaBoSS, you can download the software, install the executable of MaBoSS in the folder containing your model files and run it from the same folder. For your convenience, you can also choose to use MaBoSS environment. For that, you need to follow the instructions on the *Installation* page of MaBoSS for a better use of MaBoSS environment.
 
-You can also choose to use MaBoSS environment. For that, you need to follow the instructions on the *Installation* page of MaBoSS for a better use of MaBoSS environment.
-
-In a terminal, go to the MaBoSS environment folder. Type:
+In a terminal, go to the MaBoSS environment folder (in `/lib` folder of the pipeline if you have installed it there). Type:
 
 	source MaBoSS.env
 
@@ -235,19 +233,12 @@ To run the wild type condition (with no modifications from the initial model), y
 	SMAD.is\_internal=1;
 ```
 
-#### For Windows users (under Cygwin)
+For your convenience, we have also provided a script that use the information of inputs and outputs in order to have a complete run of the different phenotypes using MaBoSS. First you need to define define the outputs of the model in the file listOut.txt and the inputs in file listIn.txt, one output or input per line. then you need to run this script using: 
 
-If you are using Windows, you can use our executable in the lib folder of our Github repository ([https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib)) using the script:
+	BND_CFG_modif.sh
+	
+The script changes these files (with the new parameters for simulating mutants that we will use in following sections) and keeps the original ones with original suffix: ginsimout\_original.bnd and ginsimout\_original.cfg. The script also optimizes the simulation parameter values (maximum number of steps, number of trajectories, etc.).
 
-	./run_MaBoSS_CygWin.sh
-
-If you do not have perl installed on your Cygwin environment, you can use the script: 
-
-	./run_MaBoSS_CygWin_noPerl.sh
-
-Note that some changes can be made in the CFG file for a faster and more comprehensive Windows run: unabling multi-threads, reducing sample_count and time_tick.
-
-	sed -i 's/thread_count = 4/thread_count = 1/' ginsimout.cfg
 
 #### For Linux and Mac users
 
@@ -262,6 +253,24 @@ Or if you run it from the MaBoSS environment, simply type:
 Or, for completeness, you can also run it with following script:
 
 	run_MaBoSS_Unix.sh ginsimout.bnd ginsimout.cfg
+
+#### For Windows users (under Cygwin)
+
+If you are using Windows, you can use our executable in the lib folder of our Github repository ([https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib)) using the script:
+
+	./run_MaBoSS_CygWin.sh
+
+If you do not have perl installed on your Cygwin environment, you can use the script: 
+
+	./run_MaBoSS_CygWin_noPerl.sh
+
+Or, for completeness, you can also run it with MaBoSS environment files. Copy Windows MaBoSS executable (from `MaBoSS-env-2.0/binaries/win-x86`) and MBSS_FormatTable.pl (from `/MaBoSS-env-2.0/tools`) and copy them to the local folder `1 run MaBoSS`:
+
+	./MBSS_FormatTable.pl ginsimout.bnd ginsimout.cfg
+
+Note that some changes can be made in the CFG file for a faster and more comprehensive Windows run: unabling multi-threads, reducing sample_count and time_tick.
+
+	sed -i 's/thread_count = 4/thread_count = 1/' ginsimout.cfg
 
 #### For all users
 
