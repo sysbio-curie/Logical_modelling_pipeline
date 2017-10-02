@@ -1202,7 +1202,7 @@ Note that this analysis could also be achieved using: [R-based rROMA](https://gi
 
 We use ROMA software to perform the following analysis (ref 10). 
 
-We select gene sets from MSigDB (ref 11), KEGG (ref 12), Reactome (ref 13) and ACSN (ref 14) to identify the pathways that are overdispersed in the dataset. A collection of 1135 gene sets were selected and are available at the pipeline [github repository](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts/8a%20Using%20data%20as%20priors%20of%20model%20construction%20-%20ROMA).
+We select gene sets from MSigDB (ref 11), KEGG (ref 12), Reactome (ref 13) and ACSN (ref 14) to identify the pathways that are overdispersed in the dataset. A collection of 1135 gene sets were selected and are available at the pipeline [github repository](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts/8b%20Using%20data%20as%20priors%20of%20model%20construction%20-%20ROMA).
 
 To run ROMA, we use the R script: `R_script_for_ROMA.R`.
 
