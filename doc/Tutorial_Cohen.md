@@ -1208,7 +1208,11 @@ To run ROMA, we use the R script: `R_script_for_ROMA.R`.
 
 For this analysis, we did not specify the use of a weighted GMT file, so the algorithm considers a default unweighted GMT format.
 
-ROMA detected 51 differentially activated/inactivated gene sets (t-test, p-value <0.05) revealing major biological pathways contributing to the cetuximab response. Among them, we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. Moreover, we identified activation of HSP27 and CARM1 pathways, potentially involved in the tumour aggressiveness.
+In this example, we focused on KEGG database only. ROMA detected 51 differentially activated/inactivated gene sets (t-test, p-value <0.05) revealing major biological pathways contributing to the cetuximab response. 
+
+When performing ROMA analyses on the whole GMT provided in [github address], we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. 
+
+Moreover, we identified activation of HSP27 and CARM1 pathways, potentially involved in the tumour aggressiveness.
 
 <p align="center">
 <img src="./Images_Cohen/image_29.png" width="300">
