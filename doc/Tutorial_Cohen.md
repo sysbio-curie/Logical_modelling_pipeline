@@ -1141,7 +1141,7 @@ Looking closely at the logical gates variations that shift the phenotype’s dis
 
 Note that AKT1 is a node in which changing some logical rules may abolish the metastatic phenotype, while changing others (obviously, in opposite sense) will increase this phenotype.
 
-All the figures for all the phenotypes of interest can be found in Supplementary figure 1.
+All the figures for all the phenotypes of interest can be found in Supplementary figure 1 and an interesting evaluation of logical formula length on logical gates' robustness study can be accessed in [doc folder of GitHub repository](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Evaluation_length.md).
 
 <p align="center">
 <img src="./Images_Cohen/image_23.png" width="550"><br>
