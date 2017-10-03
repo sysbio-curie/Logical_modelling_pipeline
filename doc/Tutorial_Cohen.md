@@ -901,7 +901,9 @@ We propose two means to facilitate the creation of these files:
 
 * With the perl script: `MBSS_MutBndCfg.pl`, available on MaBoSS webpage: [MaBoSS webpage](http://maboss.curie.fr/) or directly available from the environment. 
 For that, you need to type: 
-	MBSS_MutBndCfg.pl ginsimout.bnd ginsimout.cfg 'VAR1 VAR2 …'
+
+	`MBSS_MutBndCfg.pl ginsimout.bnd ginsimout.cfg 'VAR1 VAR2 …'`
+
 Two new files are created with the extension \_mut
 
 * With the script: `BND_CFG_modif.sh`
