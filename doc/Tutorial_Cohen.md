@@ -932,7 +932,7 @@ We propose to simulate all single and double mutants. For that, we start by crea
 
 At the end, a script (BAT and SH) is created in order to run MaBoSS simulations with all these files. The command line to perform this analysis is:
 
-	java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigurationFile 
+	java -cp ../../../lib/BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigurationFile 
 	-c ./ginsimout.cfg -b ./ginsimout.bnd
 
 We also provide the small script: `1_generating_mutants.sh`
@@ -958,7 +958,7 @@ The script `3_results_table_norm.sh` goal is to build a table that gathers all t
 
 The command that performs this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
 	-maketable -folder ginsimout_mutants/ -prefix ginsimout -out ginsimout.xls
 
 Where `-cp` is the location of the JAR files, `-maketable` is the command to build the results’ table (in a tab-delimited file and a DAT ViDaExpert table file), `-folder` is the location of the folder with ProbTraj files, `-prefix` is the name of the files’ prefix (usually a descriptive name for the model) and `-out` is the desired output file name.
@@ -969,14 +969,14 @@ The script `4_epistasis_study.sh` goal is to normalize the results obtained with
 
 The command for this is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile
 	-normtable -table ginsimout.xls
 
 Where `-cp` is the location of the JAR files, `-normtable` is the normalization command that filters lower bounds of 1% in the probability table and `-table` is the name of the data table that results from `-maketable` command. This command will build a new table called ginsimout\_norm.xls that we will need to perform the epistasis study.
 
 Additionally, we can use this normalization step to bundle together phenotypes that are very similar using the `-mergedphenotypes` flag. We can add phenotypes into different groups such as:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -normtable 
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -normtable 
 	-mergedphenotypes "ECM1=ECMicroenv/EMT+ECMicroenv/EMT/GF+ECMicroenv/EMT/GF/TGFbeta+ECMicroenv/EMT/TGFbeta+ECMicroenv/GF+ECMicroenv/GF/TGFbeta;
 	Migration1=ECMicroenv/Migration/Metastasis/Invasion/EMT/GF/TGFbeta+Metastasis+ECMicroenv/EMT/CellCycleArrest/GF" 
 	-table ginsimout.xls
@@ -987,7 +987,7 @@ Once we have normalized the results and bundled together some phenotypes, we can
 
 The command for this is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile
 	-makeinter -table ginsimout_norm.dat -phenotype CellCycleArrest -phenotype_short CCA -out ginsimout >epistasis_summary.txt
 
 Where `-makeinter` is the command to build the table of interactions with correlation values and alpha values (look at a previous paper (ref 8) for details), `-table` is the name of the data table that results from `-normtable` command (only DAT file is allowed), -phenotype is the name of the phenotype in the DAT file (in this case, CellCycleArrest), -phenotype\_short is the short name that you want to assign to this phenotype in the output file (in this case, CCA) and `-out` is the prefix of the output files that the command will generate.
@@ -1074,7 +1074,7 @@ Similarly to the "Predicting genetic interactions" section, we first built model
 
 The goal is to build a folder with files corresponding to the different logical gates mutants for each node formula. We built variant models with 3 modifications: (1) one change of a logical operator in one logical rule, (2) two changes in the same logical rule, or (3) one single change in two different logical rules. In machine power allows, of course, more changes can be envisaged. The total number of different models that are generated in 8001. For this, we use MaBoSSBNDFile script from BiNoM JAR file. At the end, this script also builds a script (BAT and SH) to run MaBoSS simulations with all these files. The command line to perform this analysis is:
 
-	java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile 
+	java -cp ../../../lib/BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile 
 	-c ./ginsimout.cfg -b ./ginsimout.bnd -level 2
 
 Where -cp is the classpath or location of the JAR file, -c is the CFG file location and -b is the BND file location. Several paths to CFG files can be glued together using '+' symbol and, in this case, several command lines per one model variant will be generated. Other optional arguments are:
@@ -1110,7 +1110,7 @@ The goal is to build a table that gathers all the results from all the ProbTraj 
 
 The command line to perform this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
 	-makelogicmutanttable -folder ./ginsimout_mutants_logics/ -prefix ginsimout 
 	-out ginsimout.xls -description ./ginsimout_mutants_logics/descriptions.txt
 
@@ -1124,7 +1124,7 @@ First, the goal is to build a table that gathers all the final stable states and
 
 The command line to perform this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSStatDistFile 
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSStatDistFile 
 	-maketable -folder ginsimout_mutants_logics/ -prefix ginsimout
 
 Where -cp is the location of the JAR files, -maketable is the command to build the table with all final stable states reached by each mutant (in a tab-delimited file and a ViDaExpert table file), -folder is the location of the folder with StatDist files and -prefix is the name of the files’ prefix (usually a descriptive name for the model).
