@@ -1197,7 +1197,12 @@ B)&nbsp;&nbsp;<img src="./Images_Cohen/image_28.png" width="550" align="top"><br
 Figure 9: A) gene-wide model with data, B) module-wide model with data
 </p>
 
-Note that this analysis could also be achieved using: [R-based rROMA](https://github.com/sysbio-curie/rRomaDash) 
+Note that this analysis could also be achieved using: [R-based rROMA](https://github.com/sysbio-curie/rRomaDash).
+
+We have run the same analyses using the R version of ROMA and provided the script in GitHub repository. 
+
+We tested on a list of gene sets that was used in the initial paper (modular_model.gmt) and compared the significance of scores between the two groups. The results can be found in the document "comparison_samples.pdf" in the folder.
+
 
 ## 8. Using data as priors of model construction
 
