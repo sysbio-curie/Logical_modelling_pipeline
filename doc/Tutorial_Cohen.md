@@ -1234,14 +1234,14 @@ Prior to run the code, we have centered the expression values of each row of the
 
 Then we cluster gene expression profiles using Lemon-Tree Gibbs Sampling procedure with the command:
 
-	java -jar lemontree.jar -task ganesh -data_file ../data/data_reduced.txt 
+	java -jar ../../../lib/lemontree.jar -task ganesh -data_file ./data_reduced.txt 
 	-output_file cluster1.txt 
 
 The clustering solution output is contained in the file cluster1.txt. We then repeat this command at least 10 times, to generate 10 (slightly) different clustering solutions (cluster2.txt, cluster3.txt, etc.).
 
 From this 10 solutions, we then create a robust clustering solution with the command:
 
-	java -jar lemontree.jar -task tight_clusters -data_file data_reduced.txt 
+	java -jar ../../../lib/lemontree.jar -task tight_clusters -data_file ./data_reduced.txt 
 	-cluster_file cluster_file_list.txt -output_file tight_clusters.txt -node_clustering true
 
 In this command, the file `cluster_file_list.txt` is just a text file listing all the clustering solutions files generated at the previous step. The file `tight_clusters.txt` contains the robust clusters. It can be easily constructed with the command:
@@ -1250,7 +1250,7 @@ In this command, the file `cluster_file_list.txt` is just a text file listing al
 
 Now we will assign "regulators" for each one of the clusters, taking as input the list of genes of the model that we want to prioritize and the robust clustering solution created at the previous step:
 
-	java -jar lemontree.jar -task regulators -data_file data_reduced.txt 
+	java -jar ../../../lib/lemontree.jar -task regulators -data_file ./data_reduced.txt 
 	-reg_file reg_emt.txt -cluster_file tight_clusters.txt -output_file reg_model
 
 The output file reg\_model.topreg.txt contains the top regulators (i.e. genes with scores that are ranked within the top 1% of all regulators). A given gene can be assigned to multiple clusters. We further refine this list by calculating the sum of all individual scores for each gene. This will give a higher weight to the genes that are indeed assigned to more than one cluster ("hub" regulators). Finally, the list is ranked by decreasing global score. We can now use this list to prioritize genes for the construction of the model, by selecting for instance genes that are within the the top 20 of the list, in combination with other criteria. 
