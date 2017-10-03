@@ -1185,8 +1185,9 @@ We tested target gene sets selected from MSigDB (PMID:16273092) database togethe
 
 To run ROMA, we set the parameters as follows in the .bat file:
 
-	java -cp lib/ROMA.jar fr.curie.ROMA.ModuleActivityAnalysis -dataFile data_EMT_sorted.txt -moduleFile Main_Pathway_File.gmt 
-	-typeOfModuleFile 1 -outputFolder crc_cetuximab_MainPath -robustPCA 1 -numberOfPermutations 1000 
+	java -cp ../../../lib/ROMA_v1_0.jar fr.curie.ROMA.ModuleActivityAnalysis -dataFile data_EMT_sorted.txt 
+	-moduleFile Main_Pathway_File.gmt -typeOfModuleFile 1 -outputFolder crc_cetuximab_MainPath 
+	-robustPCA 1 -numberOfPermutations 1000 
 
 where the parameter -typeOfModuleFile 1 specifies that the we provided a module file GMT with weights and -robustPCA 1 requires to compute PCA using leave-one-out-based removal of outliers. The output folder contains the `moduletable_simple.txt` file with the matrix of activity values of each tested module in each sample. These have been used to compute the mean activity score in the two groups for the modules included in the model.
 
@@ -1212,7 +1213,7 @@ For this analysis, we did not specify the use of a weighted GMT file, so the alg
 
 In this example, we focused on KEGG database only. ROMA detected 51 differentially activated/inactivated gene sets (t-test, p-value <0.05) revealing major biological pathways contributing to the cetuximab response. 
 
-When performing ROMA analyses on the whole GMT provided in [github address], we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. 
+When performing ROMA analyses on the whole GMT provided in [github address](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts/8b%20Using%20data%20as%20priors%20of%20model%20construction%20-%20ROMA), we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. 
 
 Moreover, we identified activation of HSP27 and CARM1 pathways, potentially involved in the tumour aggressiveness.
 
