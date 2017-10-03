@@ -1,6 +1,26 @@
-#install.packages("readr")
-#install.packages("devtools")
-#devtools::install_github("Albluca/rROMA")
+# First installation of the packages needed
+
+source("https://bioconductor.org/biocLite.R")
+
+## Loading required namespace: scater
+if(!requireNamespace("scater")){
+  biocLite("scater")
+}
+
+if(!requireNamespace("biomaRt")){
+  biocLite("biomaRt")
+}
+
+## installation of ROMA
+if(!requireNamespace("devtools")){
+  install.packages("devtools")
+}
+
+if(!requireNamespace("rRoma")){
+  devtools::install_github("Albluca/rROMA")
+}
+
+
 
 library(readr)
 library(rRoma)
@@ -16,11 +36,10 @@ GroupVect <- unlist(Groups$responder)
 names(GroupVect) <- unlist(Groups$patients)
 table(GroupVect)
 
-Modules <- read_delim("./modular_model.gmt.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
-
+GMT <- ReadGMTFile("./modular_model.gmt.txt")
 
 Data.colon <- rRoma.R(ExpressionMatrix = Exp_colon, centerData = TRUE, ExpFilter = FALSE,
-                      ApproxSamples = 4, ModuleList = Modules, MinGenes = 8,
+                      ApproxSamples = 4, ModuleList = GMT, MinGenes = 6,
                       MaxGenes = 1000, nSamples = 100, UseWeigths = FALSE,
                       DefaultWeight = 1, FixedCenter = FALSE,
                       GeneOutDetection = 'L1OutExpOut', GeneOutThr = 4,
@@ -33,8 +52,15 @@ Data.colon <- rRoma.R(ExpressionMatrix = Exp_colon, centerData = TRUE, ExpFilter
 
 
 # Plot genesets
-Agg.colon <- Plot.Genesets(RomaData = Data.colon, Selected = SelectGeneSets(RomaData = Data.colon, VarThr = 5e-2, VarMode = "Wil", VarType = "Over"), GenesetMargin = 14, SampleMargin = 14, 
+Agg.colon <- Plot.Genesets(RomaData = Data.colon, Selected = SelectGeneSets(RomaData = Data.colon, VarThr = 5e-2, VarMode = "Wil", VarType = "Over"), 
+                           GenesetMargin = 14, SampleMargin = 14, 
                            cluster_cols = F, GroupInfo = GroupVect, AggByGroupsFL = c("mean"))
+
+# Compare across samples
+CompareAcrossSamples(RomaData = Data.colon,
+                     Selected = NULL,
+                     Groups = as.character(GroupVect))
+
 
 # Visualize scores for all samples for all selected pathways
 pheatmap(Agg.colon$mean, color = colorRampPalette(c("blue3", "white", "red3"))(50), fontsize_row=5, cluster_cols=FALSE, cluster_rows=T)
