@@ -1,3 +1,5 @@
+Supplementary table 1: Performance tests of the different parts of logical modelling framework
+
 | Pipeline section | Script | Unix | Docker on Windows OS | Docker on Mac OS | Cygwin on Windows OS |
 |:------------------------------------------------------------------------------:|:----------------------------------------------:|:------------:|:--------------------:|:----------------:|:--------------------:|
 | MaBoSS simulations | BND\_CFG\_modif.sh | 1.116s | 0.545s | TBA | 4.818s |
@@ -13,3 +15,8 @@
 | Mutant analysis; Predicting logical gates interactions | 1-3\_logical.sh; level 2 (4387 variants) | 474m 39.519s | 944m 52.755s | TBA | 1052m 6.628s |
 | Mutant analysis; Predicting logical gates interactions and Robustness analysis | Analyses\_of\_logical\_gates.R | 3.919s | 3.13s | TBA | 4.761s |
 | All the pipeline | Stew.sh | 181m 3.503s | 351m 23.514s | TBA | - |
+
+Windows machine was an Intel Core i7-4800MQ, CPU @ 2.70 GHz, and 8GB RAM, running Windows 7 Pro x64.
+Unix machine was an Intel Core i5-5250U, CPU @ 1.60 GHz, and 16GB RAM, running CentOS 7 x64.
+Mac machine was an XXX CPU @ XX GHz, and XX GB RAM, running MacOS XX.
+Docker container used default allocated memory (1GB).
