@@ -38,7 +38,7 @@ All command lines and steps to follow to process the results are described in th
 	1. [Prioritization of genes for constructing the model with Lemon-Tree](#prioritization-of-genes-for-constructing-the-model-with-lemon-tree)
 
 
-## Material and methods used in the pipeline
+## 1. Material and methods used in the pipeline
 
 * Software: 
 	* [Cytoscape v2](http://chianti.ucsd.edu/Cyto-2_8_3/)
@@ -62,7 +62,7 @@ All command lines and steps to follow to process the results are described in th
 
 * Docker container: [Docker hub site](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/) to pull and run the container with all tools needed to run the tutorial using Unix scripts and where its usage is explained.
 
-## 1. Constructing the model network
+## 2. Constructing the model network
 
 The desired level of description of the processes we wish to explore directs the choice of the type of networks that is most appropriate to the biological question. If the biochemistry is well known, biochemical reaction-based networks will be used. If only activation or inhibition of one protein onto the other is known without the details of the influences, then an influence network will be built.
 
@@ -100,7 +100,7 @@ The pipeline will be run on this example. Note that for other models, we anticip
 
 We have also worked with another model that represents the cell fate decision network in the AGS gastric cancer cell line, with 75 signaling and regulatory components (ref 4), the tutorial for which can be found [here](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Tutorial_Flobak.md).
 
-## 2. Translation of the network into a mathematical model
+## 3. Translation of the network into a mathematical model
 
 The network has been built with connections among nodes describing the type of influences (positive or negative), described in the annotation box of each node. This information can be traced, updated and corrected at any time.
 
@@ -288,7 +288,7 @@ This launching script generates a folder with the BND and CFG files as well as t
 
 * statdist\_table file, which is the previous file rearranged for better use
 
-## 3. Analysis of stable solutions
+## 4. Analysis of stable solutions
 
 ### Principal component analysis
 
@@ -748,7 +748,7 @@ The R code provided here allows full freedom in modifying the files to output. A
 	MBSS_TrajectoryFig.py ginsimout
 	MBSS_PieChart.py ginsimout
 
-## 4. Model reduction
+## 5. Model reduction
 
 For some analyses or depending on the size of the network, it might be necessary to reduce the model to get some clearer insight about the mechanisms involved in the processes described in the model. We propose two approaches here.
 
@@ -889,7 +889,7 @@ with the corresponding rules:
 </table>
 
 
-## 5. Mutant analysis
+## 6. Mutant analysis
 
 One of the reasons to be interested in model construction is the possibility to study genetic perturbations and how they affect phenotypes. As our nodes correspond to genes or sets of genes, it is easy to have an automated construction of models with perturbed genes and be able to simulate them. This allows us to be able to compare different mutant models and combinations of perturbations, thus enabling epistasis studies, and perform also robustness analyses.
 
@@ -1052,7 +1052,7 @@ Figure 4: <i>Migration/Metastasis/Invasion/EMT/CellCycleArrest</i> phenotype dis
 
 All the figures for all the phenotypes of interest can be found in Supplementary figure 2.
 
-### Robustness analysis of logical gates
+### 3. Robustness analysis of logical gates
 
 For this, we need several files, such as: 
 
@@ -1173,7 +1173,7 @@ Figure 8: Unique stable states counts present in all mutants combinations. 209 u
 
 Note that in this analysis we are looking at stable states and we are ignoring the possible cyclic attractors, but it can still be informative to study the divergence from the wild type stable states.
 
-## 6. Using the model as a scaffold for data integration
+## 7. Using the model as a scaffold for data integration
 
 ### Mapping data onto modular network using ROMA
 
@@ -1196,7 +1196,7 @@ Figure 9: A) gene-wide model with data, B) module-wide model with data
 
 Note that this analysis could also be achieved using: [R-based rROMA](https://github.com/sysbio-curie/rRomaDash) 
 
-## 7. Using data as priors of model construction
+## 8. Using data as priors of model construction
 
 ### Identifying interesting modules from data with ROMA
 
