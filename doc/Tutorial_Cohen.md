@@ -724,7 +724,7 @@ The PCA plot in Figure 1 shows a first dimension (with 62.48% of variability exp
 
 <p align="center">
 <img src="./Images_Cohen/image_11.png" width="550"><br>
-Figure 1: PCA bi-plot of stable state solutions of the metastasis model. The nine fixed points are represented here: FP1 corresponds to the homeostatic stable state (HS), FP2 - FP4 to the apoptotic stable states, FP6 and FP7 to the EMT stable states, and FP8 and FP9 to the metastatic stable states. The arrows show the directions of the contributions. PC1 shows that the EMT regulators contribute the most to the *EMT* and *Metastasis* stable states, whereas PC2 shows that *TGFbeta* pathway promotes *Migration* and thus *Metastasis*.
+Figure 1: PCA bi-plot of stable state solutions of the metastasis model. The nine fixed points are represented here: FP1 corresponds to the homeostatic stable state (HS), FP2 - FP4 to the apoptotic stable states, FP6 and FP7 to the EMT stable states, and FP8 and FP9 to the metastatic stable states. The arrows show the directions of the contributions. PC1 shows that the EMT regulators contribute the most to the <i>EMT</i> and <i>Metastasis</i> stable states, whereas PC2 shows that <i>TGFbeta</i> pathway promotes <i>Migration</i> and thus <i>Metastasis</i>.
 </p>
 
 ### Displaying asymptotic solutions
