@@ -1,4 +1,5 @@
 rm(list=ls(all=TRUE)) 
+# Following line is needed for an interactive RStudio session in Docker, please comment it if you are going to use this Rscript from command line.
 setwd(dir = "~/data/scripts/3 Displaying asymptotic solutions/")
 
 a1 <- read.table("./ginsimout_probtraj_table.csv", header = TRUE, sep="\t", stringsAsFactors=FALSE)

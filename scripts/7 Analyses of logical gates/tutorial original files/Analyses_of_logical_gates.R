@@ -1,4 +1,5 @@
 rm(list=ls(all=TRUE)) 
+# Following line is needed for an interactive RStudio session in Docker, please comment it if you are going to use this Rscript from command line.
 setwd(dir = "~/data/scripts/7 Analyses of logical gates/")
 # import data ----
 a1<-read.table("./ginsimout.xls", header = TRUE, sep="\t", row.names = 1, stringsAsFactors=FALSE)

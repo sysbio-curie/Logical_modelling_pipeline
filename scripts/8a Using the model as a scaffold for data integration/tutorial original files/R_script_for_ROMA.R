@@ -16,11 +16,11 @@ GroupVect <- unlist(Groups$responder)
 names(GroupVect) <- unlist(Groups$patients)
 table(GroupVect)
 
-AllKEGG <- SelectFromMSIGdb("KEGG")
+Modules <- read_delim("./modular_model.gmt.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
 
 
 Data.colon <- rRoma.R(ExpressionMatrix = Exp_colon, centerData = TRUE, ExpFilter = FALSE,
-                      ApproxSamples = 4, ModuleList = AllKEGG, MinGenes = 8,
+                      ApproxSamples = 4, ModuleList = Modules, MinGenes = 8,
                       MaxGenes = 1000, nSamples = 100, UseWeigths = FALSE,
                       DefaultWeight = 1, FixedCenter = FALSE,
                       GeneOutDetection = 'L1OutExpOut', GeneOutThr = 4,

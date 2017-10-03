@@ -1,4 +1,5 @@
 rm(list=ls(all=TRUE)) 
+# Following line is needed for an interactive RStudio session in Docker, please comment it if you are going to use this Rscript from command line.
 setwd(dir = "~/data/scripts/5 Analyses of genetic interactions/")
 # import data ----
 a1<- read.table("./ginsimout_norm.xls", header = TRUE, sep="\t", row.names = 1, stringsAsFactors=FALSE)

@@ -1,4 +1,5 @@
 rm(list=ls())
+# Following line is needed for an interactive RStudio session in Docker, please comment it if you are going to use this Rscript from command line.
 setwd(dir = "~/data/scripts/2 PCA on ss/")
 # comment when appropiate:
 # option a) for .FP files (MaBoSS on Cygwin used with PlMaBoSS_2.0.pl
