@@ -12,4 +12,5 @@ In order to make a sanity check, we explicitly verified if there is any systemat
 
 We explicitly compared the histograms of the distributions of the metastatic phenotype probability where one of the modified rule was of certain length (see file LENGTH_EFFECT.png), and did not find any strong systematic bias. 
 Note that these results can be blurred by the fact that some of the nodes characterized by a certain rule length are biologically more sensitive to logical rule changes, and this creates some distinguished peaks in the average effect of logical rule mutations of certain length. 
+
 In our model, this is the case of AKT2 (the only node having the length of the logical rule 6). Mutations in this logical rule frequently leads to increase of Metastasis probability, which creates a peak of average mutation effect for all combinations of the mutation in the rule of length 6 with mutations in rules of other lengths. This effect is much stronger than any hypothetical systematic bias with respect to the rule length, and it is completely justified by biological reasons. 

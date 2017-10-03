@@ -14,31 +14,31 @@ All command lines and steps to follow to process the results are described in th
 *Note: the scripts used in this tutorial are tailored for the Cohen et al example. Only small changes are needed in the provided files to fit a new model. Another example of the use of the pipeline is presented [using Flobak et al model](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Tutorial_Flobak.md).*
 
 ## Table of contents
-1. [Material and methods used in the pipeline](#material-and-methods-used-in-the-pipeline)
-1. [Constructing the Metastasis model network](#1-constructing-the-model-network)
+1. [Material and methods used in the pipeline](#1-material-and-methods-used-in-the-pipeline)
+1. [Constructing the Metastasis model network](#2-constructing-the-model-network)
 	1. [Metastasis model as a test case](#metastasis-model-as-a-test-case)
-1. [Translation of the network into a mathematical model](#2-translation-of-the-network-into-a-mathematical-model)
+1. [Translation of the network into a mathematical model](#3-translation-of-the-network-into-a-mathematical-model)
 	1. [MaBoSS simulations](#maboss-simulations)
-1. [Analysing stable solutions](#3-analysis-of-stable-solutions)
+1. [Analysing stable solutions](#4-analysis-of-stable-solutions)
 	1. [Principal component analysis](#principal-component-analysis)
 	1. [Displaying asymptotic solutions](#displaying-asymptotic-solutions)
-1. [Model reduction](#4-model-reduction)
+1. [Model reduction](#5-model-reduction)
 	1. [Masking nodes reduction using GINsim](#1-masking-nodes-reduction-using-ginsim)
 	1. [Modular reduction using BiNoM](#2-modular-reduction-using-binom)
-1. [Mutant analysis](#5-mutant-analysis)
+1. [Mutant analysis](#6-mutant-analysis)
 	1. [Predicting genetic interactions](#2-predicting-genetic-interactions) 
 		1. [Robustness analysis of genetic interactions with respect to the phenotype probability](#robustness-analysis-of-logical-gates-with-respect-to-the-phenotype-probability)
-	1. [Robustness analysis of logical gates](#robustness-analysis-of-logical-gates)
+	1. [Robustness analysis of logical gates](#3-robustness-analysis-of-logical-gates)
 		1. [Robustness analysis of logical gates with respect to the phenotype probability](#robustness-analysis-of-logical-gates-with-respect-to-the-phenotype-probability)
 		1. [Robustness analysis of logical gates with respect to the stable states](#robustness-analysis-of-logical-gates-with-respect-to-the-stable-states)
-1. [Using the model as a scaffold for data integration](#6-using-the-model-as-a-scaffold-for-data-integration)
+1. [Using the model as a scaffold for data integration](#7-using-the-model-as-a-scaffold-for-data-integration)
 	1. [Mapping data onto modular network using ROMA](#mapping-data-onto-modular-network-using-roma)
-1. [Using data as priors of model construction](#7-using-data-as-priors-of-model-construction)
+1. [Using data as priors of model construction](#8-using-data-as-priors-of-model-construction)
 	1. [Identifying interesting modules from data with ROMA](#identifying-interesting-modules-from-data-with-roma)
 	1. [Prioritization of genes for constructing the model with Lemon-Tree](#prioritization-of-genes-for-constructing-the-model-with-lemon-tree)
 
 
-## Material and methods used in the pipeline
+## 1. Material and methods used in the pipeline
 
 * Software: 
 	* [Cytoscape v2](http://chianti.ucsd.edu/Cyto-2_8_3/)
@@ -62,7 +62,7 @@ All command lines and steps to follow to process the results are described in th
 
 * Docker container: [Docker hub site](https://hub.docker.com/r/arnaumontagud/logical_modelling_pipeline/) to pull and run the container with all tools needed to run the tutorial using Unix scripts and where its usage is explained.
 
-## 1. Constructing the model network
+## 2. Constructing the model network
 
 The desired level of description of the processes we wish to explore directs the choice of the type of networks that is most appropriate to the biological question. If the biochemistry is well known, biochemical reaction-based networks will be used. If only activation or inhibition of one protein onto the other is known without the details of the influences, then an influence network will be built.
 
@@ -100,7 +100,7 @@ The pipeline will be run on this example. Note that for other models, we anticip
 
 We have also worked with another model that represents the cell fate decision network in the AGS gastric cancer cell line, with 75 signaling and regulatory components (ref 4), the tutorial for which can be found [here](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Tutorial_Flobak.md).
 
-## 2. Translation of the network into a mathematical model
+## 3. Translation of the network into a mathematical model
 
 The network has been built with connections among nodes describing the type of influences (positive or negative), described in the annotation box of each node. This information can be traced, updated and corrected at any time.
 
@@ -288,7 +288,7 @@ This launching script generates a folder with the BND and CFG files as well as t
 
 * statdist\_table file, which is the previous file rearranged for better use
 
-## 3. Analysis of stable solutions
+## 4. Analysis of stable solutions
 
 ### Principal component analysis
 
@@ -724,7 +724,7 @@ The PCA plot in Figure 1 shows a first dimension (with 62.48% of variability exp
 
 <p align="center">
 <img src="./Images_Cohen/image_11.png" width="550"><br>
-Figure 1: PCA bi-plot of stable state solutions of the metastasis model. The nine fixed points are represented here: FP1 corresponds to the homeostatic stable state (HS), FP2 - FP4 to the apoptotic stable states, FP6 and FP7 to the EMT stable states, and FP8 and FP9 to the metastatic stable states. The arrows show the directions of the contributions. PC1 shows that the EMT regulators contribute the most to the *EMT* and *Metastasis* stable states, whereas PC2 shows that *TGFbeta* pathway promotes *Migration* and thus *Metastasis*.
+Figure 1: PCA bi-plot of stable state solutions of the metastasis model. The nine fixed points are represented here: FP1 corresponds to the homeostatic stable state (HS), FP2 - FP4 to the apoptotic stable states, FP6 and FP7 to the EMT stable states, and FP8 and FP9 to the metastatic stable states. The arrows show the directions of the contributions. PC1 shows that the EMT regulators contribute the most to the <i>EMT</i> and <i>Metastasis</i> stable states, whereas PC2 shows that <i>TGFbeta</i> pathway promotes <i>Migration</i> and thus <i>Metastasis</i>.
 </p>
 
 ### Displaying asymptotic solutions
@@ -748,7 +748,7 @@ The R code provided here allows full freedom in modifying the files to output. A
 	MBSS_TrajectoryFig.py ginsimout
 	MBSS_PieChart.py ginsimout
 
-## 4. Model reduction
+## 5. Model reduction
 
 For some analyses or depending on the size of the network, it might be necessary to reduce the model to get some clearer insight about the mechanisms involved in the processes described in the model. We propose two approaches here.
 
@@ -889,7 +889,7 @@ with the corresponding rules:
 </table>
 
 
-## 5. Mutant analysis
+## 6. Mutant analysis
 
 One of the reasons to be interested in model construction is the possibility to study genetic perturbations and how they affect phenotypes. As our nodes correspond to genes or sets of genes, it is easy to have an automated construction of models with perturbed genes and be able to simulate them. This allows us to be able to compare different mutant models and combinations of perturbations, thus enabling epistasis studies, and perform also robustness analyses.
 
@@ -901,7 +901,9 @@ We propose two means to facilitate the creation of these files:
 
 * With the perl script: `MBSS_MutBndCfg.pl`, available on MaBoSS webpage: [MaBoSS webpage](http://maboss.curie.fr/) or directly available from the environment. 
 For that, you need to type: 
-	MBSS_MutBndCfg.pl ginsimout.bnd ginsimout.cfg 'VAR1 VAR2 …'
+
+	`MBSS_MutBndCfg.pl ginsimout.bnd ginsimout.cfg 'VAR1 VAR2 …'`
+
 Two new files are created with the extension \_mut
 
 * With the script: `BND_CFG_modif.sh`
@@ -930,7 +932,7 @@ We propose to simulate all single and double mutants. For that, we start by crea
 
 At the end, a script (BAT and SH) is created in order to run MaBoSS simulations with all these files. The command line to perform this analysis is:
 
-	java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigurationFile 
+	java -cp ../../../lib/BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSConfigurationFile 
 	-c ./ginsimout.cfg -b ./ginsimout.bnd
 
 We also provide the small script: `1_generating_mutants.sh`
@@ -956,7 +958,7 @@ The script `3_results_table_norm.sh` goal is to build a table that gathers all t
 
 The command that performs this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
 	-maketable -folder ginsimout_mutants/ -prefix ginsimout -out ginsimout.xls
 
 Where `-cp` is the location of the JAR files, `-maketable` is the command to build the results’ table (in a tab-delimited file and a DAT ViDaExpert table file), `-folder` is the location of the folder with ProbTraj files, `-prefix` is the name of the files’ prefix (usually a descriptive name for the model) and `-out` is the desired output file name.
@@ -967,14 +969,14 @@ The script `4_epistasis_study.sh` goal is to normalize the results obtained with
 
 The command for this is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile
 	-normtable -table ginsimout.xls
 
 Where `-cp` is the location of the JAR files, `-normtable` is the normalization command that filters lower bounds of 1% in the probability table and `-table` is the name of the data table that results from `-maketable` command. This command will build a new table called ginsimout\_norm.xls that we will need to perform the epistasis study.
 
 Additionally, we can use this normalization step to bundle together phenotypes that are very similar using the `-mergedphenotypes` flag. We can add phenotypes into different groups such as:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -normtable 
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile -normtable 
 	-mergedphenotypes "ECM1=ECMicroenv/EMT+ECMicroenv/EMT/GF+ECMicroenv/EMT/GF/TGFbeta+ECMicroenv/EMT/TGFbeta+ECMicroenv/GF+ECMicroenv/GF/TGFbeta;
 	Migration1=ECMicroenv/Migration/Metastasis/Invasion/EMT/GF/TGFbeta+Metastasis+ECMicroenv/EMT/CellCycleArrest/GF" 
 	-table ginsimout.xls
@@ -985,7 +987,7 @@ Once we have normalized the results and bundled together some phenotypes, we can
 
 The command for this is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile
 	-makeinter -table ginsimout_norm.dat -phenotype CellCycleArrest -phenotype_short CCA -out ginsimout >epistasis_summary.txt
 
 Where `-makeinter` is the command to build the table of interactions with correlation values and alpha values (look at a previous paper (ref 8) for details), `-table` is the name of the data table that results from `-normtable` command (only DAT file is allowed), -phenotype is the name of the phenotype in the DAT file (in this case, CellCycleArrest), -phenotype\_short is the short name that you want to assign to this phenotype in the output file (in this case, CCA) and `-out` is the prefix of the output files that the command will generate.
@@ -1052,7 +1054,7 @@ Figure 4: <i>Migration/Metastasis/Invasion/EMT/CellCycleArrest</i> phenotype dis
 
 All the figures for all the phenotypes of interest can be found in Supplementary figure 2.
 
-### Robustness analysis of logical gates
+### 3. Robustness analysis of logical gates
 
 For this, we need several files, such as: 
 
@@ -1072,7 +1074,7 @@ Similarly to the "Predicting genetic interactions" section, we first built model
 
 The goal is to build a folder with files corresponding to the different logical gates mutants for each node formula. We built variant models with 3 modifications: (1) one change of a logical operator in one logical rule, (2) two changes in the same logical rule, or (3) one single change in two different logical rules. In machine power allows, of course, more changes can be envisaged. The total number of different models that are generated in 8001. For this, we use MaBoSSBNDFile script from BiNoM JAR file. At the end, this script also builds a script (BAT and SH) to run MaBoSS simulations with all these files. The command line to perform this analysis is:
 
-	java -cp ./BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile 
+	java -cp ../../../lib/BiNoM.jar fr.curie.BiNoM.pathways.MaBoSS.MaBoSSBNDFile 
 	-c ./ginsimout.cfg -b ./ginsimout.bnd -level 2
 
 Where -cp is the classpath or location of the JAR file, -c is the CFG file location and -b is the BND file location. Several paths to CFG files can be glued together using '+' symbol and, in this case, several command lines per one model variant will be generated. Other optional arguments are:
@@ -1108,7 +1110,7 @@ The goal is to build a table that gathers all the results from all the ProbTraj 
 
 The command line to perform this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSProbTrajFile 
 	-makelogicmutanttable -folder ./ginsimout_mutants_logics/ -prefix ginsimout 
 	-out ginsimout.xls -description ./ginsimout_mutants_logics/descriptions.txt
 
@@ -1122,7 +1124,7 @@ First, the goal is to build a table that gathers all the final stable states and
 
 The command line to perform this analysis is:
 
-	java -cp './BiNoM.jar:./VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSStatDistFile 
+	java -cp '../../../lib/BiNoM.jar:../../../lib/VDAOEngine.jar' fr.curie.BiNoM.pathways.MaBoSS.MaBoSSStatDistFile 
 	-maketable -folder ginsimout_mutants_logics/ -prefix ginsimout
 
 Where -cp is the location of the JAR files, -maketable is the command to build the table with all final stable states reached by each mutant (in a tab-delimited file and a ViDaExpert table file), -folder is the location of the folder with StatDist files and -prefix is the name of the files’ prefix (usually a descriptive name for the model).
@@ -1133,7 +1135,7 @@ This command builds two tab-delimited files, one with name `{prefix}_dist_mutant
 
 Using the file ginsimout.xls we can explore the robustness of the rules with respect to the phenotype probabilities. For this, we can run the R code found in file `Analyses_of_logical_gates.R`.
 
-For example, we continue to be particularly interested in the combined phenotype of *Migration/Metastasis/Invasion/EMT/CellCycleArrest*. As we can see in Figure 2, the wild type probability at the end of the MaBoSS run for this phenotype is 30.4%. In Figure 5, we have plotted this phenotype’s probability distribution across single and double logical gates mutants. We can see that 2913 combinations (66.4% of total) of logical operator variations do not vary the phenotype probability to that of the WT. There are 340 combinations (7.75% of the total) of logical gates variations combinations that abolish the phenotype probability to 0. Furthermore, there are 222 combinations (5% of the total) of variations that increase this phenotype’s probability more than 1.5 times that of the WT and 11 combinations (0.25% of the total) of variations that increase this phenotype’s probability more than 1.7 times that of the WT. 
+For the Cohen et al model, all phenotypes were robust to changes except for Homeostasis. This is due to the fact that Homeostasis is a phenotype that is active when no input is present. Thus, all changes that end up activating a pathway will cause an alteration in Homeostasis activation. In fact, we continue to be particularly interested in the combined phenotype of *Migration/Metastasis/Invasion/EMT/CellCycleArrest*. As we can see in Figure 2, the wild type probability at the end of the MaBoSS run for this phenotype is 30.4%. In Figure 5, we have plotted this phenotype’s probability distribution across single and double logical gates mutants. We can see that 2913 combinations (66.4% of total) of logical operator variations do not vary the phenotype probability to that of the WT. There are 340 combinations (7.75% of the total) of logical gates variations combinations that abolish the phenotype probability to 0. Furthermore, there are 222 combinations (5% of the total) of variations that increase this phenotype’s probability more than 1.5 times that of the WT and 11 combinations (0.25% of the total) of variations that increase this phenotype’s probability more than 1.7 times that of the WT. 
 
 Looking closely at the logical gates variations that shift the phenotype’s distribution to 0, top three node whose rules need to be carefully looked upon are AKT1 and p53 (Figure 6). Changing some logical operator of these nodes’ rule will likely abolish an otherwise pro-migratory phenotype. Likewise, if we look at the 222 combinations of logical gates variations that increase this phenotype’s probability more than 1.5 times that of the WT, we find combinations of three nodes’ rule logical operators: AKT1, AKT2 and NICD and if we look at the 11 combinations of logical gates variations that most increase this phenotype’s probability, we find that they are all part of the NICD node’s rule logical operators. Meaning that allowing a less strict activation of this node will likely cause a false positive pro-migratory phenotype. A particular attention needs to be given to these variables whose rules need to be carefully constrained and the literature in which they are based be studied in special detail.
 
@@ -1173,7 +1175,7 @@ Figure 8: Unique stable states counts present in all mutants combinations. 209 u
 
 Note that in this analysis we are looking at stable states and we are ignoring the possible cyclic attractors, but it can still be informative to study the divergence from the wild type stable states.
 
-## 6. Using the model as a scaffold for data integration
+## 7. Using the model as a scaffold for data integration
 
 ### Mapping data onto modular network using ROMA
 
@@ -1183,8 +1185,9 @@ We tested target gene sets selected from MSigDB (PMID:16273092) database togethe
 
 To run ROMA, we set the parameters as follows in the .bat file:
 
-	java -cp lib/ROMA.jar fr.curie.ROMA.ModuleActivityAnalysis -dataFile data_EMT_sorted.txt -moduleFile Main_Pathway_File.gmt 
-	-typeOfModuleFile 1 -outputFolder crc_cetuximab_MainPath -robustPCA 1 -numberOfPermutations 1000 
+	java -cp ../../../lib/ROMA_v1_0.jar fr.curie.ROMA.ModuleActivityAnalysis -dataFile data_EMT_sorted.txt 
+	-moduleFile Main_Pathway_File.gmt -typeOfModuleFile 1 -outputFolder crc_cetuximab_MainPath 
+	-robustPCA 1 -numberOfPermutations 1000 
 
 where the parameter -typeOfModuleFile 1 specifies that the we provided a module file GMT with weights and -robustPCA 1 requires to compute PCA using leave-one-out-based removal of outliers. The output folder contains the `moduletable_simple.txt` file with the matrix of activity values of each tested module in each sample. These have been used to compute the mean activity score in the two groups for the modules included in the model.
 
@@ -1196,19 +1199,23 @@ Figure 9: A) gene-wide model with data, B) module-wide model with data
 
 Note that this analysis could also be achieved using: [R-based rROMA](https://github.com/sysbio-curie/rRomaDash) 
 
-## 7. Using data as priors of model construction
+## 8. Using data as priors of model construction
 
 ### Identifying interesting modules from data with ROMA
 
 We use ROMA software to perform the following analysis (ref 10). 
 
-We select gene sets from MSigDB (ref 11), KEGG (ref 12), Reactome (ref 13) and ACSN (ref 14) to identify the pathways that are overdispersed in the dataset. A collection of 1135 gene sets were selected and are available at the pipeline [github repository](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts/8a%20Using%20data%20as%20priors%20of%20model%20construction%20-%20ROMA).
+We select gene sets from MSigDB (ref 11), KEGG (ref 12), Reactome (ref 13) and ACSN (ref 14) to identify the pathways that are overdispersed in the dataset. A collection of 1135 gene sets were selected and are available at the pipeline [github repository](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts/8b%20Using%20data%20as%20priors%20of%20model%20construction%20-%20ROMA).
 
 To run ROMA, we use the R script: `R_script_for_ROMA.R`.
 
 For this analysis, we did not specify the use of a weighted GMT file, so the algorithm considers a default unweighted GMT format.
 
-ROMA detected 51 differentially activated/inactivated gene sets (t-test, p-value <0.05) revealing major biological pathways contributing to the cetuximab response. Among them, we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. Moreover, we identified activation of HSP27 and CARM1 pathways, potentially involved in the tumour aggressiveness.
+In this example, we focused on KEGG database only. ROMA detected 51 differentially activated/inactivated gene sets (t-test, p-value <0.05) revealing major biological pathways contributing to the cetuximab response. 
+
+When performing ROMA analyses on the whole GMT provided in [github address](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts/8b%20Using%20data%20as%20priors%20of%20model%20construction%20-%20ROMA), we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. 
+
+Moreover, we identified activation of HSP27 and CARM1 pathways, potentially involved in the tumour aggressiveness.
 
 <p align="center">
 <img src="./Images_Cohen/image_29.png" width="300">
@@ -1227,14 +1234,14 @@ Prior to run the code, we have centered the expression values of each row of the
 
 Then we cluster gene expression profiles using Lemon-Tree Gibbs Sampling procedure with the command:
 
-	java -jar lemontree.jar -task ganesh -data_file ../data/data_reduced.txt 
+	java -jar ../../../lib/lemontree.jar -task ganesh -data_file ./data_reduced.txt 
 	-output_file cluster1.txt 
 
 The clustering solution output is contained in the file cluster1.txt. We then repeat this command at least 10 times, to generate 10 (slightly) different clustering solutions (cluster2.txt, cluster3.txt, etc.).
 
 From this 10 solutions, we then create a robust clustering solution with the command:
 
-	java -jar lemontree.jar -task tight_clusters -data_file data_reduced.txt 
+	java -jar ../../../lib/lemontree.jar -task tight_clusters -data_file ./data_reduced.txt 
 	-cluster_file cluster_file_list.txt -output_file tight_clusters.txt -node_clustering true
 
 In this command, the file `cluster_file_list.txt` is just a text file listing all the clustering solutions files generated at the previous step. The file `tight_clusters.txt` contains the robust clusters. It can be easily constructed with the command:
@@ -1243,7 +1250,7 @@ In this command, the file `cluster_file_list.txt` is just a text file listing al
 
 Now we will assign "regulators" for each one of the clusters, taking as input the list of genes of the model that we want to prioritize and the robust clustering solution created at the previous step:
 
-	java -jar lemontree.jar -task regulators -data_file data_reduced.txt 
+	java -jar ../../../lib/lemontree.jar -task regulators -data_file ./data_reduced.txt 
 	-reg_file reg_emt.txt -cluster_file tight_clusters.txt -output_file reg_model
 
 The output file reg\_model.topreg.txt contains the top regulators (i.e. genes with scores that are ranked within the top 1% of all regulators). A given gene can be assigned to multiple clusters. We further refine this list by calculating the sum of all individual scores for each gene. This will give a higher weight to the genes that are indeed assigned to more than one cluster ("hub" regulators). Finally, the list is ranked by decreasing global score. We can now use this list to prioritize genes for the construction of the model, by selecting for instance genes that are within the the top 20 of the list, in combination with other criteria. 
