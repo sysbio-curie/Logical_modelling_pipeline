@@ -21,6 +21,6 @@ Windows machine was an Intel Core i7-4800MQ, CPU @ 2.70 GHz, and 8GB RAM, runnin
 
 Unix machine was an Intel Core i5-5250U, CPU @ 1.60 GHz, and 16GB RAM, running CentOS 7 x64.
 
-Mac machine was an XXX CPU @ XX GHz, and XX GB RAM, running MacOS XX.
+Mac machine was an Intel Core i5-3427U, CPU @ 1.80 GHz, and 4GB RAM, running MacOS X El Capitan x64.
 
 Docker container used default allocated memory (1GB).
