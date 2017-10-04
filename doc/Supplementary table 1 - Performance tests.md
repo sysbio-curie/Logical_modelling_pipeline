@@ -23,4 +23,4 @@ Unix machine was an Intel Core i5-5250U, CPU @ 1.60 GHz, and 16GB RAM, running C
 
 Mac machine was an Intel Core i5-3427U, CPU @ 1.80 GHz, and 4GB RAM, running MacOS X El Capitan x64.
 
-Docker container used default allocated memory (1GB).
+Docker container was build to use default allocated memory (1GB).
