@@ -19,7 +19,7 @@ In our model, this is the case of AKT2 (the only node having the length of the l
 ### Analysis of logical gates interactions with compact logical rules
 We manually modified the logical rules of the CFG file that is exported from GINsim in order to make it as compact as possible while conserving the truth table properties. We next analysed the model with this new file through section `6 Predicting logical gates interactions` and `7 Analyses of logical gates` of the pipeline.
 
-This analyses retrieve results that we can compare to the original model and see that the robustness with respect to the phenotype probability is practically the same than the robustness of the original model (Figure 2 and [PDF file](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Images_evaluation/Logical_gates_ratio_histograms_phenotypes_most_probable.pdg)).
+This analyses retrieve results that we can compare to the original model and see that the robustness with respect to the phenotype probability is practically the same than the robustness of the original model (Figure 2 and [PDF file](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Images_evaluation/Logical_gates_ratio_histograms_phenotypes_most_probable.pdf)).
 
 ![](./Images_evaluation/Migration_histogram.png) 
 
