@@ -25,7 +25,7 @@ This analyses retrieve results that we can compare to the original model and see
 
 Figure 2: Migration/Metastasis/Invasion/EMT/CellCycleArrest phenotype probability distribution across all mutants for logical gates. Bin where wild type value is found has been marked with dark red colour.
 
-Looking at which nodes' logical rules inhibit the Migration phenotype, we see that AKT1, CTNNB1, miR34, and p53 are still on the top list, but with changed orders. There are differences, however, in regards to the counts due to the decreased number of possible changes in the new model. 
+Looking at which nodes' logical rules inhibit the Migration phenotype, we see that AKT1, CTNNB1, miR34, and p53 are still on the top list, but with changed orders. There are differences, however, in regards to the counts due to the decreased number of possible changes in the new rules. 
 
 ![](./Images_evaluation/Migration_logical_mutants_high.png) 
 
