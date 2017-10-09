@@ -15,7 +15,7 @@ b2<-b1[,-c(cols)]
 b3<-b2[-c(1:9),]
 b3$Dist_to_WT<-as.numeric(levels(b3$Dist_to_WT))[b3$Dist_to_WT]
 
-c1 <- read.table("./projectname_probtraj_table.csv", header = TRUE, sep="\t", stringsAsFactors=FALSE)
+c1 <- read.table("./ginsimout_probtraj_table.csv", header = TRUE, sep="\t", stringsAsFactors=FALSE)
 c1 <- c1[,-ncol(c1)]
 c2 <- c1[,!grepl("Err.*",colnames(c1))]
 colnames(c2) <- gsub("\\.\\.","-",gsub("\\.$","", gsub("\\.nil\\.","HS", gsub("^Prob.","", colnames(c2)))))
