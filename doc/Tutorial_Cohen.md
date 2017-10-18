@@ -735,7 +735,7 @@ This file creates temporal evolution and pie charts for the asymptotic solutions
 
 <p align="center">
 A)&nbsp;&nbsp;<img src="./Images_Cohen/image_12.png" width="550" align="top"><br>
-B)&nbsp;&nbsp;<img src="./Images_Cohen/image_14.png" width="550" align="top"><br>
+B)&nbsp;&nbsp;<img src="./Images_Cohen/image_13.png" width="550" align="top"><br>
 Figure 2: Plot of the metastasis model solutions using MaBoSS. Initial conditions were chosen such that: all internal nodes had initial values set to zero and inputs nodes (<i>ECMicroenv</i>, <i>DNAdamage</i>, <i>GF</i> and <i>TGFbeta</i>) were randomly set to zero or one. A) Probabilities of one hundred trajectories of model state over continuous time; B) Pie chart of asymptotic solutions for the wild type case
 </p>
 
