@@ -43,7 +43,7 @@ pie_data$ord<-rownames(pie_data)
 pie<-ggplot(pie_data,aes(x="", y=pie_data[,1],fill=ord,order= ord))+ 
   geom_bar(width=1,stat = "identity")+
   coord_polar("y")+
-  geom_text(aes(label = percent(V299)), size=5,position = position_stack(vjust = .5)) +
+  geom_text(aes(label = percent(pie_data[,1])), size=5,position = position_stack(vjust = .5)) +
   guides(fill=guide_legend(nrow=2,byrow=TRUE)) +
   theme(axis.text=element_blank(),
         axis.ticks=element_blank(),
