@@ -10,9 +10,9 @@ rownames(a2)<-sub("__ginsimout","",rownames(a2),perl = F)
 
 b1<-read.delim("./ginsimout_dist_mutants_Hamming.txt", header = T)
 rownames(b1)<-b1$FP_ID
-cols<-c(1:3,5:36,ncol(b1))
-b2<-b1[,-c(cols)]
-b3<-b2[-c(1:9),]
+cols<-c("FP_STRING","COUNT","Dist_to_WT","Closest_WT")
+b2<-b1[,c(cols)]
+b3<-b2[-c(1:length(grep("^_WT",rownames(b1),perl = T))),]
 b3$Dist_to_WT<-as.numeric(levels(b3$Dist_to_WT))[b3$Dist_to_WT]
 
 c1 <- read.table("./ginsimout_probtraj_table.csv", header = TRUE, sep="\t", stringsAsFactors=FALSE)
