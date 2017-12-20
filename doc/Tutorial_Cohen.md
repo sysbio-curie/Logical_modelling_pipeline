@@ -76,7 +76,7 @@ A logical rule is defined for each of the nodes of the network. The nodes can ta
 
 ### Metastasis model as a test case
 
-As an example, we use a model that describes the signalling and regulation of EMT and Metastasis in cancer cells (ref 3). This model comprises 32 nodes and 157 edges; has two inputs, *ECMicroenv* and *DNAdamage* and 6 outputs: *ECM*, *Invasion*, *Migration*, *Metastasis*, *Apoptosis* and *CellCycleArrest*.
+As an example, we use a model that describes the signalling and regulation of EMT and Metastasis in cancer cells (ref 3). This model comprises 32 nodes and 157 edges; has two inputs, *ECMicroenv* and *DNAdamage* and 6 outputs: *EMT*, *Invasion*, *Migration*, *Metastasis*, *Apoptosis* and *CellCycleArrest*.
 
 The model is able to predict conditions, e.g. single or double mutations, favourable (or unfavourable) to tumour invasion and migration to the blood vessels in response to two inputs, extracellular matrix signalling (*ECMicroenv*) and DNA damage presence (*DNAdamage*). 
 
