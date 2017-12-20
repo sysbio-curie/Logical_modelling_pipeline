@@ -762,7 +762,7 @@ The list of the stable states of the full detailed model is shown below:
 <img src="./Images_Cohen/image_14.png" width="600">
 </p>
 
-First two columns, *ECMicroenv* and *DNAdamage* are the inputs of the system and the following six are outputs: *ECM*, *Invasion*, *Migration*, *Metastasis*, *Apoptosis* and *CellCycleArrest*.
+First two columns, *ECMicroenv* and *DNAdamage* are the inputs of the system and the following six are outputs: *EMT*, *Invasion*, *Migration*, *Metastasis*, *Apoptosis* and *CellCycleArrest*.
 
 We select the variables we wish to keep in the reduced version of the model and 
 
