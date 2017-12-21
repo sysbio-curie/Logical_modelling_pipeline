@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # - modifying CFG file
 # Define outputs in file called "listOut" (needed for _ko and _up parameters of epistasis) and inputs in file called "listIn" (needed for is_internal parameters of MaBoSS), one output per line
