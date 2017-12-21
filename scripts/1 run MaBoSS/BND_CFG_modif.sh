@@ -10,7 +10,7 @@ output=$(sed ':a;N;$!ba;s/\n/ -e /g;s/^/ -e /g' listOut.txt)
 outputs=$(sed ':a;N;$!ba;s/\n/ /g;s/^/ /g' listOut.txt)
 
 cp ginsimout.cfg ginsimout_original.cfg
-statesnoout=$(grep -v $output <<<"$states")
+statesnoout=$(grep -v "$output" <<<"$states")
 state_ko=$(echo "$statesnoout" | sed 's/$/_ko=0;/g')
 state_up=$(echo "$statesnoout" | sed 's/$/_up=0;/g')
 states2=$(printf "%s\n" ${state_ko[@]} ${state_up[@]})
