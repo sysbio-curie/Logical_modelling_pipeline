@@ -15,7 +15,10 @@ state_ko=$(echo "$statesnoout" | sed 's/$/_ko=0;/g')
 state_up=$(echo "$statesnoout" | sed 's/$/_up=0;/g')
 states2=$(printf "%s\n" ${state_ko[@]} ${state_up[@]})
 IFS=$'\n' sorted=($(sort <<<"${states2[*]}"))
-printf "%s\n" "${sorted[@]}" | sed 's/^/\$/;1i\\' | sed '1i\\' >> ginsimout.cfg
+printf "%s\n" "${sorted[@]}" | sed 's/^/\$/;1i\
+\
+\
+' >> ginsimout.cfg
 unset IFS
 
 # commenting input istates
@@ -35,7 +38,9 @@ for state in $states; do
 		echo $state | sed "s/$/\.is_internal=1;/" >> internal.temp
 	fi
 done
-sed -i.temp '1i\\' internal.temp
+sed -i.temp '1i\
+\
+' internal.temp
 
 
 cat internal.temp >> ginsimout.cfg
