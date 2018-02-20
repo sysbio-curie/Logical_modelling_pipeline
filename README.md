@@ -7,5 +7,5 @@ All scripts can be found in [scripts folder](https://github.com/sysbio-curie/Log
 
 The paper that explains the use of this repository can be found in *Briefings in Bioinformatics* with DOI [10.1093/bib/bbx163](https://doi.org/10.1093/bib/bbx163).
 
-This repository can be refered to with its own DOI: [![DOI](https://zenodo.org/badge/111694879.svg)](https://zenodo.org/badge/latestdoi/111694879)
+This repository can be referred to with its own DOI: [![DOI](https://zenodo.org/badge/111694879.svg)](https://zenodo.org/badge/latestdoi/111694879)
 
