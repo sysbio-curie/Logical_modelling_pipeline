@@ -9,7 +9,7 @@ All tools can be run in your CentOS/MacOS/Windows machine or you can download ou
 
 All command lines and steps to follow to process the results are described in this tutorial. The same steps can be used for any other Boolean models.
 
-*Disclaimer: we will keep updating the tutorial in the github as the different tools used evolve.* 
+*Disclaimer: we will keep updating the tutorial in the GitHub as the different tools used evolve.* 
 
 *Note: the scripts used in this tutorial are tailored for the Cohen et al example. Only small changes are needed in the provided files to fit a new model. Another example of the use of the pipeline is presented [using Flobak et al model](https://github.com/sysbio-curie/Logical_modelling_pipeline/blob/master/doc/Tutorial_Flobak.md).*
 
@@ -256,7 +256,7 @@ Or, for completeness, you can also run it with following script:
 
 #### For Windows users (under Cygwin)
 
-If you are using Windows, you can use our executable in the lib folder of our Github repository ([https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib)) using the script:
+If you are using Windows, you can use our executable in the lib folder of our GitHub repository ([https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/lib)) using the script:
 
 	./run_MaBoSS_CygWin.sh
 
@@ -1218,7 +1218,7 @@ For this analysis, we did not specify the use of a weighted GMT file, so the alg
 
 In this example, we focused on KEGG database only. ROMA detected 51 differentially activated/inactivated gene sets (t-test, p-value <0.05) revealing major biological pathways contributing to the cetuximab response. 
 
-When performing ROMA analyses on the whole GMT provided in [github address](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts/8b%20Using%20data%20as%20priors%20of%20model%20construction%20-%20ROMA), we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. 
+When performing ROMA analyses on the whole GMT provided in [GitHub address](https://github.com/sysbio-curie/Logical_modelling_pipeline/tree/master/scripts/8b%20Using%20data%20as%20priors%20of%20model%20construction%20-%20ROMA), we find consistent results with previous analyses, such as Notch and Wnt activation in aggressive tumours non responsive to therapy, caspase activation in tumours responsive to therapy. 
 
 Moreover, we identified activation of HSP27 and CARM1 pathways, potentially involved in the tumour aggressiveness.
 
