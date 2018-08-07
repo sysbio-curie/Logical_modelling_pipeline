@@ -233,7 +233,7 @@ To run the wild type condition (with no modifications from the initial model), y
 	SMAD.is\_internal=1;
 ```
 
-For your convenience, we have also provided a script that use the information of inputs and outputs in order to have a complete run of the different phenotypes using MaBoSS. First you need to define define the outputs of the model in the file `listOut.txt` and the inputs in file `listIn.txt`, one output or input per line. Then you need to run this script using: 
+For your convenience, we have also provided a script that use the information of inputs and outputs in order to have a complete run of the different phenotypes using MaBoSS. First you need to define define the outputs of the model in the file `listOut.txt` and the inputs in file `listIn.txt`, one output or input per line (and these files must not have trailing empty lines). Then you need to run this script using: 
 
 	BND_CFG_modif.sh
 	
