@@ -981,7 +981,7 @@ Additionally, we can use this normalization step to bundle together phenotypes t
 	Migration1=ECMicroenv/Migration/Metastasis/Invasion/EMT/GF/TGFbeta+Metastasis+ECMicroenv/EMT/CellCycleArrest/GF" 
 	-table ginsimout.xls
 
-This allows researchers to be able to bundle together phenotypes that are very similar and thus are supposed to have similar epistatic properties or phenotypes that are part of the same stable states family (for instance all the phenotypes that lead to *Apoptosis* or *CellCycleArrest*). 
+This allows researchers to be able to bundle together phenotypes that are very similar and thus are supposed to have similar epistatic properties or phenotypes that are part of the same stable states family (for instance all the phenotypes that lead to *Apoptosis* or *CellCycleArrest*). Also, depending on the model, **it might be necessary to bundle different phenotypes** to study a phenotype of interest that is **not** present on its own (ie, Invasion might not be present on its own, but only when bundled to others such as Migration/Metastasis/Invasion).
 
 Once we have normalized the results and bundled together some phenotypes, we can study genetic interactions among mutants using MaBoSSProbTrajFile function from BiNoM JAR file. This is also done by the `4_epistasis_study.sh` script.
 
